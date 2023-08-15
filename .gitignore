@@ -1,0 +1,11 @@
+Results
+Report
+Data
+test-table.tsv
+.DS_Store
+S1_to_S96_Results/
+S97_to_S192_Results/
+config_MiSeq.json
+config_iSeq.json
+master_iseq.sh
+master_miseq.s
