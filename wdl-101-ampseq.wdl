@@ -20,6 +20,8 @@ workflow dada2_denoising_iseq {
 		Int justConcatenate = 0
 		Int maxMismatch = 0
 		String path_to_DADA2 = '/Code'
+		File overlap_pr1
+		File overlap_pr2
 		File path_to_snv
 		String no_ref = 'False'
 		File reference
@@ -55,6 +57,8 @@ workflow dada2_denoising_iseq {
 			justConcatenate = justConcatenate,
 			maxMismatch = maxMismatch,
 			path_to_DADA2 = path_to_DADA2,
+			overlap_pr1 = overlap_pr1,
+			overlap_pr2 = overlap_pr2,
 			path_to_snv = path_to_snv,
 			no_ref = no_ref,
 			reference = reference,
@@ -101,6 +105,8 @@ task ampseq_dada2_iseq_process {
 		Int justConcatenate = 0
 		Int maxMismatch = 0
 		String path_to_DADA2 = '/Code'
+		File overlap_pr1
+		File overlap_pr2
 		File path_to_snv
 		String no_ref = 'False'
 		File reference
@@ -136,6 +142,8 @@ task ampseq_dada2_iseq_process {
 		"justConcatenate": justConcatenate,
 		"maxMismatch": maxMismatch,
 		"path_to_DADA2": path_to_DADA2,
+		"overlap_pr1" : sub(overlap_pr1, "gs://", "/cromwell_root/"),
+		"overlap_pr2" : sub(overlap_pr2, "gs://", "/cromwell_root/"),
 		"path_to_snv": sub(path_to_snv, "gs://", "/cromwell_root/"),
 		"no_ref": no_ref,
 		"reference": sub(reference, "gs://", "/cromwell_root/"),
