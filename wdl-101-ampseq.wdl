@@ -171,6 +171,8 @@ task ampseq_dada2_iseq_process {
 	python /Code/Amplicon_TerraPipeline.py --config ~{config_json} --mixed_reads --meta --repo --adaptor_removal --primer_removal #--dada2 --postproc_dada2 --asv_to_cigar
 	cat Results/stderr.txt
 	cat Results/stdout.txt
+	cat Results/AdaptorRem/*.txt
+	cat Results/AdaptorRem/*.out
 	find . -type f
 	>>>
 	output {
