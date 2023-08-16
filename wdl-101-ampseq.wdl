@@ -172,7 +172,11 @@ task ampseq_dada2_iseq_process {
 	cat Results/stderr.txt
 	cat Results/stdout.txt
 	cat Results/AdaptorRem/*stderr.txt
-	python /Code/Amplicon_TerraPipeline.py --config ~{config_json} --mixed_reads --meta --repo --adaptor_removal --primer_removal #--dada2 --postproc_dada2 --asv_to_cigar
+	cat Results/AdaptorRem/adaptorrem_meta.tsv
+
+	echo "PRIMER REMOVAL"
+
+	python /Code/Amplicon_TerraPipeline.py --config ~{config_json} --mixed_reads --primer_removal #--dada2 --postproc_dada2 --asv_to_cigar
 	cat Results/stderr.txt
 	cat Results/stdout.txt
 	find . -type f
