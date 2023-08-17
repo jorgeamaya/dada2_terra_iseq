@@ -236,77 +236,77 @@ def main():
 	if args.dada2 and args.mixed_reads:
 		print("Entered loop")
 
-		ad.flush_dir(res_dir, "PrimerRem_NOP")	
-		ad.flush_dir(res_dir, "PrimerRem_OP")	
+	#	ad.flush_dir(res_dir, "PrimerRem_NOP")	
+	#	ad.flush_dir(res_dir, "PrimerRem_OP")	
 
-		meta = open(os.path.join(res_dir, "AdaptorRem", "adaptorrem_meta.tsv"), 'r')
-		samples = meta.readlines()
+	#	meta = open(os.path.join(res_dir, "AdaptorRem", "adaptorrem_meta.tsv"), 'r')
+	#	samples = meta.readlines()
 
 		#Trim primers off Overlapping short targets and demux them to different file
 		#p = multiprocessing.Pool()
-		for sample in samples:
-			slist = sample.split()
-			ad.trim_primer(slist[0], slist[1], slist[2], res_dir, "PrimerRem_OP", overlap_pr1, overlap_pr2, "mixed_op", True)
+	#	for sample in samples:
+	#		slist = sample.split()
+	#		ad.trim_primer(slist[0], slist[1], slist[2], res_dir, "PrimerRem_OP", overlap_pr1, overlap_pr2, "mixed_op", True)
 			#p.apply_async(ad.trim_primer, args=(slist[0], slist[1], slist[2], res_dir, "PrimerRem", overlap_pr1, overlap_pr2, "mixed_op", True))
 		#p.close()
 		#p.join()
 
 		#Metafile for trimmed overlapping target reads
-		ad.create_meta(os.path.join(res_dir, "PrimerRem_OP"), res_dir, "PrimerRem_OP", "mixed_op_prim_meta.tsv",
-			pattern_fw="*_mixed_op_1.fq.gz", pattern_rv="*_mixed_op_2.fq.gz")
+	#	ad.create_meta(os.path.join(res_dir, "PrimerRem_OP"), res_dir, "PrimerRem_OP", "mixed_op_prim_meta.tsv",
+	#		pattern_fw="*_mixed_op_1.fq.gz", pattern_rv="*_mixed_op_2.fq.gz")
 
 		#Metafile for un-trimmed non-op target reads
-		ad.create_meta(os.path.join(res_dir, "PrimerRem_OP"), res_dir, "PrimerRem_OP", "mixed_temp_meta.tsv",
-			pattern_fw="*_temp_1.fq.gz", pattern_rv="*_temp_2.fq.gz")
-		temp_meta = open(os.path.join(res_dir, "PrimerRem_OP", "mixed_temp_meta.tsv"), 'r')
+	#	ad.create_meta(os.path.join(res_dir, "PrimerRem_OP"), res_dir, "PrimerRem_OP", "mixed_temp_meta.tsv",
+	#		pattern_fw="*_temp_1.fq.gz", pattern_rv="*_temp_2.fq.gz")
+	#	temp_meta = open(os.path.join(res_dir, "PrimerRem_OP", "mixed_temp_meta.tsv"), 'r')
 
 		#Trim primers off second subset of non-op long targets 
-		samples = temp_meta.readlines()
+	#	samples = temp_meta.readlines()
 		#p = multiprocessing.Pool()
-		for sample in samples:
-			slist = sample.split()
+	#	for sample in samples:
+	#		slist = sample.split()
 			#p.apply_async(ad.trim_primer, args=(slist[0], slist[1], slist[2], res_dir, "PrimerRem", pr1, pr2, "mixed_nop"))
-			ad.trim_primer(slist[0], slist[1], slist[2], res_dir, "PrimerRem_NOP", pr1, pr2, "mixed_nop")
+	#		ad.trim_primer(slist[0], slist[1], slist[2], res_dir, "PrimerRem_NOP", pr1, pr2, "mixed_nop")
 		#p.close()
 		#p.join()
 
 		#Metafile for trimmed non-op target reads
-		ad.create_meta(os.path.join(res_dir, "PrimerRem_NOP"), res_dir, "PrimerRem_NOP", "mixed_nop_prim_meta.tsv", 
-			pattern_fw="*_mixed_nop_1.fq.gz", pattern_rv="*_mixed_nop_2.fq.gz")
-		temp_meta.close()
+	#	ad.create_meta(os.path.join(res_dir, "PrimerRem_NOP"), res_dir, "PrimerRem_NOP", "mixed_nop_prim_meta.tsv", 
+	#		pattern_fw="*_mixed_nop_1.fq.gz", pattern_rv="*_mixed_nop_2.fq.gz")
+	#	temp_meta.close()
 
 		#RUN DADA2 on iseq files	
-		ad.flush_dir(res_dir, "DADA2_OP", "QProfile")
-		path_to_meta = os.path.join(res_dir, "PrimerRem_OP", "mixed_op_prim_meta.tsv")
-		justConcatenate=0	
-		ad.run_dada2(path_to_DADA2, path_to_meta, path_to_fq, path_to_flist, Class, maxEE, trimRight, minLen, truncQ, matchIDs, max_consist, omegaA, justConcatenate, maxMismatch,saveRdata, res_dir, "DADA2_OP")
-		seqtab_op = os.path.join(res_dir,'DADA2_OP','seqtab.tsv')
-		bimera_op = os.path.join(res_dir,'DADA2_OP','ASVBimeras.txt')
+	#	ad.flush_dir(res_dir, "DADA2_OP", "QProfile")
+	#	path_to_meta = os.path.join(res_dir, "PrimerRem_OP", "mixed_op_prim_meta.tsv")
+	#	justConcatenate=0	
+	#	ad.run_dada2(path_to_DADA2, path_to_meta, path_to_fq, path_to_flist, Class, maxEE, trimRight, minLen, truncQ, matchIDs, max_consist, omegaA, justConcatenate, maxMismatch,saveRdata, res_dir, "DADA2_OP")
+	#	seqtab_op = os.path.join(res_dir,'DADA2_OP','seqtab.tsv')
+	#	bimera_op = os.path.join(res_dir,'DADA2_OP','ASVBimeras.txt')
 
 		#Run DADA2 on non-op targets
-		ad.flush_dir(res_dir, "DADA2_NOP", "QProfile")
-		path_to_meta = os.path.join(res_dir, "PrimerRem_NOP", "mixed_nop_prim_meta.tsv")
-		justConcatenate=1	
-		ad.run_dada2(path_to_DADA2, path_to_meta, path_to_fq, path_to_flist, Class, maxEE, trimRight, minLen, truncQ, matchIDs, max_consist, omegaA, justConcatenate, maxMismatch,saveRdata, res_dir, "DADA2_NOP")
-		seqtab_nop = os.path.join(res_dir,'DADA2_NOP','seqtab.tsv')
-		bimera_nop = os.path.join(res_dir,'DADA2_NOP','ASVBimeras.txt')
+	#	ad.flush_dir(res_dir, "DADA2_NOP", "QProfile")
+	#	path_to_meta = os.path.join(res_dir, "PrimerRem_NOP", "mixed_nop_prim_meta.tsv")
+	#	justConcatenate=1	
+	#	ad.run_dada2(path_to_DADA2, path_to_meta, path_to_fq, path_to_flist, Class, maxEE, trimRight, minLen, truncQ, matchIDs, max_consist, omegaA, justConcatenate, maxMismatch,saveRdata, res_dir, "DADA2_NOP")
+	#	seqtab_nop = os.path.join(res_dir,'DADA2_NOP','seqtab.tsv')
+	#	bimera_nop = os.path.join(res_dir,'DADA2_NOP','ASVBimeras.txt')
 
 		#ASV modification block for non-op targets and merge two ASV tables
-		if reference is not None:
-			adjASV = ['Rscript', os.path.join(path_to_DADA2, 'adjustASV.R'), '-s', seqtab_nop, '-ref', str(reference),
-			'-dist', adjust_mode,
-			'-o', os.path.join(res_dir, 'DADA2_NOP', 'correctedASV.txt')]
-			procASV = subprocess.Popen(adjASV, stdout=sys.stdout, stderr=sys.stderr)
-			procASV.wait()
-			seqtab_corrected = os.path.join(res_dir, 'DADA2_NOP', 'seqtab_corrected.tsv')
-			seqtab = ad.merge_seqtab(seqtab_op, seqtab_corrected)
-		else:
-			print('--reference file not found. skipping ASV correction..')
-			seqtab = ad.merge_seqtab(seqtab_op, seqtab_nop)
+	#	if reference is not None:
+	#		adjASV = ['Rscript', os.path.join(path_to_DADA2, 'adjustASV.R'), '-s', seqtab_nop, '-ref', str(reference),
+	#		'-dist', adjust_mode,
+	#		'-o', os.path.join(res_dir, 'DADA2_NOP', 'correctedASV.txt')]
+	#		procASV = subprocess.Popen(adjASV, stdout=sys.stdout, stderr=sys.stderr)
+	#		procASV.wait()
+	#		seqtab_corrected = os.path.join(res_dir, 'DADA2_NOP', 'seqtab_corrected.tsv')
+	#		seqtab = ad.merge_seqtab(seqtab_op, seqtab_corrected)
+	#	else:
+	#		print('--reference file not found. skipping ASV correction..')
+	#		seqtab = ad.merge_seqtab(seqtab_op, seqtab_nop)
 
-		bimera = ad.merge_seqtab(bimera_op, bimera_nop)
-		seqtab.to_csv(os.path.join(res_dir, 'seqtab_mixed.tsv'), sep = "\t")
-		bimera.to_csv(os.path.join(res_dir, 'ASVBimeras.txt'), sep = "\t")
+	#	bimera = ad.merge_seqtab(bimera_op, bimera_nop)
+	#	seqtab.to_csv(os.path.join(res_dir, 'seqtab_mixed.tsv'), sep = "\t")
+	#	bimera.to_csv(os.path.join(res_dir, 'ASVBimeras.txt'), sep = "\t")
 
 	if args.dada2_contamination and args.mixed_reads:
 		ad.flush_dir(res_dir, "PrimerRem_OP")	
