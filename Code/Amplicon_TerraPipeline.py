@@ -234,6 +234,8 @@ def main():
 
 	#Remove primers from iseq data and perform DADA2 preprocess	
 	if args.dada2 and args.mixed_reads:
+		print("Entered loop")
+
 		ad.flush_dir(res_dir, "PrimerRem_NOP")	
 		ad.flush_dir(res_dir, "PrimerRem_OP")	
 
