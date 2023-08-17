@@ -153,6 +153,9 @@ def main():
 		ad.create_meta(os.path.join(res_dir, "AdaptorRem"), res_dir, "AdaptorRem", "adaptorrem_meta.tsv",
 			pattern_fw="*_val_1.fq.gz", pattern_rv="*_val_2.fq.gz")
 
+		ad.flush_dir(res_dir, "PrimerRem_NOP")
+		ad.flush_dir(res_dir, "PrimerRem_OP")
+
 	#Merge forward and reverse reads with bbmerge. Only for reas that overlap.
 	if args.merge and args.overlap_reads:
 		ad.flush_dir(res_dir, "Merge")
@@ -235,6 +238,7 @@ def main():
 	#Remove primers from iseq data and perform DADA2 preprocess	
 	if args.dada2 and args.mixed_reads:
 		print("Entered loop")
+		print(res_dir)
 		ad.flush_dir(res_dir, "PrimerRem_NOP")
 		ad.flush_dir(res_dir, "PrimerRem_OP")
 
