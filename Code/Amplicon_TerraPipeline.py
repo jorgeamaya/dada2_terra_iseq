@@ -235,9 +235,8 @@ def main():
 	#Remove primers from iseq data and perform DADA2 preprocess	
 	if args.dada2 and args.mixed_reads:
 		print("Entered loop")
-
-		ad.flush_dir(res_dir, "PrimerRem_NOP")	
-		ad.flush_dir(res_dir, "PrimerRem_OP")	
+		ad.flush_dir(res_dir, "PrimerRem_NOP")
+		ad.flush_dir(res_dir, "PrimerRem_OP")
 
 		meta = open(os.path.join(res_dir, "AdaptorRem", "adaptorrem_meta.tsv"), 'r')
 		samples = meta.readlines()
