@@ -236,12 +236,12 @@ def main():
 	if args.dada2 and args.mixed_reads:
 		print("Entered loop")
 
-	#	ad.flush_dir(res_dir, "PrimerRem_NOP")	
-	#	ad.flush_dir(res_dir, "PrimerRem_OP")	
+		ad.flush_dir(res_dir, "PrimerRem_NOP")	
+		ad.flush_dir(res_dir, "PrimerRem_OP")	
 
-	#	meta = open(os.path.join(res_dir, "AdaptorRem", "adaptorrem_meta.tsv"), 'r')
-	#	samples = meta.readlines()
-
+		meta = open(os.path.join(res_dir, "AdaptorRem", "adaptorrem_meta.tsv"), 'r')
+		samples = meta.readlines()
+		print("MADE PRIMERREM DIRECTORIES AND META FILE")
 		#Trim primers off Overlapping short targets and demux them to different file
 		#p = multiprocessing.Pool()
 	#	for sample in samples:
