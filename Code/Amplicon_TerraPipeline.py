@@ -277,12 +277,12 @@ def main():
 		temp_meta.close()
 
 		#RUN DADA2 on iseq files	
-	#	ad.flush_dir(res_dir, "DADA2_OP", "QProfile")
-	#	path_to_meta = os.path.join(res_dir, "PrimerRem_OP", "mixed_op_prim_meta.tsv")
-	#	justConcatenate=0	
-	#	ad.run_dada2(path_to_DADA2, path_to_meta, path_to_fq, path_to_flist, Class, maxEE, trimRight, minLen, truncQ, matchIDs, max_consist, omegaA, justConcatenate, maxMismatch,saveRdata, res_dir, "DADA2_OP")
-	#	seqtab_op = os.path.join(res_dir,'DADA2_OP','seqtab.tsv')
-	#	bimera_op = os.path.join(res_dir,'DADA2_OP','ASVBimeras.txt')
+		ad.flush_dir(res_dir, "DADA2_OP", "QProfile")
+		path_to_meta = os.path.join(res_dir, "PrimerRem_OP", "mixed_op_prim_meta.tsv")
+		justConcatenate=0	
+		ad.run_dada2(path_to_DADA2, path_to_meta, path_to_fq, path_to_flist, Class, maxEE, trimRight, minLen, truncQ, matchIDs, max_consist, omegaA, justConcatenate, maxMismatch,saveRdata, res_dir, "DADA2_OP")
+		seqtab_op = os.path.join(res_dir,'DADA2_OP','seqtab.tsv')
+		bimera_op = os.path.join(res_dir,'DADA2_OP','ASVBimeras.txt')
 
 		#Run DADA2 on non-op targets
 	#	ad.flush_dir(res_dir, "DADA2_NOP", "QProfile")
