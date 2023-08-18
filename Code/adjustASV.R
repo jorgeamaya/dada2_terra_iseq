@@ -48,22 +48,23 @@ levenshtein = function(correctedASV, tar) {
                     method="levenshtein")) > 9)
 }
 
-print('LOADED  THE LIBRARIES AND FUNCTIONS')
-#parser <- ArgumentParser()
-#parser$add_argument("-s", "--seqtab", 
-#                    help="Path to input")
-#parser$add_argument("-ref", "--reference",
-#                    help="Path to reference fasta sequences")
-#parser$add_argument("-dist", "--distance",
-#                    help=paste("Distance method to accept the corrected ASV. It can be absolute, percentage, levenshtein, or ignore",
-#                               "absolute: Corrected ASV discarded if its size is different to the reference.",
-#                               "percentage: Corrected ASV discarded if its size is 10 larger or smaller than the reference.",
-#                               "levenshtein: Corrected ASV discarded if its size is 9 bp larger or smaller than the reference.",
-#                               "ignore: Corrected ASV never discarded.", sep = " "))
-#parser$add_argument("-o", "--output",
-#                    help="Path to output for corrected ASV list")
+parser <- ArgumentParser()
+parser$add_argument("-s", "--seqtab", 
+                    help="Path to input")
+parser$add_argument("-ref", "--reference",
+                    help="Path to reference fasta sequences")
+parser$add_argument("-dist", "--distance",
+                    help=paste("Distance method to accept the corrected ASV. It can be absolute, percentage, levenshtein, or ignore",
+                               "absolute: Corrected ASV discarded if its size is different to the reference.",
+                               "percentage: Corrected ASV discarded if its size is 10 larger or smaller than the reference.",
+                               "levenshtein: Corrected ASV discarded if its size is 9 bp larger or smaller than the reference.",
+                               "ignore: Corrected ASV never discarded.", sep = " "))
+parser$add_argument("-o", "--output",
+                    help="Path to output for corrected ASV list")
 
-#args <- parser$parse_args()
+args <- parser$parse_args()
+
+print("PARSED THE ARGUMENTS TO ARGS")
 #path_to_refseq <- args$reference
 #seqfile <- args$seqtab
 #output <- args$output
