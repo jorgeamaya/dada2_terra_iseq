@@ -260,24 +260,24 @@ def main():
 			pattern_fw="*_mixed_op_1.fq.gz", pattern_rv="*_mixed_op_2.fq.gz")
 
 		#Metafile for un-trimmed non-op target reads
-	#	ad.create_meta(os.path.join(res_dir, "PrimerRem_OP"), res_dir, "PrimerRem_OP", "mixed_temp_meta.tsv",
-	#		pattern_fw="*_temp_1.fq.gz", pattern_rv="*_temp_2.fq.gz")
-	#	temp_meta = open(os.path.join(res_dir, "PrimerRem_OP", "mixed_temp_meta.tsv"), 'r')
+		ad.create_meta(os.path.join(res_dir, "PrimerRem_OP"), res_dir, "PrimerRem_OP", "mixed_temp_meta.tsv",
+			pattern_fw="*_temp_1.fq.gz", pattern_rv="*_temp_2.fq.gz")
+		temp_meta = open(os.path.join(res_dir, "PrimerRem_OP", "mixed_temp_meta.tsv"), 'r')
 
 		#Trim primers off second subset of non-op long targets 
-	#	samples = temp_meta.readlines()
+		samples = temp_meta.readlines()
 		#p = multiprocessing.Pool()
-	#	for sample in samples:
-	#		slist = sample.split()
+		for sample in samples:
+			slist = sample.split()
 			#p.apply_async(ad.trim_primer, args=(slist[0], slist[1], slist[2], res_dir, "PrimerRem", pr1, pr2, "mixed_nop"))
-	#		ad.trim_primer(slist[0], slist[1], slist[2], res_dir, "PrimerRem_NOP", pr1, pr2, "mixed_nop")
+			ad.trim_primer(slist[0], slist[1], slist[2], res_dir, "PrimerRem_NOP", pr1, pr2, "mixed_nop")
 		#p.close()
 		#p.join()
 
 		#Metafile for trimmed non-op target reads
-	#	ad.create_meta(os.path.join(res_dir, "PrimerRem_NOP"), res_dir, "PrimerRem_NOP", "mixed_nop_prim_meta.tsv", 
-	#		pattern_fw="*_mixed_nop_1.fq.gz", pattern_rv="*_mixed_nop_2.fq.gz")
-	#	temp_meta.close()
+		ad.create_meta(os.path.join(res_dir, "PrimerRem_NOP"), res_dir, "PrimerRem_NOP", "mixed_nop_prim_meta.tsv", 
+			pattern_fw="*_mixed_nop_1.fq.gz", pattern_rv="*_mixed_nop_2.fq.gz")
+		temp_meta.close()
 
 		#RUN DADA2 on iseq files	
 	#	ad.flush_dir(res_dir, "DADA2_OP", "QProfile")
