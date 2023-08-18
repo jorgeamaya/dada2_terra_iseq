@@ -293,19 +293,20 @@ def main():
 		bimera_nop = os.path.join(res_dir,'DADA2_NOP','ASVBimeras.txt')
 
 		#ASV modification block for non-op targets and merge two ASV tables
-		#if reference is not None:
-		#	print("Correcting reference")
-		#	adjASV = ['Rscript', os.path.join(path_to_DADA2, 'adjustASV.R'), '-s', seqtab_nop, '-ref', str(reference),
-		#	'-dist', adjust_mode,
-		#	'-o', os.path.join(res_dir, 'DADA2_NOP', 'correctedASV.txt')]
-		#	procASV = subprocess.Popen(adjASV, stdout=sys.stdout, stderr=sys.stderr)
-		#	procASV.wait()
-		#	seqtab_corrected = os.path.join(res_dir, 'DADA2_NOP', 'seqtab_corrected.tsv')
-		#	seqtab = ad.merge_seqtab(seqtab_op, seqtab_corrected)
-		#	print("Finished correcting reference")
-		#else:
-		#	print('--reference file not found. skipping ASV correction..')
-		#	seqtab = ad.merge_seqtab(seqtab_op, seqtab_nop)
+		if reference is not None:
+			print("Correcting reference")
+			adjASV = ['Rscript', os.path.join(path_to_DADA2, 'adjustASV.R'), '-s', seqtab_nop, '-ref', str(reference),
+			'-dist', adjust_mode,
+			'-o', os.path.join(res_dir, 'DADA2_NOP', 'correctedASV.txt')]
+			print(adjASV)
+			#procASV = subprocess.Popen(adjASV, stdout=sys.stdout, stderr=sys.stderr)
+			#procASV.wait()
+			seqtab_corrected = os.path.join(res_dir, 'DADA2_NOP', 'seqtab_corrected.tsv')
+			seqtab = ad.merge_seqtab(seqtab_op, seqtab_corrected)
+			print("Finished correcting reference")
+		else:
+			print('--reference file not found. skipping ASV correction..')
+			seqtab = ad.merge_seqtab(seqtab_op, seqtab_nop)
 
 		#bimera = ad.merge_seqtab(bimera_op, bimera_nop)
 		#seqtab.to_csv(os.path.join(res_dir, 'seqtab_mixed.tsv'), sep = "\t")
