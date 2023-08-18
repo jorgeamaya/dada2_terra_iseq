@@ -170,8 +170,12 @@ task ampseq_dada2_iseq_process {
 
 	mkdir PrimerRem_NOP
 	mkdir PrimerRem_OP
+	
+	ECHO "TEST TERRA" > PrimerRem_OP/test_terra.txt
 
 	cat /Code/Amplicon_TerraPipeline.py
+
+	cat PrimerRem_OP/test_terra.txt
 
 	#python /Code/Amplicon_TerraPipeline.py --config ~{config_json} --mixed_reads --meta --repo --adaptor_removal --dada2
 	#cat Results/stderr.txt
