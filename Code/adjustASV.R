@@ -16,6 +16,8 @@ if (!require("argparse")) {
   install.packages("argparse", repos="http://cran.rstudio.com/")
   library("argparse")
 }
+
+print('LOADED HALF OF THE LIBRARIES AND FUNCTIONS')
 if (!require("Biostrings")) {
   install.packages("Biostrings", repos="http://cran.rstudio.com/")
   library("Biostrings")
@@ -48,31 +50,31 @@ levenshtein = function(correctedASV, tar) {
                     method="levenshtein")) > 9)
 }
 
-parser <- ArgumentParser()
-parser$add_argument("-s", "--seqtab", 
-                    help="Path to input")
-parser$add_argument("-ref", "--reference",
-                    help="Path to reference fasta sequences")
-parser$add_argument("-dist", "--distance",
-                    help=paste("Distance method to accept the corrected ASV. It can be absolute, percentage, levenshtein, or ignore",
-                               "absolute: Corrected ASV discarded if its size is different to the reference.",
-                               "percentage: Corrected ASV discarded if its size is 10 larger or smaller than the reference.",
-                               "levenshtein: Corrected ASV discarded if its size is 9 bp larger or smaller than the reference.",
-                               "ignore: Corrected ASV never discarded.", sep = " "))
-parser$add_argument("-o", "--output",
-                    help="Path to output for corrected ASV list")
+#parser <- ArgumentParser()
+#parser$add_argument("-s", "--seqtab", 
+#                    help="Path to input")
+#parser$add_argument("-ref", "--reference",
+#                    help="Path to reference fasta sequences")
+#parser$add_argument("-dist", "--distance",
+#                    help=paste("Distance method to accept the corrected ASV. It can be absolute, percentage, levenshtein, or ignore",
+#                               "absolute: Corrected ASV discarded if its size is different to the reference.",
+#                               "percentage: Corrected ASV discarded if its size is 10 larger or smaller than the reference.",
+#                               "levenshtein: Corrected ASV discarded if its size is 9 bp larger or smaller than the reference.",
+#                               "ignore: Corrected ASV never discarded.", sep = " "))
+#parser$add_argument("-o", "--output",
+#                    help="Path to output for corrected ASV list")
 
-args <- parser$parse_args()
-path_to_refseq <- args$reference
-seqfile <- args$seqtab
-output <- args$output
-dist = args$dist
+#args <- parser$parse_args()
+#path_to_refseq <- args$reference
+#seqfile <- args$seqtab
+#output <- args$output
+#dist = args$dist
 
-print('LOADED LIBRARIES, FUNCTIONS, AND VARIABLES')
-print(path_to_refseq)
-print(seqfile)
-print(output)
-print(dist)
+#print('LOADED LIBRARIES, FUNCTIONS, AND VARIABLES')
+#print(path_to_refseq)
+#print(seqfile)
+#print(output)
+#print(dist)
 
 #if (dist == 'ignore') {
 #  print("Caution: All Corrected ASV will be included in the output. Some ASVs in your table may be incorrect constructs.")
