@@ -168,6 +168,9 @@ task ampseq_dada2_iseq_process {
 	gsutil ls ~{path_to_fq}
 	gsutil -m cp -r ~{path_to_fq}* fq_dir/
 
+	mkdir PrimerRem_NOP
+	mkdir PrimerRem_OP
+
 	python /Code/Amplicon_TerraPipeline.py --config ~{config_json} --mixed_reads --meta --repo --adaptor_removal --dada2
 	cat Results/stderr.txt
 	cat Results/stdout.txt
