@@ -8,68 +8,72 @@ if (!require("seqinr")) {
   install.packages("seqinr", repos="http://cran.rstudio.com/")
   library("seqinr")
 }
+if (!require("data.table")) {
+  install.packages("data.table", repos="http://cran.rstudio.com/")
+  library("data.table")
+}
+if (!require("argparse")) {
+  install.packages("argparse", repos="http://cran.rstudio.com/")
+  library("argparse")
+}
+if (!require("Biostrings")) {
+  install.packages("Biostrings", repos="http://cran.rstudio.com/")
+  library("Biostrings")
+}
+if (!require("parallel")) {
+  install.packages("parallel", repos="http://cran.rstudio.com/")
+  library("parallel")
+}
+if (!require("doMC")) {
+  install.packages("doMC", repos="http://cran.rstudio.com/")
+  library("doMC")
+}
 
-print('LOADED THE FIRST LIBRARY')
-#if (!require("data.table")) {
-#  install.packages("data.table", repos="http://cran.rstudio.com/")
-#  library("data.table")
-#}
-#if (!require("argparse")) {
-#  install.packages("argparse", repos="http://cran.rstudio.com/")
-#  library("argparse")
-#}
-#if (!require("Biostrings")) {
-#  install.packages("Biostrings", repos="http://cran.rstudio.com/")
-#  library("Biostrings")
-#}
-#if (!require("parallel")) {
-#  install.packages("parallel", repos="http://cran.rstudio.com/")
-#  library("parallel")
-#}
-#if (!require("doMC")) {
-#  install.packages("doMC", repos="http://cran.rstudio.com/")
-#  library("doMC")
-#}
-#
-#absolute = function(correctedASV, tar) {
-#  return(nchar(correctedASV) != nchar(tar))
-#}
-#per_size = function(correctedASV, tar) {
-#  return((abs(nchar(correctedASV)-nchar(tar))/nchar(tar)) > 0.1)
-#}
-#levenshtein = function(correctedASV, tar) {
-#  positions <- list(first = gregexpr("N", correctedASV)[[1]][1],
-#                    last = tail(gregexpr("N", correctedASV)[[1]], 1))
-#  correctedASV_three_prime = substr(correctedASV, 1, positions$first-1)
-#  correctedASV_five_prime = substr(correctedASV, positions$last+1, nchar(correctedASV))
-#  ref_three_prime = substr(tar, 1, positions$first-1)
-#  ref_five_prime = substr(tar, positions$last+1, nchar(tar))
-#  
-#  return((stringDist(c(paste0(correctedASV_three_prime, correctedASV_five_prime),
-#                      paste0(ref_three_prime, ref_five_prime)),
-#                    method="levenshtein")) > 9)
-#}
-#
-#parser <- ArgumentParser()
-#parser$add_argument("-s", "--seqtab", 
-#                    help="Path to input")
-#parser$add_argument("-ref", "--reference",
-#                    help="Path to reference fasta sequences")
-#parser$add_argument("-dist", "--distance",
-#                    help=paste("Distance method to accept the corrected ASV. It can be absolute, percentage, levenshtein, or ignore",
-#                               "absolute: Corrected ASV discarded if its size is different to the reference.",
-#                               "percentage: Corrected ASV discarded if its size is 10 larger or smaller than the reference.",
-#                               "levenshtein: Corrected ASV discarded if its size is 9 bp larger or smaller than the reference.",
-#                               "ignore: Corrected ASV never discarded.", sep = " "))
-#parser$add_argument("-o", "--output",
-#                    help="Path to output for corrected ASV list")
-#
-#args <- parser$parse_args()
-#path_to_refseq <- args$reference
-#seqfile <- args$seqtab
-#output <- args$output
-#dist = args$dist
-#
+absolute = function(correctedASV, tar) {
+  return(nchar(correctedASV) != nchar(tar))
+}
+per_size = function(correctedASV, tar) {
+  return((abs(nchar(correctedASV)-nchar(tar))/nchar(tar)) > 0.1)
+}
+levenshtein = function(correctedASV, tar) {
+  positions <- list(first = gregexpr("N", correctedASV)[[1]][1],
+                    last = tail(gregexpr("N", correctedASV)[[1]], 1))
+  correctedASV_three_prime = substr(correctedASV, 1, positions$first-1)
+  correctedASV_five_prime = substr(correctedASV, positions$last+1, nchar(correctedASV))
+  ref_three_prime = substr(tar, 1, positions$first-1)
+  ref_five_prime = substr(tar, positions$last+1, nchar(tar))
+  
+  return((stringDist(c(paste0(correctedASV_three_prime, correctedASV_five_prime),
+                      paste0(ref_three_prime, ref_five_prime)),
+                    method="levenshtein")) > 9)
+}
+
+parser <- ArgumentParser()
+parser$add_argument("-s", "--seqtab", 
+                    help="Path to input")
+parser$add_argument("-ref", "--reference",
+                    help="Path to reference fasta sequences")
+parser$add_argument("-dist", "--distance",
+                    help=paste("Distance method to accept the corrected ASV. It can be absolute, percentage, levenshtein, or ignore",
+                               "absolute: Corrected ASV discarded if its size is different to the reference.",
+                               "percentage: Corrected ASV discarded if its size is 10 larger or smaller than the reference.",
+                               "levenshtein: Corrected ASV discarded if its size is 9 bp larger or smaller than the reference.",
+                               "ignore: Corrected ASV never discarded.", sep = " "))
+parser$add_argument("-o", "--output",
+                    help="Path to output for corrected ASV list")
+
+args <- parser$parse_args()
+path_to_refseq <- args$reference
+seqfile <- args$seqtab
+output <- args$output
+dist = args$dist
+
+print('LOADED LIBRARIES, FUNCTIONS, AND VARIABLES')
+print(path_to_refseq)
+print(seqfile)
+print(output)
+print(dist)
+
 #if (dist == 'ignore') {
 #  print("Caution: All Corrected ASV will be included in the output. Some ASVs in your table may be incorrect constructs.")
 #}
