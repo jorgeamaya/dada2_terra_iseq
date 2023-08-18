@@ -168,20 +168,10 @@ task ampseq_dada2_iseq_process {
 	gsutil ls ~{path_to_fq}
 	gsutil -m cp -r ~{path_to_fq}* fq_dir/
 
-	mkdir PrimerRem_NOP
-	mkdir PrimerRem_OP
-	
-	echo "TEST TERRA" > PrimerRem_OP/test_terra.txt
-
-	cat /Code/Amplicon_TerraPipeline.py
-
-	cat PrimerRem_OP/test_terra.txt
-
-	#python /Code/Amplicon_TerraPipeline.py --config ~{config_json} --mixed_reads --meta --repo --adaptor_removal --dada2
-	#cat Results/stderr.txt
-	#cat Results/stdout.txt
-	#cat Results/AdaptorRem/*stderr.txt
-	#cat Results/AdaptorRem/adaptorrem_meta.tsv
+	python /Code/Amplicon_TerraPipeline.py --config ~{config_json} --mixed_reads --meta --repo --adaptor_removal --dada2
+	cat Results/stderr.txt
+	cat Results/stdout.txt
+	cat Results/AdaptorRem/adaptorrem_meta.tsv
 
 	#find . -type f
 	#python /Code/Amplicon_TerraPipeline.py --config ~{config_json} --mixed_reads --dada2 #--postproc_dada2 --asv_to_cigar

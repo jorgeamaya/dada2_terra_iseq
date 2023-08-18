@@ -248,16 +248,16 @@ def main():
 		print("MADE PRIMERREM DIRECTORIES AND META FILE")
 		#Trim primers off Overlapping short targets and demux them to different file
 		#p = multiprocessing.Pool()
-	#	for sample in samples:
-	#		slist = sample.split()
-	#		ad.trim_primer(slist[0], slist[1], slist[2], res_dir, "PrimerRem_OP", overlap_pr1, overlap_pr2, "mixed_op", True)
+		for sample in samples:
+			slist = sample.split()
+			ad.trim_primer(slist[0], slist[1], slist[2], res_dir, "PrimerRem_OP", overlap_pr1, overlap_pr2, "mixed_op", True)
 			#p.apply_async(ad.trim_primer, args=(slist[0], slist[1], slist[2], res_dir, "PrimerRem", overlap_pr1, overlap_pr2, "mixed_op", True))
 		#p.close()
 		#p.join()
 
 		#Metafile for trimmed overlapping target reads
-	#	ad.create_meta(os.path.join(res_dir, "PrimerRem_OP"), res_dir, "PrimerRem_OP", "mixed_op_prim_meta.tsv",
-	#		pattern_fw="*_mixed_op_1.fq.gz", pattern_rv="*_mixed_op_2.fq.gz")
+		ad.create_meta(os.path.join(res_dir, "PrimerRem_OP"), res_dir, "PrimerRem_OP", "mixed_op_prim_meta.tsv",
+			pattern_fw="*_mixed_op_1.fq.gz", pattern_rv="*_mixed_op_2.fq.gz")
 
 		#Metafile for un-trimmed non-op target reads
 	#	ad.create_meta(os.path.join(res_dir, "PrimerRem_OP"), res_dir, "PrimerRem_OP", "mixed_temp_meta.tsv",
