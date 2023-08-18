@@ -285,12 +285,12 @@ def main():
 		bimera_op = os.path.join(res_dir,'DADA2_OP','ASVBimeras.txt')
 
 		#Run DADA2 on non-op targets
-	#	ad.flush_dir(res_dir, "DADA2_NOP", "QProfile")
-	#	path_to_meta = os.path.join(res_dir, "PrimerRem_NOP", "mixed_nop_prim_meta.tsv")
-	#	justConcatenate=1	
-	#	ad.run_dada2(path_to_DADA2, path_to_meta, path_to_fq, path_to_flist, Class, maxEE, trimRight, minLen, truncQ, matchIDs, max_consist, omegaA, justConcatenate, maxMismatch,saveRdata, res_dir, "DADA2_NOP")
-	#	seqtab_nop = os.path.join(res_dir,'DADA2_NOP','seqtab.tsv')
-	#	bimera_nop = os.path.join(res_dir,'DADA2_NOP','ASVBimeras.txt')
+		ad.flush_dir(res_dir, "DADA2_NOP", "QProfile")
+		path_to_meta = os.path.join(res_dir, "PrimerRem_NOP", "mixed_nop_prim_meta.tsv")
+		justConcatenate=1	
+		ad.run_dada2(path_to_DADA2, path_to_meta, path_to_fq, path_to_flist, Class, maxEE, trimRight, minLen, truncQ, matchIDs, max_consist, omegaA, justConcatenate, maxMismatch,saveRdata, res_dir, "DADA2_NOP")
+		seqtab_nop = os.path.join(res_dir,'DADA2_NOP','seqtab.tsv')
+		bimera_nop = os.path.join(res_dir,'DADA2_NOP','ASVBimeras.txt')
 
 		#ASV modification block for non-op targets and merge two ASV tables
 	#	if reference is not None:
