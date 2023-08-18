@@ -171,7 +171,7 @@ task ampseq_dada2_iseq_process {
 	mkdir PrimerRem_NOP
 	mkdir PrimerRem_OP
 	
-	ECHO "TEST TERRA" > PrimerRem_OP/test_terra.txt
+	echo "TEST TERRA" > PrimerRem_OP/test_terra.txt
 
 	cat /Code/Amplicon_TerraPipeline.py
 
