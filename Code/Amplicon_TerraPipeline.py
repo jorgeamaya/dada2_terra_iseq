@@ -301,12 +301,12 @@ def main():
 			print(adjASV)
 			#procASV = subprocess.Popen(adjASV, stdout=sys.stdout, stderr=sys.stderr)
 			#procASV.wait()
-			seqtab_corrected = os.path.join(res_dir, 'DADA2_NOP', 'seqtab_corrected.tsv')
-			seqtab = ad.merge_seqtab(seqtab_op, seqtab_corrected)
+			#seqtab_corrected = os.path.join(res_dir, 'DADA2_NOP', 'seqtab_corrected.tsv')
+			#seqtab = ad.merge_seqtab(seqtab_op, seqtab_corrected)
 			print("Finished correcting reference")
 		else:
 			print('--reference file not found. skipping ASV correction..')
-			seqtab = ad.merge_seqtab(seqtab_op, seqtab_nop)
+			#seqtab = ad.merge_seqtab(seqtab_op, seqtab_nop)
 
 		#bimera = ad.merge_seqtab(bimera_op, bimera_nop)
 		#seqtab.to_csv(os.path.join(res_dir, 'seqtab_mixed.tsv'), sep = "\t")
