@@ -299,6 +299,8 @@ def main():
 			'-dist', adjust_mode,
 			'-o', os.path.join(res_dir, 'DADA2_NOP', 'correctedASV.txt')]
 			print(adjASV)
+			print(sys.stdout)
+			print(sys.stderr)
 			#procASV = subprocess.Popen(adjASV, stdout=sys.stdout, stderr=sys.stderr)
 			#procASV.wait()
 			#seqtab_corrected = os.path.join(res_dir, 'DADA2_NOP', 'seqtab_corrected.tsv')
