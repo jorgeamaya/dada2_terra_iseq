@@ -171,16 +171,18 @@ task ampseq_dada2_iseq_process {
 	mkdir PrimerRem_NOP
 	mkdir PrimerRem_OP
 
-	python /Code/Amplicon_TerraPipeline.py --config ~{config_json} --mixed_reads --meta --repo --adaptor_removal --dada2
-	cat Results/stderr.txt
-	cat Results/stdout.txt
-	cat Results/AdaptorRem/*stderr.txt
-	cat Results/AdaptorRem/adaptorrem_meta.tsv
+	cat /Code/Amplicon_TerraPipeline.py
 
-	find . -type f
-	python /Code/Amplicon_TerraPipeline.py --config ~{config_json} --mixed_reads --dada2 #--postproc_dada2 --asv_to_cigar
-	cat Results/stderr.txt
-	cat Results/stdout.txt
+	#python /Code/Amplicon_TerraPipeline.py --config ~{config_json} --mixed_reads --meta --repo --adaptor_removal --dada2
+	#cat Results/stderr.txt
+	#cat Results/stdout.txt
+	#cat Results/AdaptorRem/*stderr.txt
+	#cat Results/AdaptorRem/adaptorrem_meta.tsv
+
+	#find . -type f
+	#python /Code/Amplicon_TerraPipeline.py --config ~{config_json} --mixed_reads --dada2 #--postproc_dada2 --asv_to_cigar
+	#cat Results/stderr.txt
+	#cat Results/stdout.txt
 	find . -type f
 	>>>
 	output {
