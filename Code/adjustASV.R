@@ -16,8 +16,6 @@ if (!require("argparse")) {
   install.packages("argparse", repos="http://cran.rstudio.com/")
   library("argparse")
 }
-
-print('LOADED HALF OF THE LIBRARIES AND FUNCTIONS')
 if (!require("Biostrings")) {
   install.packages("Biostrings", repos="http://cran.rstudio.com/")
   library("Biostrings")
@@ -50,6 +48,7 @@ levenshtein = function(correctedASV, tar) {
                     method="levenshtein")) > 9)
 }
 
+print('LOADED  THE LIBRARIES AND FUNCTIONS')
 #parser <- ArgumentParser()
 #parser$add_argument("-s", "--seqtab", 
 #                    help="Path to input")
