@@ -152,7 +152,7 @@ print(length(overlap))
     correctedASV <- paste0(seq[1], substr(seq[2], (N+1), nchar(seq[2])))
     print(correctedASV)
   }
- print("IF OVERLAP")
+ print("POST IF OVERLAP")
   if(dist == 'absolute') {
     if (absolute(correctedASV, tar)) {
       N = NA
@@ -180,11 +180,13 @@ print(length(overlap))
   print("POST BIND")
   } else {
    print("UNSUABLE ASV")
+   N = NA
+   correctedASV = NA
    row = data.frame(target = names(tar),
            ASV = seqs[i],
            correctedASV = correctedASV,
            overlap = N)
-   df
+   df = rbind(df, row)
 
   }
   print("SUB FOR")
@@ -197,6 +199,8 @@ write.table(df, file = output, sep = "\t", quote = FALSE, row.names = FALSE)
 print("WROTE TABLE")
 seqfile_corrected <- paste0(dirname(seqfile), "/seqtab_corrected.tsv")
 print("DECLARED seqfile_corrected")
+print(seqtab)
+print(df$correctedASV)
 colnames(seqtab) <- as.character(df$correctedASV)
 print("DECLARED COLNAMES SEQTAB")
 ##seqtab = seqtab[,which(colnames(seqtab) == NA)]
