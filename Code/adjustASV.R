@@ -186,11 +186,11 @@ print(length(overlap))
 
 print("PLACEHOLDER ADJUSTED ASV")
 
-#print(df)
-#write.table(df, file = output, sep = "\t", quote = FALSE, row.names = FALSE)
-#seqfile_corrected <- paste0(dirname(seqfile), "/seqtab_corrected.tsv")
-#colnames(seqtab) <- as.character(df$correctedASV)
-    ##seqtab = seqtab[,which(colnames(seqtab) == NA)]
-#print(seqtab)
-    ##rownames(seqtab) <- as.character(rownames(df))
-#write.table(seqtab, file = seqfile_corrected, sep = "\t", quote = FALSE, row.names = TRUE)
+print(df)
+write.table(df, file = output, sep = "\t", quote = FALSE, row.names = FALSE)
+seqfile_corrected <- paste0(dirname(seqfile), "/seqtab_corrected.tsv")
+colnames(seqtab) <- as.character(df$correctedASV)
+##seqtab = seqtab[,which(colnames(seqtab) == NA)]
+print(seqtab)
+##rownames(seqtab) <- as.character(rownames(df))
+write.table(seqtab, file = seqfile_corrected, sep = "\t", quote = FALSE, row.names = TRUE)
