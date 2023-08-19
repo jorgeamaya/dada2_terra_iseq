@@ -107,7 +107,8 @@ sigma <- nucleotideSubstitutionMatrix(match = 2, mismatch = -1, baseOnly = FALSE
 seqs <- as.character(colnames(seqtab))
 #
 registerDoMC(detectCores())
-df <- foreach(i=1:length(seqs), .combine = "rbind") %dopar% {
+#df <- foreach(i=1:length(seqs), .combine = "rbind") %dopar% {
+for (i in 1:length(seqs)) {
   map <- pairwiseAlignment(ref, seqs[i], substitutionMatrix = sigma, gapOpening = -8, gapExtension = -5, scoreOnly = TRUE)
   tar = ref[which.max(map)]
   seq <- strsplit(seqs[i],"NNNNNNNNNN")[[1]]
@@ -145,6 +146,8 @@ df <- foreach(i=1:length(seqs), .combine = "rbind") %dopar% {
              ASV = seqs[i],
              correctedASV = correctedASV,
              overlap = N)
+
+  df <- rbind(df, row)
 }
 
 print("PLACEHOLDER ADJUSTED ASV")
