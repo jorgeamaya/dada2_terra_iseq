@@ -110,14 +110,21 @@ seqs <- as.character(colnames(seqtab))
 #df <- foreach(i=1:length(seqs), .combine = "rbind") %dopar% {
 
 df <- data.frame()
+print("PRE FOR LOOP")
 for (i in 1:length(seqs)) {
+print("ENTERED FOr LOOP")
   map <- pairwiseAlignment(ref, seqs[i], substitutionMatrix = sigma, gapOpening = -8, gapExtension = -5, scoreOnly = TRUE)
+print("MAP")
   tar = ref[which.max(map)]
+print("TAR")
   seq <- strsplit(seqs[i],"NNNNNNNNNN")[[1]]
+print("SEQ")
   aln <- pairwiseAlignment(seq[1:2], tar, substitutionMatrix = sigma, gapOpening = -8, gapExtension = -5, scoreOnly = FALSE, type = 'overlap')
+print("ALN")
   con <- compareStrings(consensusString(aln[1]), consensusString(aln[2]))
+print("CON")
   overlap <- unlist(gregexpr("[[:alpha:]]", con))
-  
+print("OVERLAP")
   if (overlap == -1) {
     N = (nchar(seq[1])+nchar(seq[2])) - nchar(tar)
     stkN <- paste0(rep('N', abs(N)), collapse = '')
@@ -126,7 +133,7 @@ for (i in 1:length(seqs)) {
     N = length(overlap)
     correctedASV <- paste0(seq[1], substr(seq[2], (N+1), nchar(seq[2])))
   }
- 
+ print("IF OVERLAP")
   if(dist == 'absolute') {
     if (absolute(correctedASV, tar)) {
       N = NA
@@ -143,13 +150,14 @@ for (i in 1:length(seqs)) {
       correctedASV = NA
     }
   }
-  
+  print("PRE DATA FFRAME")
   data.frame(target = names(tar),
              ASV = seqs[i],
              correctedASV = correctedASV,
              overlap = N)
-
+  print("PRE BIND")
   df <- rbind(df, row)
+  print("POST BIND")
 }
 
 print("PLACEHOLDER ADJUSTED ASV")
