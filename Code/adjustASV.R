@@ -172,14 +172,20 @@ print(length(overlap))
   print("PRE DATA FFRAME")
   row = data.frame(target = names(tar),
              ASV = seqs[i],
-             correctedASV = correctedASV,
-             overlap = N)
+             correctedASV = NA,
+             overlap = NA)
   print("PRE BIND")
   print(row)
   df <- rbind(df, row)
   print("POST BIND")
   } else {
    print("UNSUABLE ASV")
+   row = data.frame(target = names(tar),
+           ASV = seqs[i],
+           correctedASV = correctedASV,
+           overlap = N)
+   df
+
   }
   print("SUB FOR")
 }
@@ -188,9 +194,13 @@ print("PLACEHOLDER ADJUSTED ASV")
 
 print(df)
 write.table(df, file = output, sep = "\t", quote = FALSE, row.names = FALSE)
+print("WROTE TABLE")
 seqfile_corrected <- paste0(dirname(seqfile), "/seqtab_corrected.tsv")
+print("DECLARED seqfile_corrected")
 colnames(seqtab) <- as.character(df$correctedASV)
+print("DECLARED COLNAMES SEQTAB")
 ##seqtab = seqtab[,which(colnames(seqtab) == NA)]
 print(seqtab)
 ##rownames(seqtab) <- as.character(rownames(df))
 write.table(seqtab, file = seqfile_corrected, sep = "\t", quote = FALSE, row.names = TRUE)
+print("WROTE TABLE CORRECTED")
