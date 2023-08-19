@@ -112,35 +112,47 @@ seqs <- as.character(colnames(seqtab))
 df <- data.frame()
 print("PRE FOR LOOP")
 for (i in 1:length(seqs)) {
-
- map <- pairwiseAlignment(ref, seqs[i], substitutionMatrix = sigma, gapOpening = -8, gapExtension = -5, scoreOnly = TRUE)
+print("ENTERED FOr LOOP")
+  map <- pairwiseAlignment(ref, seqs[i], substitutionMatrix = sigma, gapOpening = -8, gapExtension = -5, scoreOnly = TRUE)
 print("MAP")
 print(map)
-tar = ref[which.max(map)]
+  tar = ref[which.max(map)]
 print("TAR")
 print(tar)
-seq <- strsplit(seqs[i],"NNNNNNNNNN")[[1]]
+  seq <- strsplit(seqs[i],"NNNNNNNNNN")[[1]]
 print("SEQ")
 print(seq)
-aln <- pairwiseAlignment(seq[1:2], tar, substitutionMatrix = sigma, gapOpening = -8, gapExtension = -5, scoreOnly = FALSE, type = 'overlap')
+  aln <- pairwiseAlignment(seq[1:2], tar, substitutionMatrix = sigma, gapOpening = -8, gapExtension = -5, scoreOnly = FALSE, type = 'overlap')
 print("ALN")
 print(aln)
-con <- compareStrings(consensusString(aln[1]), consensusString(aln[2]))
+  con <- compareStrings(consensusString(aln[1]), consensusString(aln[2]))
 print("CON")
 print(con)
-overlap <- unlist(gregexpr("[[:alpha:]]", con))
+  overlap <- unlist(gregexpr("[[:alpha:]]", con))
 print("OVERLAP")
 print(overlap)
-
+print(length(overlap))
+  if (length(overlap) == 1) {
+  print("PRE IF OVERLAP")
   if (overlap == -1) {
+    print("PreN")
+    print(nchar(seq[1]))
+    print(nchar(seq[2]))
+    print(nchar(tar))
     N = (nchar(seq[1])+nchar(seq[2])) - nchar(tar)
+    print(N)
     stkN <- paste0(rep('N', abs(N)), collapse = '')
+    print(stkN)
     correctedASV <- paste0(seq[1], stkN, seq[2])
+    print(correctedASV)
   } else {
+    print("In else")
     N = length(overlap)
+    print(N)
     correctedASV <- paste0(seq[1], substr(seq[2], (N+1), nchar(seq[2])))
+    print(correctedASV)
   }
-
+ print("POST IF OVERLAP")
   if(dist == 'absolute') {
     if (absolute(correctedASV, tar)) {
       N = NA
@@ -157,96 +169,28 @@ print(overlap)
       correctedASV = NA
     }
   }
-
-  row_tmp = data.frame(target = names(tar),
+  print("PRE DATA FFRAME")
+  row = data.frame(target = names(tar),
              ASV = seqs[i],
-             correctedASV = correctedASV,
-             overlap = N)
-  print(row_tmp)
-  df = rbind(df, row_tmp)
+             correctedASV = NA,
+             overlap = NA)
+  print("PRE BIND")
+  print(row)
+  df <- rbind(df, row)
+  print("POST BIND")
+  } else {
+   print("UNSUABLE ASV")
+   N = NA
+   correctedASV = NA
+   row = data.frame(target = names(tar),
+           ASV = seqs[i],
+           correctedASV = correctedASV,
+           overlap = N)
+   df = rbind(df, row)
+
+  }
+  print("SUB FOR")
 }
-
-
-
-#print("ENTERED FOr LOOP")
-#  map <- pairwiseAlignment(ref, seqs[i], substitutionMatrix = sigma, gapOpening = -8, gapExtension = -5, scoreOnly = TRUE)
-#print("MAP")
-#print(map)
-#  tar = ref[which.max(map)]
-#print("TAR")
-#print(tar)
-#  seq <- strsplit(seqs[i],"NNNNNNNNNN")[[1]]
-#print("SEQ")
-#print(seq)
-#  aln <- pairwiseAlignment(seq[1:2], tar, substitutionMatrix = sigma, gapOpening = -8, gapExtension = -5, scoreOnly = FALSE, type = 'overlap')
-#print("ALN")
-#print(aln)
-#  con <- compareStrings(consensusString(aln[1]), consensusString(aln[2]))
-#print("CON")
-#print(con)
-#  overlap <- unlist(gregexpr("[[:alpha:]]", con))
-#print("OVERLAP")
-#print(overlap)
-#print(length(overlap))
-#  if (length(overlap) == 1) {
-#  print("PRE IF OVERLAP")
-#  if (overlap == -1) {
-#    print("PreN")
-#    print(nchar(seq[1]))
-#    print(nchar(seq[2]))
-#    print(nchar(tar))
-#    N = (nchar(seq[1])+nchar(seq[2])) - nchar(tar)
-#    print(N)
-#    stkN <- paste0(rep('N', abs(N)), collapse = '')
-#    print(stkN)
-#    correctedASV <- paste0(seq[1], stkN, seq[2])
-#    print(correctedASV)
-#  } else {
-#    print("In else")
-#    N = length(overlap)
-#    print(N)
-#    correctedASV <- paste0(seq[1], substr(seq[2], (N+1), nchar(seq[2])))
-#    print(correctedASV)
-#  }
-# print("POST IF OVERLAP")
-#  if(dist == 'absolute') {
-#    if (absolute(correctedASV, tar)) {
-#      N = NA
-#      correctedASV = NA
-#    }
-#  } else if (dist == 'levenshtein') {
-#    if (levenshtein(correctedASV, tar)) {
-#      N = NA
-#      correctedASV = NA
-#    }
-#  } else if (dist == 'percentage') {
-#    if (absolute(correctedASV, tar)) {
-#      N = NA
-#      correctedASV = NA
-#    }
-#  }
-#  print("PRE DATA FFRAME")
-#  row = data.frame(target = names(tar),
-#             ASV = seqs[i],
-#             correctedASV = NA,
-#             overlap = NA)
-#  print("PRE BIND")
-#  print(row)
-#  df <- rbind(df, row)
-#  print("POST BIND")
-#  } else {
-#   print("UNSUABLE ASV")
-#   N = NA
-#   correctedASV = NA
-#   row = data.frame(target = names(tar),
-#           ASV = seqs[i],
-#           correctedASV = correctedASV,
-#           overlap = N)
-#   df = rbind(df, row)
-#
-#  }
-#  print("SUB FOR")
-#}
 
 print("PLACEHOLDER ADJUSTED ASV")
 
