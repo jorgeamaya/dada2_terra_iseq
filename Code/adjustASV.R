@@ -131,6 +131,9 @@ print(con)
   overlap <- unlist(gregexpr("[[:alpha:]]", con))
 print("OVERLAP")
 print(overlap)
+print(length(overlap))
+  if (length(overlap) != 1) {
+  print("PRE IF OVERLAP")
   if (overlap == -1) {
     print("PreN")
     print(nchar(seq[1]))
@@ -175,6 +178,10 @@ print(overlap)
   print(row)
   df <- rbind(df, row)
   print("POST BIND")
+  else {
+   print("UNSUABLE ASV")
+  }
+  print("SUB FOR")
 }
 
 print("PLACEHOLDER ADJUSTED ASV")
@@ -183,7 +190,7 @@ print("PLACEHOLDER ADJUSTED ASV")
 #write.table(df, file = output, sep = "\t", quote = FALSE, row.names = FALSE)
 #seqfile_corrected <- paste0(dirname(seqfile), "/seqtab_corrected.tsv")
 #colnames(seqtab) <- as.character(df$correctedASV)
-##seqtab = seqtab[,which(colnames(seqtab) == NA)]
+    ##seqtab = seqtab[,which(colnames(seqtab) == NA)]
 #print(seqtab)
-##rownames(seqtab) <- as.character(rownames(df))
+    ##rownames(seqtab) <- as.character(rownames(df))
 #write.table(seqtab, file = seqfile_corrected, sep = "\t", quote = FALSE, row.names = TRUE)
