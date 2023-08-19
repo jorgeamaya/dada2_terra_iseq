@@ -106,8 +106,10 @@ print('LOADED seqtab and refernce file')
 sigma <- nucleotideSubstitutionMatrix(match = 2, mismatch = -1, baseOnly = FALSE)
 seqs <- as.character(colnames(seqtab))
 #
-registerDoMC(detectCores())
+#registerDoMC(detectCores())
 #df <- foreach(i=1:length(seqs), .combine = "rbind") %dopar% {
+
+df <- data.frame()
 for (i in 1:length(seqs)) {
   map <- pairwiseAlignment(ref, seqs[i], substitutionMatrix = sigma, gapOpening = -8, gapExtension = -5, scoreOnly = TRUE)
   tar = ref[which.max(map)]
