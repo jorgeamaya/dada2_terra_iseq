@@ -64,17 +64,16 @@ parser$add_argument("-o", "--output",
 
 args <- parser$parse_args()
 
-print("PARSED THE ARGUMENTS TO ARGS")
-#path_to_refseq <- args$reference
-#seqfile <- args$seqtab
-#output <- args$output
-#dist = args$dist
+path_to_refseq <- args$reference
+seqfile <- args$seqtab
+output <- args$output
+dist <- args$distance
 
-#print('LOADED LIBRARIES, FUNCTIONS, AND VARIABLES')
-#print(path_to_refseq)
-#print(seqfile)
-#print(output)
-#print(dist)
+print('PLACEHOLDER: LOADED LIBRARIES, FUNCTIONS, AND VARIABLES')
+print(path_to_refseq)
+print(seqfile)
+print(output)
+print(dist)
 
 #if (dist == 'ignore') {
 #  print("Caution: All Corrected ASV will be included in the output. Some ASVs in your table may be incorrect constructs.")
