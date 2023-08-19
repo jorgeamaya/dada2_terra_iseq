@@ -191,7 +191,7 @@ task ampseq_dada2_iseq_process {
 		File seqtab = "Results/seqtab_mixed.tsv"
 	}
 	runtime {
-		cpu: 1
+		cpu: 4
 		memory: "10 GiB"
 		disks: "local-disk 10 HDD"
 		bootDiskSizeGb: 10
