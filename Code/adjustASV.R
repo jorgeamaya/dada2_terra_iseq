@@ -178,7 +178,7 @@ print(length(overlap))
   print(row)
   df <- rbind(df, row)
   print("POST BIND")
-  else {
+  } else {
    print("UNSUABLE ASV")
   }
   print("SUB FOR")
