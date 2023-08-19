@@ -94,60 +94,62 @@ if (file.exists(seqfile)) {
   stop(paste("ASV sequence table file",seqtab,"not found!"))
 }
 
+print('LOADED seqtab and refernce file')
+
 #########################################
 #           PROCESS ASVs               #
 #########################################
 
-#Generate the substitution matrix
-sigma <- nucleotideSubstitutionMatrix(match = 2, mismatch = -1, baseOnly = FALSE)
-seqs <- as.character(colnames(seqtab))
-
-registerDoMC(detectCores())
-df <- foreach(i=1:length(seqs), .combine = "rbind") %dopar% {
-  map <- pairwiseAlignment(ref, seqs[i], substitutionMatrix = sigma, gapOpening = -8, gapExtension = -5, scoreOnly = TRUE)
-  tar = ref[which.max(map)]
-  seq <- strsplit(seqs[i],"NNNNNNNNNN")[[1]]
-  aln <- pairwiseAlignment(seq[1:2], tar, substitutionMatrix = sigma, gapOpening = -8, gapExtension = -5, scoreOnly = FALSE, type = 'overlap')
-  con <- compareStrings(consensusString(aln[1]), consensusString(aln[2]))
-  overlap <- unlist(gregexpr("[[:alpha:]]", con))
-  
-  if (overlap == -1) {
-    N = (nchar(seq[1])+nchar(seq[2])) - nchar(tar)
-    stkN <- paste0(rep('N', abs(N)), collapse = '')
-    correctedASV <- paste0(seq[1], stkN, seq[2])
-  } else {
-    N = length(overlap)
-    correctedASV <- paste0(seq[1], substr(seq[2], (N+1), nchar(seq[2])))
-  }
- 
-  if(dist == 'absolute') {
-    if (absolute(correctedASV, tar)) {
-      N = NA
-      correctedASV = NA
-    }
-  } else if (dist == 'levenshtein') {
-    if (levenshtein(correctedASV, tar)) {
-      N = NA
-      correctedASV = NA
-    }
-  } else if (dist == 'percentage') {
-    if (absolute(correctedASV, tar)) {
-      N = NA
-      correctedASV = NA
-    }
-  }
-  
-  data.frame(target = names(tar),
-             ASV = seqs[i],
-             correctedASV = correctedASV,
-             overlap = N)
-}
-
-print(df)
-write.table(df, file = output, sep = "\t", quote = FALSE, row.names = FALSE)
-seqfile_corrected <- paste0(dirname(seqfile), "/seqtab_corrected.tsv")
-colnames(seqtab) <- as.character(df$correctedASV)
-#seqtab = seqtab[,which(colnames(seqtab) == NA)]
-print(seqtab)
-#rownames(seqtab) <- as.character(rownames(df))
-write.table(seqtab, file = seqfile_corrected, sep = "\t", quote = FALSE, row.names = TRUE)
+##Generate the substitution matrix
+#sigma <- nucleotideSubstitutionMatrix(match = 2, mismatch = -1, baseOnly = FALSE)
+#seqs <- as.character(colnames(seqtab))
+#
+#registerDoMC(detectCores())
+#df <- foreach(i=1:length(seqs), .combine = "rbind") %dopar% {
+#  map <- pairwiseAlignment(ref, seqs[i], substitutionMatrix = sigma, gapOpening = -8, gapExtension = -5, scoreOnly = TRUE)
+#  tar = ref[which.max(map)]
+#  seq <- strsplit(seqs[i],"NNNNNNNNNN")[[1]]
+#  aln <- pairwiseAlignment(seq[1:2], tar, substitutionMatrix = sigma, gapOpening = -8, gapExtension = -5, scoreOnly = FALSE, type = 'overlap')
+#  con <- compareStrings(consensusString(aln[1]), consensusString(aln[2]))
+#  overlap <- unlist(gregexpr("[[:alpha:]]", con))
+#  
+#  if (overlap == -1) {
+#    N = (nchar(seq[1])+nchar(seq[2])) - nchar(tar)
+#    stkN <- paste0(rep('N', abs(N)), collapse = '')
+#    correctedASV <- paste0(seq[1], stkN, seq[2])
+#  } else {
+#    N = length(overlap)
+#    correctedASV <- paste0(seq[1], substr(seq[2], (N+1), nchar(seq[2])))
+#  }
+# 
+#  if(dist == 'absolute') {
+#    if (absolute(correctedASV, tar)) {
+#      N = NA
+#      correctedASV = NA
+#    }
+#  } else if (dist == 'levenshtein') {
+#    if (levenshtein(correctedASV, tar)) {
+#      N = NA
+#      correctedASV = NA
+#    }
+#  } else if (dist == 'percentage') {
+#    if (absolute(correctedASV, tar)) {
+#      N = NA
+#      correctedASV = NA
+#    }
+#  }
+#  
+#  data.frame(target = names(tar),
+#             ASV = seqs[i],
+#             correctedASV = correctedASV,
+#             overlap = N)
+#}
+#
+#print(df)
+#write.table(df, file = output, sep = "\t", quote = FALSE, row.names = FALSE)
+#seqfile_corrected <- paste0(dirname(seqfile), "/seqtab_corrected.tsv")
+#colnames(seqtab) <- as.character(df$correctedASV)
+##seqtab = seqtab[,which(colnames(seqtab) == NA)]
+#print(seqtab)
+##rownames(seqtab) <- as.character(rownames(df))
+#write.table(seqtab, file = seqfile_corrected, sep = "\t", quote = FALSE, row.names = TRUE)
