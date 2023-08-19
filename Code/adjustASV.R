@@ -151,11 +151,12 @@ print("OVERLAP")
     }
   }
   print("PRE DATA FFRAME")
-  data.frame(target = names(tar),
+  row = data.frame(target = names(tar),
              ASV = seqs[i],
              correctedASV = correctedASV,
              overlap = N)
   print("PRE BIND")
+  print(row)
   df <- rbind(df, row)
   print("POST BIND")
 }
