@@ -132,7 +132,7 @@ print(con)
 print("OVERLAP")
 print(overlap)
 print(length(overlap))
-  if (length(overlap) != 1) {
+  if (length(overlap) == 1) {
   print("PRE IF OVERLAP")
   if (overlap == -1) {
     print("PreN")
