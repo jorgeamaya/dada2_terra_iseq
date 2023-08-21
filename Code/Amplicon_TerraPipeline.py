@@ -292,7 +292,7 @@ def main():
 		seqtab_nop = os.path.join(res_dir,'DADA2_NOP','seqtab.tsv')
 		bimera_nop = os.path.join(res_dir,'DADA2_NOP','ASVBimeras.txt')
 
-		print("Skipping reference")
+		print("PLACEHOLDER1: Skipping reference")
 		#ASV modification block for non-op targets and merge two ASV tables
 		#if reference is not None:
 		#	print("Correcting reference")
