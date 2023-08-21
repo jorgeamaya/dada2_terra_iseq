@@ -132,10 +132,15 @@ overlap <- unlist(gregexpr("[[:alpha:]]", con))
 print("OVERLAP")
 print(overlap)
 
-  if (overlap == -1) {
-    N = (nchar(seq[1])+nchar(seq[2])) - nchar(tar)
-    stkN <- paste0(rep('N', abs(N)), collapse = '')
-    correctedASV <- paste0(seq[1], stkN, seq[2])
+  if (length(overlap) == 1) {
+    if (overlap == -1) {
+      N = (nchar(seq[1])+nchar(seq[2])) - nchar(tar)
+      stkN <- paste0(rep('N', abs(N)), collapse = '')
+      correctedASV <- paste0(seq[1], stkN, seq[2])
+    } else {
+      N = length(overlap)
+      correctedASV <- paste0(seq[1], substr(seq[2], (N+1), nchar(seq[2])))
+    }
   } else {
     N = length(overlap)
     correctedASV <- paste0(seq[1], substr(seq[2], (N+1), nchar(seq[2])))
