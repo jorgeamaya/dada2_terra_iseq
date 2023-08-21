@@ -312,6 +312,7 @@ def main():
 		#	print('--reference file not found. skipping ASV correction..')
 		#	seqtab = ad.merge_seqtab(seqtab_op, seqtab_nop)
 		print("PLACEHOLDER2")
+		seqtab = ad.merge_seqtab(seqtab_op, seqtab_nop)
 		bimera = ad.merge_seqtab(bimera_op, bimera_nop)
 		seqtab.to_csv(os.path.join(res_dir, 'seqtab_mixed.tsv'), sep = "\t")
 		bimera.to_csv(os.path.join(res_dir, 'ASVBimeras.txt'), sep = "\t")
