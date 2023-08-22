@@ -410,23 +410,23 @@ def main():
 		procASV.wait()
 		print("PLACEHOLDER5")
 
-	if args.asv_to_cigar:		
+#	if args.asv_to_cigar:		
 		print("PLACEHOLDER6")
 		ad.flush_dir(res_dir, "ASV_to_CIGAR")
+
+		if args.mixed_reads:
+			path_to_seqtab = os.path.join(res_dir, 'seqtab_mixed.tsv')
+		else:	
+			path_to_seqtab = os.path.join(res_dir, 'seqtab.tsv')
 #
-#		if args.mixed_reads:
-#			path_to_seqtab = os.path.join(res_dir, 'seqtab_mixed.tsv')
-#		else:	
-#			path_to_seqtab = os.path.join(res_dir, 'seqtab.tsv')
-#
-#		path_to_fasta = os.path.join(res_dir, "PostProc_DADA2", "ASVSeqs.fasta") #Fasta file of ASV sequences from DADA2 pipeline"
-#		path_to_table = os.path.join(res_dir, "PostProc_DADA2", "ASVTable.txt") #ASV table from DADA2 pipeline
-#		path_to_out = os.path.join(res_dir, "CIGARVariants_Bfilter.out.tsv") #Output seqtab tsv file with amplicon/variant counts
-#		path_asv_to_cigar = os.path.join(res_dir, "ASV_to_CIGAR", "ASV_to_CIGAR.out.txt") #Output file for ASV -> CIGAR string table 
-#		path_to_amp_db = reference #Amplicon sequence fasta file
-#		path_to_alignments = os.path.join(res_dir, "ASV_to_CIGAR", "alingments") #Directory to store ASV alignment files
-#
-#		print(f"INFO: Loading {path_to_amp_db}", file=sys.stderr)
+		path_to_fasta = os.path.join(res_dir, "PostProc_DADA2", "ASVSeqs.fasta") #Fasta file of ASV sequences from DADA2 pipeline"
+		path_to_table = os.path.join(res_dir, "PostProc_DADA2", "ASVTable.txt") #ASV table from DADA2 pipeline
+		path_to_out = os.path.join(res_dir, "CIGARVariants_Bfilter.out.tsv") #Output seqtab tsv file with amplicon/variant counts
+		path_asv_to_cigar = os.path.join(res_dir, "ASV_to_CIGAR", "ASV_to_CIGAR.out.txt") #Output file for ASV -> CIGAR string table 
+		path_to_amp_db = reference #Amplicon sequence fasta file
+		path_to_alignments = os.path.join(res_dir, "ASV_to_CIGAR", "alingments") #Directory to store ASV alignment files
+
+		print(f"INFO: Loading {path_to_amp_db}", file=sys.stderr)
 #		amplicons = ac.parse_amp_db(path_to_amp_db)
 #		if not amplicons:
 #			print(f"ERROR: No amplicons in {path_to_amp_db}", file=sys.stderr)
