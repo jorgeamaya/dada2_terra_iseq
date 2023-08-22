@@ -410,8 +410,6 @@ def main():
 		procASV.wait()
 		print("PLACEHOLDER5")
 
-	#ASV to CIGAR
-	#Convert ASVs from DADA2 pipeline to pseudo-CIGAR strings.
 	if args.asv_to_cigar:		
 		print("PLACEHOLDER6")
 		ad.flush_dir(res_dir, "ASV_to_CIGAR")
