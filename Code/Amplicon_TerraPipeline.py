@@ -381,7 +381,8 @@ def main():
 		proccp = subprocess.Popen(cmd, stdout=sys.stdout, stderr=sys.stderr)
 		proccp.wait()
 
-	if args.postproc_dada2:		
+	if args.postproc_dada2:
+		print("PLACEHOLDER4")
 		ad.flush_dir(res_dir, "PostProc_DADA2")
 
 		if args.mixed_reads:
@@ -407,10 +408,12 @@ def main():
 		print(postProc)
 		procASV = subprocess.Popen(postProc, stdout=sys.stdout, stderr=sys.stderr)
 		procASV.wait()
+		print("PLACEHOLDER5")
 
 	#ASV to CIGAR
 	#Convert ASVs from DADA2 pipeline to pseudo-CIGAR strings.
 	if args.asv_to_cigar:		
+		print("PLACEHOLDER6")
 		ad.flush_dir(res_dir, "ASV_to_CIGAR")
 
 		if args.mixed_reads:
@@ -432,6 +435,7 @@ def main():
 			sys.exit("ERROR: No amplicons")
 			#sys.exit(1)
 
+		print("PLACEHOLDER7")
 		mask = {}
 		#Disabled. Possibly deprecated
 		#if amp_mask:
