@@ -408,7 +408,7 @@ def main():
 		print(postProc)
 		procASV = subprocess.Popen(postProc, stdout=sys.stdout, stderr=sys.stderr)
 		procASV.wait()
-		print("PLACEHOLDER5")
+		print("PLACEHOLDER5 - Watermark1")
 		print("PLACEHOLDER6")
 		ad.flush_dir(res_dir, "ASV_to_CIGAR")
 
