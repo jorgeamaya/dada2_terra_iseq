@@ -428,15 +428,15 @@ def main():
 		path_to_amp_db = reference #Amplicon sequence fasta file
 		path_to_alignments = os.path.join(res_dir, "ASV_to_CIGAR", "alingments") #Directory to store ASV alignment files
 
-		print(f"INFO: Loading {path_to_amp_db}", file=sys.stderr)
-		amplicons = ac.parse_amp_db(path_to_amp_db)
-		if not amplicons:
-			print(f"ERROR: No amplicons in {path_to_amp_db}", file=sys.stderr)
-			sys.exit("ERROR: No amplicons")
-			#sys.exit(1)
-
-		print("PLACEHOLDER7")
-		mask = {}
+#		print(f"INFO: Loading {path_to_amp_db}", file=sys.stderr)
+#		amplicons = ac.parse_amp_db(path_to_amp_db)
+#		if not amplicons:
+#			print(f"ERROR: No amplicons in {path_to_amp_db}", file=sys.stderr)
+#			sys.exit("ERROR: No amplicons")
+#			#sys.exit(1)
+#
+#		print("PLACEHOLDER7")
+#		mask = {}
 		#Disabled. Possibly deprecated
 		#if amp_mask:
 		#	print(f"INFO: Loading {amp_mask}", file=sys.stderr)
@@ -445,52 +445,52 @@ def main():
 		#	print(f"INFO: No mask data specified.", file=sys.stderr)
 		#	mask = {}
 
-		print(f"INFO: Loading {path_to_fasta}")
-		asvs = ac.get_asv_seqs(path_to_fasta)
-		if not asvs:
-			print(f"ERROR: No ASV sequences in {path_to_fasta}", file=sys.stderr)
-			sys.exit("ERROR: No ASV sequences")	
-			#sys.exit(1)
-
-		print(f"INFO: Parsing {path_to_table} with total reads >= {min_reads}, samples >= {min_samples}, snv_dist <= {max_snv_dist}, indel_dist <= {max_indel_dist}", file=sys.stderr)
-
-		if include_failed:
-			print("WARNING: Including ASVs that failed post-DADA2 filters! This is not recommended.", file=sys.stderr)
-		else:
-			print("INFO: Excluding ASVs that failed post-DADA2 filters.", file=sys.stderr)
-
-		if exclude_bimeras:
-			print("INFO: Excluding ASVs that DADA2 marked as bimeras.", file=sys.stderr)
-
-		bins = ac.parse_asv_table(path_to_table, min_reads=min_reads, min_samples=min_samples, max_snv_dist=max_snv_dist, max_indel_dist=max_indel_dist, include_failed=include_failed, exclude_bimeras=exclude_bimeras) #This function only matches to the first strain.
-		if not bins:
-			print(f"ERROR: No useable data in {path_to_table}", file=sys.stderr)
-			sys.exit("ERROR: No useable data")
-			#sys.exit(1)
-
-		outdir = path_to_alignments
-		print(f"INFO: Writing amplicon fasta files to {outdir}", file=sys.stderr)
-		if not os.path.isdir(outdir):
-			os.mkdir(outdir)
-		ac.write_amplicon_fastas(asvs, bins, amplicons, outdir=outdir)
-
-		print("INFO: Running MUSCLE aligner on amplicon fasta files. Please wait...", file=sys.stderr)
-		ac.run_muscle(bins, outdir=outdir)
-
-		print("INFO: Parsing alignments to CIGAR strings", file=sys.stderr)
-		cigars = ac.parse_alignments(bins, mask=mask, min_homopolymer_length=polyN, outdir=outdir, verbose=False)
-		if not cigars:
-			print("ERROR: could not determine CIGAR strings", file=sys.stderr)
-			sys.exit("ERROR: could not determine CIGAR strings")
-			#sys.exit(1)
-
-		if path_asv_to_cigar:
-			ac.write_cigar_strings(cigars, path_asv_to_cigar)
-			print(f"INFO: Wrote ASV->CIGAR table to {path_asv_to_cigar}", file=sys.stderr)
-
-		print(f"INFO: Converting DADA2 seqtab file {path_to_seqtab} to {path_to_out}", file=sys.stderr)
-		if ac.convert_seqtab(path_to_seqtab, cigars, path_to_out):
-			print("INFO: Completed successfully!", file=sys.stderr)
+#		print(f"INFO: Loading {path_to_fasta}")
+#		asvs = ac.get_asv_seqs(path_to_fasta)
+#		if not asvs:
+#			print(f"ERROR: No ASV sequences in {path_to_fasta}", file=sys.stderr)
+#			sys.exit("ERROR: No ASV sequences")	
+#			#sys.exit(1)
+#
+#		print(f"INFO: Parsing {path_to_table} with total reads >= {min_reads}, samples >= {min_samples}, snv_dist <= {max_snv_dist}, indel_dist <= {max_indel_dist}", file=sys.stderr)
+#
+#		if include_failed:
+#			print("WARNING: Including ASVs that failed post-DADA2 filters! This is not recommended.", file=sys.stderr)
+#		else:
+#			print("INFO: Excluding ASVs that failed post-DADA2 filters.", file=sys.stderr)
+#
+#		if exclude_bimeras:
+#			print("INFO: Excluding ASVs that DADA2 marked as bimeras.", file=sys.stderr)
+#
+#		bins = ac.parse_asv_table(path_to_table, min_reads=min_reads, min_samples=min_samples, max_snv_dist=max_snv_dist, max_indel_dist=max_indel_dist, include_failed=include_failed, exclude_bimeras=exclude_bimeras) #This function only matches to the first strain.
+#		if not bins:
+#			print(f"ERROR: No useable data in {path_to_table}", file=sys.stderr)
+#			sys.exit("ERROR: No useable data")
+#			#sys.exit(1)
+#
+#		outdir = path_to_alignments
+#		print(f"INFO: Writing amplicon fasta files to {outdir}", file=sys.stderr)
+#		if not os.path.isdir(outdir):
+#			os.mkdir(outdir)
+#		ac.write_amplicon_fastas(asvs, bins, amplicons, outdir=outdir)
+#
+#		print("INFO: Running MUSCLE aligner on amplicon fasta files. Please wait...", file=sys.stderr)
+#		ac.run_muscle(bins, outdir=outdir)
+#
+#		print("INFO: Parsing alignments to CIGAR strings", file=sys.stderr)
+#		cigars = ac.parse_alignments(bins, mask=mask, min_homopolymer_length=polyN, outdir=outdir, verbose=False)
+#		if not cigars:
+#			print("ERROR: could not determine CIGAR strings", file=sys.stderr)
+#			sys.exit("ERROR: could not determine CIGAR strings")
+#			#sys.exit(1)
+#
+#		if path_asv_to_cigar:
+#			ac.write_cigar_strings(cigars, path_asv_to_cigar)
+#			print(f"INFO: Wrote ASV->CIGAR table to {path_asv_to_cigar}", file=sys.stderr)
+#
+#		print(f"INFO: Converting DADA2 seqtab file {path_to_seqtab} to {path_to_out}", file=sys.stderr)
+#		if ac.convert_seqtab(path_to_seqtab, cigars, path_to_out):
+#			print("INFO: Completed successfully!", file=sys.stderr)
 
 if __name__ == "__main__":
 	main()
