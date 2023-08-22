@@ -197,6 +197,6 @@ task ampseq_dada2_iseq_process {
 		bootDiskSizeGb: 10
 		preemptible: 3
 		maxRetries: 1
-		docker: 'jorgeamaya/dada2_terra_iseq:v1'
+		docker: 'jorgeamaya/dada2_terra_iseq:v1.387f90d75cdcf8de67b5c8532d6e080673dd7512382d8430ab4a549b9bf35e3b'
 	}
 }
