@@ -118,6 +118,7 @@ def main():
 
 	#Create metadata files and a list of missing files
 	if args.meta:
+		print("Watermark 1")
 		ad.flush_dir(res_dir, "Fq_metadata")
 		ad.create_meta(path_to_fq, res_dir, "Fq_metadata", "rawfilelist.tsv", 
 		pattern_fw, pattern_rv)
@@ -234,7 +235,7 @@ def main():
 
 	#Remove primers from iseq data and perform DADA2 preprocess	
 	if args.dada2 and args.mixed_reads:
-		print("BARCODE")
+		print("BARCODE - Watermark 1")
 		print("Entered loop")
 		print(res_dir)
 		ad.flush_dir(res_dir, "PrimerRem_NOP")
@@ -408,7 +409,7 @@ def main():
 		print(postProc)
 		procASV = subprocess.Popen(postProc, stdout=sys.stdout, stderr=sys.stderr)
 		procASV.wait()
-		print("PLACEHOLDER5 - Watermark1")
+		print("PLACEHOLDER5")
 		print("PLACEHOLDER6")
 		ad.flush_dir(res_dir, "ASV_to_CIGAR")
 
