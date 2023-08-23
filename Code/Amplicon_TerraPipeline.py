@@ -497,13 +497,15 @@ def main():
 			sys.exit("ERROR: could not determine CIGAR strings")
 #			#sys.exit(1)
 		print("PLACEHOLDER 14")
-#		if path_asv_to_cigar:
-#			ac.write_cigar_strings(cigars, path_asv_to_cigar)
-#			print(f"INFO: Wrote ASV->CIGAR table to {path_asv_to_cigar}", file=sys.stderr)
-#
-#		print(f"INFO: Converting DADA2 seqtab file {path_to_seqtab} to {path_to_out}", file=sys.stderr)
-#		if ac.convert_seqtab(path_to_seqtab, cigars, path_to_out):
-#			print("INFO: Completed successfully!", file=sys.stderr)
+		if path_asv_to_cigar:
+			ac.write_cigar_strings(cigars, path_asv_to_cigar)
+			print(f"INFO: Wrote ASV->CIGAR table to {path_asv_to_cigar}", file=sys.stderr)
+
+		print("PLACEHOLDER 15")
+		print(f"INFO: Converting DADA2 seqtab file {path_to_seqtab} to {path_to_out}", file=sys.stderr)
+		if ac.convert_seqtab(path_to_seqtab, cigars, path_to_out):
+			print("INFO: Completed successfully!", file=sys.stderr)
+		print("PLACEHOLDER 16")
 
 if __name__ == "__main__":
 	main()
