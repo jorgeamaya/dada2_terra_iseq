@@ -118,7 +118,7 @@ def main():
 
 	#Create metadata files and a list of missing files
 	if args.meta:
-		print("Watermark 1")
+		print("Watermark 2")
 		ad.flush_dir(res_dir, "Fq_metadata")
 		ad.create_meta(path_to_fq, res_dir, "Fq_metadata", "rawfilelist.tsv", 
 		pattern_fw, pattern_rv)
@@ -235,7 +235,7 @@ def main():
 
 	#Remove primers from iseq data and perform DADA2 preprocess	
 	if args.dada2 and args.mixed_reads:
-		print("BARCODE - Watermark 1")
+		print("BARCODE - Watermark 2")
 		print("Entered loop")
 		print(res_dir)
 		ad.flush_dir(res_dir, "PrimerRem_NOP")
@@ -293,7 +293,7 @@ def main():
 		seqtab_nop = os.path.join(res_dir,'DADA2_NOP','seqtab.tsv')
 		bimera_nop = os.path.join(res_dir,'DADA2_NOP','ASVBimeras.txt')
 
-		print("PLACEHOLDER1: Watermark 1")
+		print("PLACEHOLDER1: Watermark 2")
 		#ASV modification block for non-op targets and merge two ASV tables
 		#if reference is not None:
 		#	print("Correcting reference")
@@ -433,7 +433,7 @@ def main():
 			#sys.exit(1)
 
 		print("PLACEHOLDER7")
-#		mask = {}
+		mask = {}
 #		#Disabled. Possibly deprecated
 #		#if amp_mask:
 #		#	print(f"INFO: Loading {amp_mask}", file=sys.stderr)
@@ -490,13 +490,13 @@ def main():
 		
 #		ac.run_muscle(bins, outdir=outdir)
 		print("PLACEHOLDER 13")
-#		print("INFO: Parsing alignments to CIGAR strings", file=sys.stderr)
-#		cigars = ac.parse_alignments(bins, mask=mask, min_homopolymer_length=polyN, outdir=outdir, verbose=False)
-#		if not cigars:
-#			print("ERROR: could not determine CIGAR strings", file=sys.stderr)
-#			sys.exit("ERROR: could not determine CIGAR strings")
+		print("INFO: Parsing alignments to CIGAR strings", file=sys.stderr)
+		cigars = ac.parse_alignments(bins, mask=mask, min_homopolymer_length=polyN, outdir=outdir, verbose=False)
+		if not cigars:
+			print("ERROR: could not determine CIGAR strings", file=sys.stderr)
+			sys.exit("ERROR: could not determine CIGAR strings")
 #			#sys.exit(1)
-#
+		print("PLACEHOLDER 14")
 #		if path_asv_to_cigar:
 #			ac.write_cigar_strings(cigars, path_asv_to_cigar)
 #			print(f"INFO: Wrote ASV->CIGAR table to {path_asv_to_cigar}", file=sys.stderr)
