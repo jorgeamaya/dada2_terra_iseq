@@ -118,7 +118,7 @@ def main():
 
 	#Create metadata files and a list of missing files
 	if args.meta:
-		print("Watermark 2")
+		print("Watermark 4")
 		ad.flush_dir(res_dir, "Fq_metadata")
 		ad.create_meta(path_to_fq, res_dir, "Fq_metadata", "rawfilelist.tsv", 
 		pattern_fw, pattern_rv)
@@ -235,7 +235,7 @@ def main():
 
 	#Remove primers from iseq data and perform DADA2 preprocess	
 	if args.dada2 and args.mixed_reads:
-		print("BARCODE - Watermark 3")
+		print("BARCODE - Watermark 4")
 		print("Entered loop")
 		print(res_dir)
 		ad.flush_dir(res_dir, "PrimerRem_NOP")
@@ -293,7 +293,7 @@ def main():
 		seqtab_nop = os.path.join(res_dir,'DADA2_NOP','seqtab.tsv')
 		bimera_nop = os.path.join(res_dir,'DADA2_NOP','ASVBimeras.txt')
 
-		print("PLACEHOLDER1: Watermark 3")
+		print("PLACEHOLDER1: Watermark 4")
 		#ASV modification block for non-op targets and merge two ASV tables
 		#if reference is not None:
 		#	print("Correcting reference")
@@ -426,13 +426,13 @@ def main():
 		path_to_alignments = os.path.join(res_dir, "ASV_to_CIGAR", "alingments") #Directory to store ASV alignment files
 
 		print(f"INFO: Loading {path_to_amp_db}", file=sys.stderr)
-#		amplicons = ac.parse_amp_db(path_to_amp_db)
-#		if not amplicons:
-#			print(f"ERROR: No amplicons in {path_to_amp_db}", file=sys.stderr)
-#			sys.exit("ERROR: No amplicons")
-#			#sys.exit(1)
-#
-#		print("PLACEHOLDER7")
+		amplicons = ac.parse_amp_db(path_to_amp_db)
+		if not amplicons:
+			print(f"ERROR: No amplicons in {path_to_amp_db}", file=sys.stderr)
+			sys.exit("ERROR: No amplicons")
+			#sys.exit(1)
+
+		print("PLACEHOLDER7")
 #		mask = {}
 #		#Disabled. Possibly deprecated
 #		#if amp_mask:
@@ -442,23 +442,23 @@ def main():
 #		#	print(f"INFO: No mask data specified.", file=sys.stderr)
 #		#	mask = {}
 #
-#		print(f"INFO: Loading {path_to_fasta}")
-#		asvs = ac.get_asv_seqs(path_to_fasta)
-#		if not asvs:
-#			print(f"ERROR: No ASV sequences in {path_to_fasta}", file=sys.stderr)
-#			sys.exit("ERROR: No ASV sequences")	
+		print(f"INFO: Loading {path_to_fasta}")
+		asvs = ac.get_asv_seqs(path_to_fasta)
+		if not asvs:
+			print(f"ERROR: No ASV sequences in {path_to_fasta}", file=sys.stderr)
+			sys.exit("ERROR: No ASV sequences")	
 #			#sys.exit(1)
-#
-#		print(f"INFO: Parsing {path_to_table} with total reads >= {min_reads}, samples >= {min_samples}, snv_dist <= {max_snv_dist}, indel_dist <= {max_indel_dist}", file=sys.stderr)
-#
-#		if include_failed:
-#			print("WARNING: Including ASVs that failed post-DADA2 filters! This is not recommended.", file=sys.stderr)
-#		else:
-#			print("INFO: Excluding ASVs that failed post-DADA2 filters.", file=sys.stderr)
-#
-#		if exclude_bimeras:
-#			print("INFO: Excluding ASVs that DADA2 marked as bimeras.", file=sys.stderr)
-#
+		print("PLACEHOLDER 8")
+		print(f"INFO: Parsing {path_to_table} with total reads >= {min_reads}, samples >= {min_samples}, snv_dist <= {max_snv_dist}, indel_dist <= {max_indel_dist}", file=sys.stderr)
+
+		if include_failed:
+			print("WARNING: Including ASVs that failed post-DADA2 filters! This is not recommended.", file=sys.stderr)
+		else:
+			print("INFO: Excluding ASVs that failed post-DADA2 filters.", file=sys.stderr)
+
+		if exclude_bimeras:
+			print("INFO: Excluding ASVs that DADA2 marked as bimeras.", file=sys.stderr)
+		print("PLACEHOLDER 9")
 #		bins = ac.parse_asv_table(path_to_table, min_reads=min_reads, min_samples=min_samples, max_snv_dist=max_snv_dist, max_indel_dist=max_indel_dist, include_failed=include_failed, exclude_bimeras=exclude_bimeras) #This function only matches to the first strain.
 #		if not bins:
 #			print(f"ERROR: No useable data in {path_to_table}", file=sys.stderr)
