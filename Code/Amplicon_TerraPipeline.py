@@ -118,7 +118,7 @@ def main():
 
 	#Create metadata files and a list of missing files
 	if args.meta:
-		print("Watermark 5")
+		print("Watermark 6")
 		ad.flush_dir(res_dir, "Fq_metadata")
 		ad.create_meta(path_to_fq, res_dir, "Fq_metadata", "rawfilelist.tsv", 
 		pattern_fw, pattern_rv)
@@ -235,7 +235,7 @@ def main():
 
 	#Remove primers from iseq data and perform DADA2 preprocess	
 	if args.dada2 and args.mixed_reads:
-		print("BARCODE - Watermark 5")
+		print("BARCODE - Watermark 6")
 		print("Entered loop")
 		print(res_dir)
 		ad.flush_dir(res_dir, "PrimerRem_NOP")
@@ -293,7 +293,7 @@ def main():
 		seqtab_nop = os.path.join(res_dir,'DADA2_NOP','seqtab.tsv')
 		bimera_nop = os.path.join(res_dir,'DADA2_NOP','ASVBimeras.txt')
 
-		print("PLACEHOLDER1: Watermark 5")
+		print("PLACEHOLDER1: Watermark 6")
 		#ASV modification block for non-op targets and merge two ASV tables
 		#if reference is not None:
 		#	print("Correcting reference")
@@ -467,12 +467,13 @@ def main():
 		print("PLACEHOLDER 10")
 		outdir = path_to_alignments
 		print(f"INFO: Writing amplicon fasta files to {outdir}", file=sys.stderr)
-		if not os.path.isdir(outdir):
-			os.mkdir(outdir)
+		#if not os.path.isdir(outdir):
+		os.mkdir(outdir)
 		print("PLACEHOLDER 11")
-#		ac.write_amplicon_fastas(asvs, bins, amplicons, outdir=outdir)
-#
-#		print("INFO: Running MUSCLE aligner on amplicon fasta files. Please wait...", file=sys.stderr)
+		ac.write_amplicon_fastas(asvs, bins, amplicons, outdir=outdir)
+
+		print("INFO: Running MUSCLE aligner on amplicon fasta files. Please wait...", file=sys.stderr)
+		print("PLACEHOLDER 12")
 #		ac.run_muscle(bins, outdir=outdir)
 #
 #		print("INFO: Parsing alignments to CIGAR strings", file=sys.stderr)
