@@ -474,9 +474,9 @@ def main():
 
 		print("INFO: Running MUSCLE aligner on amplicon fasta files. Please wait...", file=sys.stderr)
 		print("PLACEHOLDER 12")
-		ac.run_muscle(bins, outdir=outdir)
-		print("PLACEHOLDER 13")
-		print("INFO: Parsing alignments to CIGAR strings", file=sys.stderr)
+#		ac.run_muscle(bins, outdir=outdir)
+#		print("PLACEHOLDER 13")
+#		print("INFO: Parsing alignments to CIGAR strings", file=sys.stderr)
 #		cigars = ac.parse_alignments(bins, mask=mask, min_homopolymer_length=polyN, outdir=outdir, verbose=False)
 #		if not cigars:
 #			print("ERROR: could not determine CIGAR strings", file=sys.stderr)
