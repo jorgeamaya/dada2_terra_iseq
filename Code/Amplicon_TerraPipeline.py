@@ -118,7 +118,7 @@ def main():
 
 	#Create metadata files and a list of missing files
 	if args.meta:
-		print("Watermark 8")
+		print("Watermark 9")
 		ad.flush_dir(res_dir, "Fq_metadata")
 		ad.create_meta(path_to_fq, res_dir, "Fq_metadata", "rawfilelist.tsv", 
 		pattern_fw, pattern_rv)
@@ -235,7 +235,7 @@ def main():
 
 	#Remove primers from iseq data and perform DADA2 preprocess	
 	if args.dada2 and args.mixed_reads:
-		print("BARCODE - Watermark 8")
+		print("BARCODE - Watermark 9")
 		print("Entered loop")
 		print(res_dir)
 		ad.flush_dir(res_dir, "PrimerRem_NOP")
@@ -293,7 +293,7 @@ def main():
 		seqtab_nop = os.path.join(res_dir,'DADA2_NOP','seqtab.tsv')
 		bimera_nop = os.path.join(res_dir,'DADA2_NOP','ASVBimeras.txt')
 
-		print("PLACEHOLDER1: Watermark 8")
+		print("PLACEHOLDER1: Watermark 9")
 		#ASV modification block for non-op targets and merge two ASV tables
 		#if reference is not None:
 		#	print("Correcting reference")
@@ -474,6 +474,7 @@ def main():
 
 		print("INFO: Running MUSCLE aligner on amplicon fasta files. Please wait...", file=sys.stderr)
 		print("PLACEHOLDER 12")
+		print(bins)
 #		ac.run_muscle(bins, outdir=outdir)
 #		print("PLACEHOLDER 13")
 #		print("INFO: Parsing alignments to CIGAR strings", file=sys.stderr)
