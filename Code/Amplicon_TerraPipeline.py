@@ -235,7 +235,7 @@ def main():
 
 	#Remove primers from iseq data and perform DADA2 preprocess	
 	if args.dada2 and args.mixed_reads:
-		print("BARCODE - Watermark 2")
+		print("BARCODE - Watermark 3")
 		print("Entered loop")
 		print(res_dir)
 		ad.flush_dir(res_dir, "PrimerRem_NOP")
@@ -293,7 +293,7 @@ def main():
 		seqtab_nop = os.path.join(res_dir,'DADA2_NOP','seqtab.tsv')
 		bimera_nop = os.path.join(res_dir,'DADA2_NOP','ASVBimeras.txt')
 
-		print("PLACEHOLDER1: Watermark 2")
+		print("PLACEHOLDER1: Watermark 3")
 		#ASV modification block for non-op targets and merge two ASV tables
 		#if reference is not None:
 		#	print("Correcting reference")
@@ -412,7 +412,7 @@ def main():
 		print("PLACEHOLDER5")
 		print("PLACEHOLDER6")
 		ad.flush_dir(res_dir, "ASV_to_CIGAR")
-
+		print("PLACEHOLDER7")
 		if args.mixed_reads:
 			path_to_seqtab = os.path.join(res_dir, 'seqtab_mixed.tsv')
 		else:	

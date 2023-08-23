@@ -192,7 +192,7 @@ task ampseq_dada2_iseq_process {
 	}
 	runtime {
 		cpu: 1
-		memory: "10 GiB"
+		memory: "15 GiB"
 		disks: "local-disk 10 HDD"
 		bootDiskSizeGb: 10
 		preemptible: 3
