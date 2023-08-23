@@ -118,7 +118,7 @@ def main():
 
 	#Create metadata files and a list of missing files
 	if args.meta:
-		print("Watermark 6")
+		print("Watermark 7")
 		ad.flush_dir(res_dir, "Fq_metadata")
 		ad.create_meta(path_to_fq, res_dir, "Fq_metadata", "rawfilelist.tsv", 
 		pattern_fw, pattern_rv)
@@ -235,7 +235,7 @@ def main():
 
 	#Remove primers from iseq data and perform DADA2 preprocess	
 	if args.dada2 and args.mixed_reads:
-		print("BARCODE - Watermark 6")
+		print("BARCODE - Watermark 7")
 		print("Entered loop")
 		print(res_dir)
 		ad.flush_dir(res_dir, "PrimerRem_NOP")
@@ -293,7 +293,7 @@ def main():
 		seqtab_nop = os.path.join(res_dir,'DADA2_NOP','seqtab.tsv')
 		bimera_nop = os.path.join(res_dir,'DADA2_NOP','ASVBimeras.txt')
 
-		print("PLACEHOLDER1: Watermark 6")
+		print("PLACEHOLDER1: Watermark 7")
 		#ASV modification block for non-op targets and merge two ASV tables
 		#if reference is not None:
 		#	print("Correcting reference")
@@ -474,9 +474,9 @@ def main():
 
 		print("INFO: Running MUSCLE aligner on amplicon fasta files. Please wait...", file=sys.stderr)
 		print("PLACEHOLDER 12")
-#		ac.run_muscle(bins, outdir=outdir)
-#
-#		print("INFO: Parsing alignments to CIGAR strings", file=sys.stderr)
+		ac.run_muscle(bins, outdir=outdir)
+		print("PLACEHOLDER 13")
+		print("INFO: Parsing alignments to CIGAR strings", file=sys.stderr)
 #		cigars = ac.parse_alignments(bins, mask=mask, min_homopolymer_length=polyN, outdir=outdir, verbose=False)
 #		if not cigars:
 #			print("ERROR: could not determine CIGAR strings", file=sys.stderr)
