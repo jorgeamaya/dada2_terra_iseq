@@ -475,8 +475,21 @@ def main():
 		print("INFO: Running MUSCLE aligner on amplicon fasta files. Please wait...", file=sys.stderr)
 		print("PLACEHOLDER 12")
 		print(bins)
+
+		for amplicon in bins:
+			print(amplicon)
+			fasta = os.path.join(outdir, f"{amplicon}.fasta")
+			print(fasta)
+			if not os.path.isfile(fasta):
+				print('ENTERED ERROR')
+				print(f"ERROR: Could not find {fasta}", file=sys.stderr)
+				continue
+			msa = os.path.join(outdir, f"{amplicon}.msa")
+			print(msa)
+			subprocess.run(["muscle", "-align", fasta, "-output", msa], stdout=sys.stdout, stderr=sys.stderr)
+		
 #		ac.run_muscle(bins, outdir=outdir)
-#		print("PLACEHOLDER 13")
+		print("PLACEHOLDER 13")
 #		print("INFO: Parsing alignments to CIGAR strings", file=sys.stderr)
 #		cigars = ac.parse_alignments(bins, mask=mask, min_homopolymer_length=polyN, outdir=outdir, verbose=False)
 #		if not cigars:
