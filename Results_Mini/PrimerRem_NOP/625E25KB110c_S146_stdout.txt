@@ -1,0 +1,96 @@
+This is cutadapt 3.4 with Python 3.7.10
+Command line parameters: -g file:Data/primers_fw.fasta -G file:Data/primers_rv.fasta -o /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_NOP/625E25KB110c_S146_mixed_nop_1.fq.gz -p /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_NOP/625E25KB110c_S146_mixed_nop_2.fq.gz --pair-adapters --action=trim --discard-untrimmed /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/625E25KB110c_S146_temp_1.fq.gz /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/625E25KB110c_S146_temp_2.fq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 0.09 s (27 µs/read; 2.23 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:              3,442
+  Read 1 with adapter:                   3,174 (92.2%)
+  Read 2 with adapter:                   3,174 (92.2%)
+Pairs written (passing filters):         3,174 (92.2%)
+
+Total basepairs processed:       970,399 bp
+  Read 1:       481,970 bp
+  Read 2:       488,429 bp
+Total written (filtered):        725,629 bp (74.8%)
+  Read 1:       365,771 bp
+  Read 2:       359,858 bp
+
+=== First read: Adapter CSP ===
+
+Sequence: TTAAGGAACAAGAAGGATAATACCA; Type: regular 5'; Length: 25; Trimmed: 172 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-25 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	1
+33	1	0.0	2	1
+34	170	0.0	2	169 1
+
+
+=== First read: Adapter SERA2 ===
+
+Sequence: TACTTTCCCTTGCCCTTGTG; Type: regular 5'; Length: 20; Trimmed: 3002 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	8	53.8	0	8
+28	65	0.0	2	51 7 7
+29	2869	0.0	2	2766 23 80
+30	60	0.0	2	1 16 43
+
+
+=== First read: Adapter TRAP ===
+
+Sequence: TCCAGCACATGCGAGTAAAG; Type: regular 5'; Length: 20; Trimmed: 0 times
+
+=== First read: Adapter AMA1 ===
+
+Sequence: CCATCAGGGAAATGTCCAGT; Type: regular 5'; Length: 20; Trimmed: 0 times
+
+=== Second read: Adapter CSP ===
+
+Sequence: AAATGACCCAAACCGAAATG; Type: regular 5'; Length: 20; Trimmed: 172 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+27	1	0.0	2	1
+28	170	0.0	2	169 1
+29	1	0.0	2	1
+
+
+=== Second read: Adapter SERA2 ===
+
+Sequence: CACTACAGATGAATCTGCTACAGGA; Type: regular 5'; Length: 25; Trimmed: 3002 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-25 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+26	2	0.0	2	2
+31	1	0.0	2	1
+32	40	0.0	2	13 23 4
+33	2817	0.0	2	2730 77 10
+34	59	0.0	2	22 21 16
+35	82	0.0	2	0 0 82
+36	1	0.0	2	0 0 1
+
+
+=== Second read: Adapter TRAP ===
+
+Sequence: AAACCCGAAAATAAGCACGA; Type: regular 5'; Length: 20; Trimmed: 0 times
+
+=== Second read: Adapter AMA1 ===
+
+Sequence: TTTCCTGCATGTCTTGAACA; Type: regular 5'; Length: 20; Trimmed: 0 times
+['cutadapt', '-g', 'file:Data/primers_fw.fasta', '-G', 'file:Data/primers_rv.fasta', '-o', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_NOP/625E25KB110c_S146_mixed_nop_1.fq.gz', '-p', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_NOP/625E25KB110c_S146_mixed_nop_2.fq.gz', '--pair-adapters', '--action=trim', '--discard-untrimmed', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/625E25KB110c_S146_temp_1.fq.gz', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/625E25KB110c_S146_temp_2.fq.gz']

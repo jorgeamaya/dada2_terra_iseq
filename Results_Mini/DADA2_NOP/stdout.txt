@@ -1,0 +1,1606 @@
+  maxEE trimRight minLen truncQ matchIDs max_consist randomize selfConsist
+1     5         0     30      5    FALSE          10      TRUE        TRUE
+2     5         0     30      5    FALSE          10      TRUE        TRUE
+  OMEGA_A justConcatenate
+1  1e-120            TRUE
+2  1e-120            TRUE
+[[1]]
+null device 
+          1 
+
+[[2]]
+null device 
+          1 
+
+[[3]]
+null device 
+          1 
+
+[[4]]
+null device 
+          1 
+
+[[5]]
+null device 
+          1 
+
+[[6]]
+null device 
+          1 
+
+[[7]]
+null device 
+          1 
+
+[[8]]
+null device 
+          1 
+
+[[9]]
+null device 
+          1 
+
+[[10]]
+null device 
+          1 
+
+[[11]]
+null device 
+          1 
+
+[[1]]
+null device 
+          1 
+
+[[2]]
+null device 
+          1 
+
+[[3]]
+null device 
+          1 
+
+[[4]]
+null device 
+          1 
+
+[[5]]
+null device 
+          1 
+
+[[6]]
+null device 
+          1 
+
+[[7]]
+null device 
+          1 
+
+[[8]]
+null device 
+          1 
+
+[[9]]
+null device 
+          1 
+
+[[10]]
+null device 
+          1 
+
+[[11]]
+null device 
+          1 
+
+[1] "filtering samples..."
+[1] "filtering done!"
+[1] "starting error model learning for forward reads..."
+5130464 total bases in 42530 reads from 11 samples will be used for learning the error rates.
+Initializing error rates to maximum possible estimate.
+
+ALIGN: 413 aligns, 0 shrouded (413 raw).
+
+ALIGN: 16 aligns, 0 shrouded (16 raw).
+
+ALIGN: 177 aligns, 0 shrouded (177 raw).
+
+ALIGN: 67 aligns, 0 shrouded (67 raw).
+
+ALIGN: 220 aligns, 0 shrouded (220 raw).
+
+ALIGN: 23 aligns, 0 shrouded (23 raw).
+
+ALIGN: 62 aligns, 0 shrouded (62 raw).
+
+ALIGN: 642 aligns, 0 shrouded (642 raw).
+
+ALIGN: 21 aligns, 0 shrouded (21 raw).
+
+ALIGN: 238 aligns, 0 shrouded (238 raw).
+
+ALIGN: 103 aligns, 0 shrouded (103 raw).
+selfConsist step 1 ., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 1, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C4:S, Division (naive): Raw 10 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 28 from Bi 0, pA=7.25e-222
+New Cluster C6:S, Division (naive): Raw 53 from Bi 0, pA=3.23e-150
+New Cluster C7:SS, Division (naive): Raw 44 from Bi 0, pA=1.23e-135
+New Cluster C8:S, Division (naive): Raw 45 from Bi 0, pA=1.18e-101
+New Cluster C9:S, Division (naive): Raw 60 from Bi 0, pA=3.90e-93
+New Cluster C10:SS, Division (naive): Raw 100 from Bi 0, pA=3.66e-83
+New Cluster C11:S, Division (naive): Raw 96 from Bi 0, pA=1.85e-69
+New Cluster C12:S, Division (naive): Raw 62 from Bi 0, pA=2.84e-51
+New Cluster C13:S, No Division. Minimum pA=3.90e-17 (Raw 54 w/ 3 reads in Bi 10).
+ALIGN: 5782 aligns, 0 shrouded (413 raw).
+., Division (naive): Raw 3 from Bi 0, pA=5.30e-58
+New Cluster C1:S, No Division. Minimum pA=1.37e+01 (Raw 2 w/ 2 reads in Bi 0).
+ALIGN: 32 aligns, 0 shrouded (16 raw).
+., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 12 from Bi 0, pA=7.40e-174
+New Cluster C4:SS, Division (naive): Raw 18 from Bi 0, pA=1.94e-154
+New Cluster C5:S, Division (naive): Raw 21 from Bi 0, pA=5.83e-70
+New Cluster C6:S, Division (naive): Raw 41 from Bi 0, pA=7.18e-66
+New Cluster C7:S, Division (naive): Raw 44 from Bi 0, pA=2.02e-64
+New Cluster C8:S, Division (naive): Raw 22 from Bi 0, pA=4.03e-64
+New Cluster C9:S, Division (naive): Raw 43 from Bi 0, pA=2.56e-57
+New Cluster C10:S, Division (naive): Raw 48 from Bi 0, pA=7.96e-47
+New Cluster C11:SS, No Division. Minimum pA=2.49e-15 (Raw 3 w/ 94 reads in Bi 2).
+ALIGN: 2124 aligns, 0 shrouded (177 raw).
+., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 16 from Bi 0, pA=8.30e-96
+New Cluster C2:SS, Division (naive): Raw 18 from Bi 0, pA=2.77e-80
+New Cluster C3:S, Division (naive): Raw 7 from Bi 0, pA=9.38e-64
+New Cluster C4:S, Division (naive): Raw 17 from Bi 0, pA=8.27e-56
+New Cluster C5:SS, No Division. Minimum pA=8.88e+00 (Raw 19 w/ 2 reads in Bi 1).
+ALIGN: 402 aligns, 0 shrouded (67 raw).
+., Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 29 from Bi 0, pA=9.87e-178
+New Cluster C3:SS, Division (naive): Raw 27 from Bi 0, pA=9.12e-157
+New Cluster C4:S, Division (naive): Raw 28 from Bi 0, pA=2.89e-142
+New Cluster C5:S, Division (naive): Raw 17 from Bi 0, pA=2.67e-125
+New Cluster C6:S, Division (naive): Raw 56 from Bi 0, pA=1.21e-90
+New Cluster C7:S, Division (naive): Raw 30 from Bi 0, pA=1.02e-64
+New Cluster C8:S, Division (naive): Raw 55 from Bi 0, pA=2.00e-57
+New Cluster C9:S, No Division. Minimum pA=1.03e-02 (Raw 11 w/ 5 reads in Bi 0).
+ALIGN: 2200 aligns, 0 shrouded (220 raw).
+., Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C1:S, Division (naive): Raw 3 from Bi 0, pA=1.01e-88
+New Cluster C2:S, Division (naive): Raw 4 from Bi 0, pA=1.38e-72
+New Cluster C3:SS, No Division. Minimum pA=2.30e+01 (Raw 1 w/ 26 reads in Bi 0).
+ALIGN: 92 aligns, 0 shrouded (23 raw).
+., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=1.41e-224
+New Cluster C2:S, Division (naive): Raw 7 from Bi 0, pA=3.42e-167
+New Cluster C3:S, Division (naive): Raw 12 from Bi 0, pA=1.44e-73
+New Cluster C4:S, No Division. Minimum pA=6.18e+01 (Raw 11 w/ 2 reads in Bi 0).
+ALIGN: 310 aligns, 0 shrouded (62 raw).
+., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 8 from Bi 0, pA=0.00e+00
+New Cluster C6:SS, Division (naive): Raw 9 from Bi 0, pA=0.00e+00
+New Cluster C7:SS, Division (naive): Raw 10 from Bi 0, pA=0.00e+00
+New Cluster C8:SS, Division (naive): Raw 11 from Bi 0, pA=0.00e+00
+New Cluster C9:SS, Division (naive): Raw 14 from Bi 0, pA=0.00e+00
+New Cluster C10:S, Division (naive): Raw 15 from Bi 0, pA=0.00e+00
+New Cluster C11:SS, Division (naive): Raw 16 from Bi 0, pA=0.00e+00
+New Cluster C12:SS, Division (naive): Raw 18 from Bi 0, pA=0.00e+00
+New Cluster C13:SS, Division (naive): Raw 19 from Bi 0, pA=0.00e+00
+New Cluster C14:SS, Division (naive): Raw 22 from Bi 0, pA=0.00e+00
+New Cluster C15:S, Division (naive): Raw 23 from Bi 0, pA=0.00e+00
+New Cluster C16:S, Division (naive): Raw 24 from Bi 0, pA=0.00e+00
+New Cluster C17:S, Division (naive): Raw 26 from Bi 0, pA=0.00e+00
+New Cluster C18:SS, Division (naive): Raw 27 from Bi 0, pA=0.00e+00
+New Cluster C19:S, Division (naive): Raw 28 from Bi 0, pA=0.00e+00
+New Cluster C20:SS, Division (naive): Raw 29 from Bi 0, pA=0.00e+00
+New Cluster C21:SS, Division (naive): Raw 30 from Bi 0, pA=0.00e+00
+New Cluster C22:SS, Division (naive): Raw 35 from Bi 0, pA=0.00e+00
+New Cluster C23:SS, Division (naive): Raw 37 from Bi 0, pA=0.00e+00
+New Cluster C24:SS, Division (naive): Raw 38 from Bi 0, pA=0.00e+00
+New Cluster C25:S, Division (naive): Raw 39 from Bi 0, pA=0.00e+00
+New Cluster C26:S, Division (naive): Raw 41 from Bi 0, pA=0.00e+00
+New Cluster C27:S, Division (naive): Raw 42 from Bi 0, pA=0.00e+00
+New Cluster C28:SS, Division (naive): Raw 44 from Bi 0, pA=0.00e+00
+New Cluster C29:S, Division (naive): Raw 45 from Bi 0, pA=0.00e+00
+New Cluster C30:SS, Division (naive): Raw 46 from Bi 0, pA=0.00e+00
+New Cluster C31:S, Division (naive): Raw 47 from Bi 0, pA=0.00e+00
+New Cluster C32:S, Division (naive): Raw 50 from Bi 0, pA=0.00e+00
+New Cluster C33:S, Division (naive): Raw 58 from Bi 0, pA=0.00e+00
+New Cluster C34:SS, Division (naive): Raw 59 from Bi 0, pA=0.00e+00
+New Cluster C35:SS, Division (naive): Raw 62 from Bi 0, pA=0.00e+00
+New Cluster C36:SS, Division (naive): Raw 57 from Bi 0, pA=3.20e-239
+New Cluster C37:S, Division (naive): Raw 51 from Bi 0, pA=4.69e-233
+New Cluster C38:SS, Division (naive): Raw 40 from Bi 0, pA=7.76e-232
+New Cluster C39:SS, Division (naive): Raw 12 from Bi 4, pA=2.58e-227
+New Cluster C40:SS, Division (naive): Raw 60 from Bi 0, pA=1.35e-220
+New Cluster C41:SS, Division (naive): Raw 54 from Bi 0, pA=4.00e-219
+New Cluster C42:SS, Division (naive): Raw 55 from Bi 0, pA=5.86e-219
+New Cluster C43:SS, Division (naive): Raw 88 from Bi 0, pA=6.06e-209
+New Cluster C44:S, Division (naive): Raw 90 from Bi 0, pA=7.14e-209
+New Cluster C45:S, Division (naive): Raw 89 from Bi 0, pA=8.76e-204
+New Cluster C46:SS, Division (naive): Raw 33 from Bi 0, pA=3.37e-203
+New Cluster C47:SSS, Division (naive): Raw 76 from Bi 0, pA=4.52e-201
+New Cluster C48:SS, Division (naive): Raw 64 from Bi 0, pA=2.31e-200
+New Cluster C49:S, Division (naive): Raw 65 from Bi 0, pA=1.19e-191
+New Cluster C50:SS, Division (naive): Raw 98 from Bi 0, pA=1.60e-188
+New Cluster C51:SS, Division (naive): Raw 83 from Bi 0, pA=8.08e-186
+New Cluster C52:SS, Division (naive): Raw 56 from Bi 0, pA=9.95e-186
+New Cluster C53:SS, Division (naive): Raw 74 from Bi 0, pA=1.57e-185
+New Cluster C54:SS, Division (naive): Raw 91 from Bi 0, pA=1.73e-185
+New Cluster C55:S, Division (naive): Raw 72 from Bi 0, pA=5.95e-181
+New Cluster C56:SS, Division (naive): Raw 66 from Bi 0, pA=7.64e-181
+New Cluster C57:S, Division (naive): Raw 36 from Bi 0, pA=1.89e-180
+New Cluster C58:SS, Division (naive): Raw 87 from Bi 0, pA=7.48e-179
+New Cluster C59:SS, Division (naive): Raw 75 from Bi 0, pA=6.40e-178
+New Cluster C60:SS, Division (naive): Raw 94 from Bi 0, pA=2.39e-175
+New Cluster C61:S, Division (naive): Raw 84 from Bi 0, pA=2.23e-174
+New Cluster C62:S, Division (naive): Raw 97 from Bi 0, pA=9.37e-173
+New Cluster C63:SS, Division (naive): Raw 78 from Bi 0, pA=9.71e-170
+New Cluster C64:SS, Division (naive): Raw 68 from Bi 0, pA=1.17e-168
+New Cluster C65:S, Division (naive): Raw 80 from Bi 0, pA=3.68e-163
+New Cluster C66:SSS, Division (naive): Raw 49 from Bi 0, pA=2.94e-159
+New Cluster C67:SS, Division (naive): Raw 34 from Bi 0, pA=1.04e-148
+New Cluster C68:SSS, Division (naive): Raw 86 from Bi 0, pA=2.37e-148
+New Cluster C69:SS, Division (naive): Raw 100 from Bi 0, pA=4.39e-148
+New Cluster C70:S, Division (naive): Raw 52 from Bi 0, pA=3.18e-143
+New Cluster C71:SS, Division (naive): Raw 85 from Bi 0, pA=1.51e-138
+New Cluster C72:S, Division (naive): Raw 61 from Bi 0, pA=2.73e-137
+New Cluster C73:SS, Division (naive): Raw 95 from Bi 0, pA=1.24e-136
+New Cluster C74:S, Division (naive): Raw 71 from Bi 0, pA=1.29e-133
+New Cluster C75:S, Division (naive): Raw 77 from Bi 0, pA=2.80e-131
+New Cluster C76:SS, Division (naive): Raw 69 from Bi 0, pA=2.77e-129
+New Cluster C77:S, Division (naive): Raw 170 from Bi 0, pA=3.99e-110
+New Cluster C78:SS, Division (naive): Raw 7 from Bi 1, pA=2.31e-109
+New Cluster C79:SS, Division (naive): Raw 118 from Bi 0, pA=3.39e-108
+New Cluster C80:SS, Division (naive): Raw 48 from Bi 0, pA=5.18e-107
+New Cluster C81:S, Division (naive): Raw 96 from Bi 0, pA=9.59e-106
+New Cluster C82:S, Division (naive): Raw 53 from Bi 0, pA=5.80e-105
+New Cluster C83:S, Division (naive): Raw 147 from Bi 0, pA=1.31e-100
+New Cluster C84:S, Division (naive): Raw 168 from Bi 0, pA=2.16e-100
+New Cluster C85:S, Division (naive): Raw 177 from Bi 0, pA=1.21e-99
+New Cluster C86:S, Division (naive): Raw 173 from Bi 0, pA=1.03e-98
+New Cluster C87:SS, Division (naive): Raw 20 from Bi 2, pA=6.10e-98
+New Cluster C88:SSS, Division (naive): Raw 104 from Bi 0, pA=1.68e-97
+New Cluster C89:S, Division (naive): Raw 154 from Bi 0, pA=1.72e-97
+New Cluster C90:S, Division (naive): Raw 119 from Bi 0, pA=1.97e-97
+New Cluster C91:S, Division (naive): Raw 108 from Bi 0, pA=1.40e-94
+New Cluster C92:S, Division (naive): Raw 132 from Bi 0, pA=5.13e-93
+New Cluster C93:S, Division (naive): Raw 145 from Bi 0, pA=9.03e-92
+New Cluster C94:S, Division (naive): Raw 189 from Bi 0, pA=1.52e-91
+New Cluster C95:S, Division (naive): Raw 176 from Bi 0, pA=3.47e-91
+New Cluster C96:S, Division (naive): Raw 159 from Bi 0, pA=4.03e-87
+New Cluster C97:S, Division (naive): Raw 133 from Bi 0, pA=4.30e-87
+New Cluster C98:SS, Division (naive): Raw 160 from Bi 0, pA=5.22e-87
+New Cluster C99:S, Division (naive): Raw 146 from Bi 0, pA=4.82e-83
+New Cluster C100:S, Division (naive): Raw 139 from Bi 0, pA=6.60e-82
+New Cluster C101:S, Division (naive): Raw 105 from Bi 0, pA=2.15e-81
+New Cluster C102:SS, Division (naive): Raw 102 from Bi 0, pA=2.22e-81
+New Cluster C103:SS, Division (naive): Raw 124 from Bi 0, pA=6.81e-80
+New Cluster C104:S, Division (naive): Raw 188 from Bi 0, pA=1.05e-79
+New Cluster C105:S, Division (naive): Raw 143 from Bi 0, pA=1.20e-79
+New Cluster C106:S, Division (naive): Raw 149 from Bi 0, pA=1.21e-79
+New Cluster C107:SS, Division (naive): Raw 121 from Bi 0, pA=1.21e-79
+New Cluster C108:S, Division (naive): Raw 153 from Bi 0, pA=1.02e-78
+New Cluster C109:S, Division (naive): Raw 134 from Bi 0, pA=1.41e-78
+New Cluster C110:SS, Division (naive): Raw 161 from Bi 0, pA=1.47e-78
+New Cluster C111:S, Division (naive): Raw 171 from Bi 0, pA=6.17e-78
+New Cluster C112:S, Division (naive): Raw 175 from Bi 0, pA=3.22e-77
+New Cluster C113:S, Division (naive): Raw 158 from Bi 0, pA=4.89e-77
+New Cluster C114:S, Division (naive): Raw 150 from Bi 0, pA=1.81e-76
+New Cluster C115:SS, Division (naive): Raw 106 from Bi 0, pA=1.02e-74
+New Cluster C116:S, Division (naive): Raw 172 from Bi 0, pA=1.77e-72
+New Cluster C117:SS, Division (naive): Raw 129 from Bi 0, pA=9.02e-71
+New Cluster C118:S, Division (naive): Raw 178 from Bi 0, pA=6.79e-70
+New Cluster C119:S, Division (naive): Raw 125 from Bi 0, pA=1.42e-69
+New Cluster C120:S, Division (naive): Raw 116 from Bi 0, pA=2.72e-69
+New Cluster C121:S, Division (naive): Raw 128 from Bi 0, pA=5.77e-69
+New Cluster C122:S, Division (naive): Raw 152 from Bi 0, pA=9.06e-69
+New Cluster C123:SS, Division (naive): Raw 180 from Bi 0, pA=8.55e-68
+New Cluster C124:SS, Division (naive): Raw 126 from Bi 0, pA=1.41e-66
+New Cluster C125:S, Division (naive): Raw 166 from Bi 0, pA=2.93e-65
+New Cluster C126:SS, Division (naive): Raw 101 from Bi 0, pA=4.71e-65
+New Cluster C127:S, Division (naive): Raw 120 from Bi 0, pA=9.23e-65
+New Cluster C128:S, Division (naive): Raw 169 from Bi 0, pA=1.55e-60
+New Cluster C129:S, Division (naive): Raw 138 from Bi 0, pA=3.27e-59
+New Cluster C130:S, Division (naive): Raw 109 from Bi 0, pA=2.45e-58
+New Cluster C131:S, Division (naive): Raw 130 from Bi 0, pA=4.62e-55
+New Cluster C132:S, Division (naive): Raw 135 from Bi 0, pA=8.03e-55
+New Cluster C133:SS, No Division. Minimum pA=4.68e-17 (Raw 70 w/ 3 reads in Bi 2).
+ALIGN: 86028 aligns, 0 shrouded (642 raw).
+., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 3 from Bi 0, pA=1.03e-77
+New Cluster C2:S, No Division. Minimum pA=2.10e+01 (Raw 0 w/ 206 reads in Bi -1).
+ALIGN: 63 aligns, 0 shrouded (21 raw).
+., Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 9 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 12 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 15 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 16 from Bi 0, pA=4.59e-193
+New Cluster C6:S, Division (naive): Raw 10 from Bi 0, pA=1.96e-152
+New Cluster C7:SS, Division (naive): Raw 50 from Bi 0, pA=8.43e-75
+New Cluster C8:S, Division (naive): Raw 47 from Bi 0, pA=2.81e-73
+New Cluster C9:S, Division (naive): Raw 46 from Bi 0, pA=3.20e-73
+New Cluster C10:S, Division (naive): Raw 48 from Bi 0, pA=8.05e-61
+New Cluster C11:S, Division (naive): Raw 29 from Bi 0, pA=6.29e-60
+New Cluster C12:S, Division (naive): Raw 4 from Bi 1, pA=7.11e-56
+New Cluster C13:SS, No Division. Minimum pA=4.24e-18 (Raw 28 w/ 3 reads in Bi 7).
+ALIGN: 3332 aligns, 0 shrouded (238 raw).
+., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 6 from Bi 0, pA=4.84e-238
+New Cluster C4:S, Division (naive): Raw 11 from Bi 0, pA=2.11e-116
+New Cluster C5:SS, Division (naive): Raw 2 from Bi 1, pA=1.04e-63
+New Cluster C6:S, Division (naive): Raw 20 from Bi 0, pA=2.08e-60
+New Cluster C7:S, Division (naive): Raw 24 from Bi 0, pA=6.36e-60
+New Cluster C8:S, Division (naive): Raw 21 from Bi 0, pA=4.50e-52
+New Cluster C9:S, Division (naive): Raw 12 from Bi 0, pA=7.03e-48
+New Cluster C10:S, Division (naive): Raw 22 from Bi 0, pA=2.19e-45
+New Cluster C11:SS, No Division. Minimum pA=5.28e-06 (Raw 23 w/ 2 reads in Bi 5).
+ALIGN: 1236 aligns, 0 shrouded (103 raw).
+
+   selfConsist step 2, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 1, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C4:S, Division (naive): Raw 10 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 28 from Bi 0, pA=0.00e+00
+New Cluster C6:S, Division (naive): Raw 44 from Bi 0, pA=0.00e+00
+New Cluster C7:S, Division (naive): Raw 45 from Bi 0, pA=0.00e+00
+New Cluster C8:S, Division (naive): Raw 53 from Bi 0, pA=0.00e+00
+New Cluster C9:SS, Division (naive): Raw 60 from Bi 0, pA=0.00e+00
+New Cluster C10:SS, Division (naive): Raw 100 from Bi 0, pA=0.00e+00
+New Cluster C11:S, Division (naive): Raw 96 from Bi 0, pA=1.41e-120
+New Cluster C12:S, Division (naive): Raw 62 from Bi 0, pA=2.40e-98
+New Cluster C13:S, No Division. Minimum pA=5.94e-35 (Raw 54 w/ 3 reads in Bi 10).
+ALIGN: 5782 aligns, 0 shrouded (413 raw).
+, Division (naive): Raw 3 from Bi 0, pA=3.13e-119
+New Cluster C1:S, No Division. Minimum pA=4.69e-02 (Raw 1 w/ 2 reads in Bi 0).
+ALIGN: 32 aligns, 0 shrouded (16 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SSS, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 12 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 18 from Bi 0, pA=0.00e+00
+New Cluster C5:S, Division (naive): Raw 3 from Bi 2, pA=9.96e-204
+New Cluster C6:SS, Division (naive): Raw 48 from Bi 0, pA=4.90e-149
+New Cluster C7:SS, Division (naive): Raw 41 from Bi 0, pA=3.94e-137
+New Cluster C8:S, Division (naive): Raw 21 from Bi 0, pA=1.80e-125
+New Cluster C9:S, Division (naive): Raw 22 from Bi 0, pA=1.00e-117
+New Cluster C10:S, Division (naive): Raw 43 from Bi 0, pA=4.51e-107
+New Cluster C11:S, Division (naive): Raw 44 from Bi 0, pA=2.49e-105
+New Cluster C12:S, No Division. Minimum pA=2.89e-22 (Raw 45 w/ 2 reads in Bi 7).
+ALIGN: 2301 aligns, 0 shrouded (177 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 16 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 18 from Bi 0, pA=1.06e-135
+New Cluster C3:S, Division (naive): Raw 7 from Bi 0, pA=3.80e-135
+New Cluster C4:S, Division (naive): Raw 17 from Bi 0, pA=1.65e-114
+New Cluster C5:SS, No Division. Minimum pA=4.50e-03 (Raw 15 w/ 2 reads in Bi 0).
+ALIGN: 402 aligns, 0 shrouded (67 raw).
+, Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 17 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 27 from Bi 0, pA=0.00e+00
+New Cluster C4:S, Division (naive): Raw 28 from Bi 0, pA=0.00e+00
+New Cluster C5:S, Division (naive): Raw 29 from Bi 0, pA=0.00e+00
+New Cluster C6:SS, Division (naive): Raw 56 from Bi 0, pA=0.00e+00
+New Cluster C7:S, Division (naive): Raw 30 from Bi 0, pA=2.81e-117
+New Cluster C8:S, Division (naive): Raw 55 from Bi 0, pA=1.71e-112
+New Cluster C9:S, No Division. Minimum pA=7.29e-10 (Raw 8 w/ 7 reads in Bi 0).
+ALIGN: 2200 aligns, 0 shrouded (220 raw).
+, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C1:S, Division (naive): Raw 3 from Bi 0, pA=1.61e-157
+New Cluster C2:S, Division (naive): Raw 4 from Bi 0, pA=1.13e-143
+New Cluster C3:SS, No Division. Minimum pA=2.23e+01 (Raw 1 w/ 26 reads in Bi 0).
+ALIGN: 92 aligns, 0 shrouded (23 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:S, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 12 from Bi 0, pA=4.86e-129
+New Cluster C4:S, No Division. Minimum pA=3.74e+00 (Raw 6 w/ 3 reads in Bi 0).
+ALIGN: 310 aligns, 0 shrouded (62 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 7 from Bi 1, pA=0.00e+00
+New Cluster C6:SS, Division (naive): Raw 8 from Bi 0, pA=0.00e+00
+New Cluster C7:SS, Division (naive): Raw 9 from Bi 0, pA=0.00e+00
+New Cluster C8:SS, Division (naive): Raw 10 from Bi 0, pA=0.00e+00
+New Cluster C9:SS, Division (naive): Raw 11 from Bi 0, pA=0.00e+00
+New Cluster C10:SS, Division (naive): Raw 12 from Bi 4, pA=0.00e+00
+New Cluster C11:SS, Division (naive): Raw 14 from Bi 0, pA=0.00e+00
+New Cluster C12:S, Division (naive): Raw 15 from Bi 0, pA=0.00e+00
+New Cluster C13:SS, Division (naive): Raw 16 from Bi 0, pA=0.00e+00
+New Cluster C14:SS, Division (naive): Raw 18 from Bi 0, pA=0.00e+00
+New Cluster C15:SS, Division (naive): Raw 19 from Bi 0, pA=0.00e+00
+New Cluster C16:SS, Division (naive): Raw 22 from Bi 0, pA=0.00e+00
+New Cluster C17:S, Division (naive): Raw 23 from Bi 0, pA=0.00e+00
+New Cluster C18:S, Division (naive): Raw 24 from Bi 0, pA=0.00e+00
+New Cluster C19:S, Division (naive): Raw 26 from Bi 0, pA=0.00e+00
+New Cluster C20:SS, Division (naive): Raw 27 from Bi 0, pA=0.00e+00
+New Cluster C21:S, Division (naive): Raw 28 from Bi 0, pA=0.00e+00
+New Cluster C22:SS, Division (naive): Raw 29 from Bi 0, pA=0.00e+00
+New Cluster C23:SS, Division (naive): Raw 30 from Bi 0, pA=0.00e+00
+New Cluster C24:SS, Division (naive): Raw 33 from Bi 0, pA=0.00e+00
+New Cluster C25:SS, Division (naive): Raw 34 from Bi 0, pA=0.00e+00
+New Cluster C26:SS, Division (naive): Raw 35 from Bi 0, pA=0.00e+00
+New Cluster C27:SS, Division (naive): Raw 36 from Bi 0, pA=0.00e+00
+New Cluster C28:SS, Division (naive): Raw 37 from Bi 0, pA=0.00e+00
+New Cluster C29:SS, Division (naive): Raw 38 from Bi 0, pA=0.00e+00
+New Cluster C30:S, Division (naive): Raw 39 from Bi 0, pA=0.00e+00
+New Cluster C31:S, Division (naive): Raw 40 from Bi 0, pA=0.00e+00
+New Cluster C32:SS, Division (naive): Raw 41 from Bi 0, pA=0.00e+00
+New Cluster C33:S, Division (naive): Raw 42 from Bi 0, pA=0.00e+00
+New Cluster C34:SS, Division (naive): Raw 44 from Bi 0, pA=0.00e+00
+New Cluster C35:S, Division (naive): Raw 45 from Bi 0, pA=0.00e+00
+New Cluster C36:SS, Division (naive): Raw 46 from Bi 0, pA=0.00e+00
+New Cluster C37:S, Division (naive): Raw 47 from Bi 0, pA=0.00e+00
+New Cluster C38:S, Division (naive): Raw 49 from Bi 0, pA=0.00e+00
+New Cluster C39:SS, Division (naive): Raw 50 from Bi 0, pA=0.00e+00
+New Cluster C40:S, Division (naive): Raw 51 from Bi 0, pA=0.00e+00
+New Cluster C41:SS, Division (naive): Raw 52 from Bi 0, pA=0.00e+00
+New Cluster C42:SS, Division (naive): Raw 54 from Bi 0, pA=0.00e+00
+New Cluster C43:SS, Division (naive): Raw 55 from Bi 0, pA=0.00e+00
+New Cluster C44:SS, Division (naive): Raw 56 from Bi 0, pA=0.00e+00
+New Cluster C45:SS, Division (naive): Raw 57 from Bi 0, pA=0.00e+00
+New Cluster C46:S, Division (naive): Raw 58 from Bi 0, pA=0.00e+00
+New Cluster C47:SS, Division (naive): Raw 59 from Bi 0, pA=0.00e+00
+New Cluster C48:SS, Division (naive): Raw 60 from Bi 0, pA=0.00e+00
+New Cluster C49:SS, Division (naive): Raw 61 from Bi 0, pA=0.00e+00
+New Cluster C50:SSS, Division (naive): Raw 62 from Bi 0, pA=0.00e+00
+New Cluster C51:SS, Division (naive): Raw 64 from Bi 0, pA=0.00e+00
+New Cluster C52:S, Division (naive): Raw 65 from Bi 0, pA=0.00e+00
+New Cluster C53:SS, Division (naive): Raw 66 from Bi 0, pA=0.00e+00
+New Cluster C54:S, Division (naive): Raw 68 from Bi 0, pA=0.00e+00
+New Cluster C55:S, Division (naive): Raw 69 from Bi 0, pA=0.00e+00
+New Cluster C56:S, Division (naive): Raw 71 from Bi 0, pA=0.00e+00
+New Cluster C57:S, Division (naive): Raw 72 from Bi 0, pA=0.00e+00
+New Cluster C58:SS, Division (naive): Raw 74 from Bi 0, pA=0.00e+00
+New Cluster C59:SS, Division (naive): Raw 75 from Bi 0, pA=0.00e+00
+New Cluster C60:SS, Division (naive): Raw 76 from Bi 0, pA=0.00e+00
+New Cluster C61:SS, Division (naive): Raw 77 from Bi 0, pA=0.00e+00
+New Cluster C62:SS, Division (naive): Raw 80 from Bi 0, pA=0.00e+00
+New Cluster C63:SS, Division (naive): Raw 83 from Bi 0, pA=0.00e+00
+New Cluster C64:SS, Division (naive): Raw 84 from Bi 0, pA=0.00e+00
+New Cluster C65:S, Division (naive): Raw 85 from Bi 0, pA=0.00e+00
+New Cluster C66:S, Division (naive): Raw 86 from Bi 0, pA=0.00e+00
+New Cluster C67:SS, Division (naive): Raw 87 from Bi 0, pA=0.00e+00
+New Cluster C68:SS, Division (naive): Raw 88 from Bi 0, pA=0.00e+00
+New Cluster C69:S, Division (naive): Raw 89 from Bi 0, pA=0.00e+00
+New Cluster C70:SS, Division (naive): Raw 90 from Bi 0, pA=0.00e+00
+New Cluster C71:S, Division (naive): Raw 91 from Bi 0, pA=0.00e+00
+New Cluster C72:S, Division (naive): Raw 94 from Bi 0, pA=0.00e+00
+New Cluster C73:S, Division (naive): Raw 95 from Bi 0, pA=0.00e+00
+New Cluster C74:S, Division (naive): Raw 96 from Bi 0, pA=0.00e+00
+New Cluster C75:S, Division (naive): Raw 97 from Bi 0, pA=0.00e+00
+New Cluster C76:SS, Division (naive): Raw 98 from Bi 0, pA=0.00e+00
+New Cluster C77:SS, Division (naive): Raw 100 from Bi 0, pA=0.00e+00
+New Cluster C78:S, Division (naive): Raw 104 from Bi 0, pA=0.00e+00
+New Cluster C79:S, Division (naive): Raw 108 from Bi 0, pA=0.00e+00
+New Cluster C80:S, Division (naive): Raw 117 from Bi 0, pA=0.00e+00
+New Cluster C81:SS, Division (naive): Raw 119 from Bi 0, pA=0.00e+00
+New Cluster C82:S, Division (naive): Raw 121 from Bi 0, pA=0.00e+00
+New Cluster C83:S, Division (naive): Raw 147 from Bi 0, pA=0.00e+00
+New Cluster C84:S, Division (naive): Raw 148 from Bi 0, pA=0.00e+00
+New Cluster C85:SS, Division (naive): Raw 154 from Bi 0, pA=0.00e+00
+New Cluster C86:S, Division (naive): Raw 160 from Bi 0, pA=0.00e+00
+New Cluster C87:S, Division (naive): Raw 161 from Bi 0, pA=0.00e+00
+New Cluster C88:S, Division (naive): Raw 168 from Bi 0, pA=0.00e+00
+New Cluster C89:S, Division (naive): Raw 170 from Bi 0, pA=0.00e+00
+New Cluster C90:SS, Division (naive): Raw 173 from Bi 0, pA=0.00e+00
+New Cluster C91:SS, Division (naive): Raw 176 from Bi 0, pA=0.00e+00
+New Cluster C92:S, Division (naive): Raw 177 from Bi 0, pA=0.00e+00
+New Cluster C93:S, Division (naive): Raw 189 from Bi 0, pA=0.00e+00
+New Cluster C94:S, Division (naive): Raw 20 from Bi 2, pA=6.29e-223
+New Cluster C95:SSS, Division (naive): Raw 6 from Bi 0, pA=6.62e-186
+New Cluster C96:SS, Division (naive): Raw 150 from Bi 0, pA=1.46e-159
+New Cluster C97:SS, Division (naive): Raw 132 from Bi 0, pA=4.04e-157
+New Cluster C98:S, Division (naive): Raw 133 from Bi 0, pA=6.20e-156
+New Cluster C99:SS, Division (naive): Raw 145 from Bi 0, pA=5.53e-155
+New Cluster C100:S, Division (naive): Raw 178 from Bi 0, pA=5.21e-154
+New Cluster C101:S, Division (naive): Raw 153 from Bi 0, pA=1.60e-152
+New Cluster C102:S, Division (naive): Raw 124 from Bi 0, pA=1.00e-150
+New Cluster C103:S, Division (naive): Raw 159 from Bi 0, pA=2.89e-149
+New Cluster C104:S, Division (naive): Raw 120 from Bi 0, pA=4.90e-148
+New Cluster C105:S, Division (naive): Raw 146 from Bi 0, pA=3.75e-146
+New Cluster C106:S, Division (naive): Raw 188 from Bi 0, pA=2.82e-145
+New Cluster C107:S, Division (naive): Raw 143 from Bi 0, pA=6.61e-145
+New Cluster C108:S, Division (naive): Raw 139 from Bi 0, pA=1.48e-144
+New Cluster C109:S, Division (naive): Raw 105 from Bi 0, pA=2.77e-141
+New Cluster C110:SS, Division (naive): Raw 134 from Bi 0, pA=2.98e-138
+New Cluster C111:SS, Division (naive): Raw 129 from Bi 0, pA=8.22e-138
+New Cluster C112:S, Division (naive): Raw 172 from Bi 0, pA=1.23e-137
+New Cluster C113:SS, Division (naive): Raw 171 from Bi 0, pA=2.22e-137
+New Cluster C114:S, Division (naive): Raw 102 from Bi 0, pA=3.74e-136
+New Cluster C115:SS, Division (naive): Raw 125 from Bi 0, pA=2.47e-134
+New Cluster C116:S, Division (naive): Raw 175 from Bi 0, pA=1.62e-131
+New Cluster C117:S, Division (naive): Raw 116 from Bi 0, pA=3.38e-130
+New Cluster C118:S, Division (naive): Raw 158 from Bi 0, pA=5.84e-129
+New Cluster C119:S, Division (naive): Raw 106 from Bi 0, pA=1.50e-126
+New Cluster C120:S, Division (naive): Raw 152 from Bi 0, pA=1.07e-122
+New Cluster C121:SS, Division (naive): Raw 126 from Bi 0, pA=1.40e-122
+New Cluster C122:S, Division (naive): Raw 101 from Bi 0, pA=1.88e-121
+New Cluster C123:S, Division (naive): Raw 128 from Bi 0, pA=1.33e-120
+New Cluster C124:S, Division (naive): Raw 180 from Bi 0, pA=4.09e-116
+New Cluster C125:SS, Division (naive): Raw 138 from Bi 0, pA=4.95e-114
+New Cluster C126:S, Division (naive): Raw 166 from Bi 0, pA=9.74e-113
+New Cluster C127:SS, Division (naive): Raw 130 from Bi 0, pA=3.39e-110
+New Cluster C128:S, Division (naive): Raw 109 from Bi 0, pA=9.30e-108
+New Cluster C129:S, Division (naive): Raw 169 from Bi 0, pA=4.13e-105
+New Cluster C130:S, Division (naive): Raw 135 from Bi 0, pA=7.47e-105
+New Cluster C131:SS, Division (naive): Raw 53 from Bi 95, pA=2.65e-58
+New Cluster C132:SS, Division (naive): Raw 48 from Bi 95, pA=1.52e-54
+New Cluster C133:S, Division (naive): Raw 17 from Bi 5, pA=2.24e-50
+New Cluster C134:SS, Division (naive): Raw 63 from Bi 95, pA=6.71e-41
+New Cluster C135:SS, No Division. Minimum pA=3.75e-32 (Raw 70 w/ 3 reads in Bi 95).
+ALIGN: 87312 aligns, 0 shrouded (642 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 3 from Bi 0, pA=6.11e-132
+New Cluster C2:S, No Division. Minimum pA=2.10e+01 (Raw 0 w/ 206 reads in Bi -1).
+ALIGN: 63 aligns, 0 shrouded (21 raw).
+, Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 9 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 10 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 12 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 15 from Bi 0, pA=0.00e+00
+New Cluster C6:SS, Division (naive): Raw 16 from Bi 0, pA=0.00e+00
+New Cluster C7:S, Division (naive): Raw 50 from Bi 0, pA=2.74e-136
+New Cluster C8:S, Division (naive): Raw 46 from Bi 0, pA=1.78e-133
+New Cluster C9:S, Division (naive): Raw 47 from Bi 0, pA=2.06e-133
+New Cluster C10:S, Division (naive): Raw 48 from Bi 0, pA=3.34e-128
+New Cluster C11:S, Division (naive): Raw 29 from Bi 0, pA=1.50e-113
+New Cluster C12:S, Division (naive): Raw 4 from Bi 1, pA=6.81e-66
+New Cluster C13:SS, Division (naive): Raw 28 from Bi 4, pA=8.21e-41
+New Cluster C14:SS, No Division. Minimum pA=1.18e-26 (Raw 8 w/ 14 reads in Bi 0).
+ALIGN: 3570 aligns, 0 shrouded (238 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 6 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C4:S, Division (naive): Raw 11 from Bi 0, pA=1.52e-208
+New Cluster C5:SS, Division (naive): Raw 20 from Bi 0, pA=2.09e-143
+New Cluster C6:S, Division (naive): Raw 21 from Bi 0, pA=3.38e-118
+New Cluster C7:S, Division (naive): Raw 24 from Bi 0, pA=1.34e-111
+New Cluster C8:S, Division (naive): Raw 12 from Bi 0, pA=1.40e-110
+New Cluster C9:S, Division (naive): Raw 22 from Bi 0, pA=1.66e-91
+New Cluster C10:SS, Division (naive): Raw 2 from Bi 1, pA=7.39e-74
+New Cluster C11:S, No Division. Minimum pA=4.41e-10 (Raw 23 w/ 2 reads in Bi 5).
+ALIGN: 1236 aligns, 0 shrouded (103 raw).
+
+   selfConsist step 3, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 1, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C4:S, Division (naive): Raw 10 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 28 from Bi 0, pA=0.00e+00
+New Cluster C6:S, Division (naive): Raw 44 from Bi 0, pA=0.00e+00
+New Cluster C7:S, Division (naive): Raw 45 from Bi 0, pA=0.00e+00
+New Cluster C8:S, Division (naive): Raw 53 from Bi 0, pA=0.00e+00
+New Cluster C9:SS, Division (naive): Raw 60 from Bi 0, pA=0.00e+00
+New Cluster C10:SS, Division (naive): Raw 100 from Bi 0, pA=0.00e+00
+New Cluster C11:S, Division (naive): Raw 96 from Bi 0, pA=1.10e-120
+New Cluster C12:S, Division (naive): Raw 62 from Bi 0, pA=1.03e-98
+New Cluster C13:S, No Division. Minimum pA=5.32e-35 (Raw 54 w/ 3 reads in Bi 10).
+ALIGN: 5782 aligns, 0 shrouded (413 raw).
+, Division (naive): Raw 3 from Bi 0, pA=2.06e-120
+New Cluster C1:S, No Division. Minimum pA=4.96e-02 (Raw 1 w/ 2 reads in Bi 0).
+ALIGN: 32 aligns, 0 shrouded (16 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SSS, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 12 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 18 from Bi 0, pA=0.00e+00
+New Cluster C5:S, Division (naive): Raw 3 from Bi 2, pA=7.19e-216
+New Cluster C6:SS, Division (naive): Raw 48 from Bi 0, pA=2.64e-149
+New Cluster C7:SS, Division (naive): Raw 41 from Bi 0, pA=4.11e-138
+New Cluster C8:S, Division (naive): Raw 21 from Bi 0, pA=6.00e-126
+New Cluster C9:S, Division (naive): Raw 22 from Bi 0, pA=5.78e-118
+New Cluster C10:S, Division (naive): Raw 43 from Bi 0, pA=2.40e-107
+New Cluster C11:S, Division (naive): Raw 44 from Bi 0, pA=1.99e-105
+New Cluster C12:S, No Division. Minimum pA=2.78e-22 (Raw 45 w/ 2 reads in Bi 7).
+ALIGN: 2301 aligns, 0 shrouded (177 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 16 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 18 from Bi 0, pA=5.02e-136
+New Cluster C3:S, Division (naive): Raw 7 from Bi 0, pA=1.25e-135
+New Cluster C4:S, Division (naive): Raw 17 from Bi 0, pA=9.69e-115
+New Cluster C5:SS, No Division. Minimum pA=4.52e-03 (Raw 15 w/ 2 reads in Bi 0).
+ALIGN: 402 aligns, 0 shrouded (67 raw).
+, Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 17 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 27 from Bi 0, pA=0.00e+00
+New Cluster C4:S, Division (naive): Raw 28 from Bi 0, pA=0.00e+00
+New Cluster C5:S, Division (naive): Raw 29 from Bi 0, pA=0.00e+00
+New Cluster C6:SS, Division (naive): Raw 56 from Bi 0, pA=0.00e+00
+New Cluster C7:S, Division (naive): Raw 30 from Bi 0, pA=1.35e-117
+New Cluster C8:S, Division (naive): Raw 55 from Bi 0, pA=1.45e-112
+New Cluster C9:S, No Division. Minimum pA=9.70e-10 (Raw 8 w/ 7 reads in Bi 0).
+ALIGN: 2200 aligns, 0 shrouded (220 raw).
+, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C1:S, Division (naive): Raw 3 from Bi 0, pA=9.42e-158
+New Cluster C2:S, Division (naive): Raw 4 from Bi 0, pA=1.19e-144
+New Cluster C3:SS, No Division. Minimum pA=2.24e+01 (Raw 1 w/ 26 reads in Bi 0).
+ALIGN: 92 aligns, 0 shrouded (23 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:S, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 12 from Bi 0, pA=1.26e-129
+New Cluster C4:S, No Division. Minimum pA=3.55e+00 (Raw 6 w/ 3 reads in Bi 0).
+ALIGN: 310 aligns, 0 shrouded (62 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 7 from Bi 1, pA=0.00e+00
+New Cluster C6:SS, Division (naive): Raw 8 from Bi 0, pA=0.00e+00
+New Cluster C7:SS, Division (naive): Raw 9 from Bi 0, pA=0.00e+00
+New Cluster C8:SSS, Division (naive): Raw 10 from Bi 0, pA=0.00e+00
+New Cluster C9:SS, Division (naive): Raw 11 from Bi 0, pA=0.00e+00
+New Cluster C10:SS, Division (naive): Raw 12 from Bi 4, pA=0.00e+00
+New Cluster C11:SS, Division (naive): Raw 14 from Bi 0, pA=0.00e+00
+New Cluster C12:S, Division (naive): Raw 15 from Bi 0, pA=0.00e+00
+New Cluster C13:SS, Division (naive): Raw 16 from Bi 0, pA=0.00e+00
+New Cluster C14:SS, Division (naive): Raw 18 from Bi 0, pA=0.00e+00
+New Cluster C15:SS, Division (naive): Raw 19 from Bi 0, pA=0.00e+00
+New Cluster C16:SS, Division (naive): Raw 22 from Bi 0, pA=0.00e+00
+New Cluster C17:S, Division (naive): Raw 23 from Bi 0, pA=0.00e+00
+New Cluster C18:S, Division (naive): Raw 24 from Bi 0, pA=0.00e+00
+New Cluster C19:S, Division (naive): Raw 26 from Bi 0, pA=0.00e+00
+New Cluster C20:SS, Division (naive): Raw 27 from Bi 0, pA=0.00e+00
+New Cluster C21:S, Division (naive): Raw 28 from Bi 0, pA=0.00e+00
+New Cluster C22:SS, Division (naive): Raw 29 from Bi 0, pA=0.00e+00
+New Cluster C23:SS, Division (naive): Raw 30 from Bi 0, pA=0.00e+00
+New Cluster C24:SS, Division (naive): Raw 33 from Bi 0, pA=0.00e+00
+New Cluster C25:SS, Division (naive): Raw 34 from Bi 0, pA=0.00e+00
+New Cluster C26:SS, Division (naive): Raw 35 from Bi 0, pA=0.00e+00
+New Cluster C27:SS, Division (naive): Raw 36 from Bi 0, pA=0.00e+00
+New Cluster C28:SS, Division (naive): Raw 37 from Bi 0, pA=0.00e+00
+New Cluster C29:SS, Division (naive): Raw 38 from Bi 0, pA=0.00e+00
+New Cluster C30:S, Division (naive): Raw 39 from Bi 0, pA=0.00e+00
+New Cluster C31:S, Division (naive): Raw 40 from Bi 0, pA=0.00e+00
+New Cluster C32:SS, Division (naive): Raw 41 from Bi 0, pA=0.00e+00
+New Cluster C33:S, Division (naive): Raw 42 from Bi 0, pA=0.00e+00
+New Cluster C34:SS, Division (naive): Raw 44 from Bi 0, pA=0.00e+00
+New Cluster C35:S, Division (naive): Raw 45 from Bi 0, pA=0.00e+00
+New Cluster C36:SS, Division (naive): Raw 46 from Bi 0, pA=0.00e+00
+New Cluster C37:S, Division (naive): Raw 47 from Bi 0, pA=0.00e+00
+New Cluster C38:S, Division (naive): Raw 49 from Bi 0, pA=0.00e+00
+New Cluster C39:SS, Division (naive): Raw 50 from Bi 0, pA=0.00e+00
+New Cluster C40:S, Division (naive): Raw 51 from Bi 0, pA=0.00e+00
+New Cluster C41:SS, Division (naive): Raw 52 from Bi 0, pA=0.00e+00
+New Cluster C42:SS, Division (naive): Raw 54 from Bi 0, pA=0.00e+00
+New Cluster C43:SS, Division (naive): Raw 55 from Bi 0, pA=0.00e+00
+New Cluster C44:SS, Division (naive): Raw 56 from Bi 0, pA=0.00e+00
+New Cluster C45:SS, Division (naive): Raw 57 from Bi 0, pA=0.00e+00
+New Cluster C46:S, Division (naive): Raw 58 from Bi 0, pA=0.00e+00
+New Cluster C47:SS, Division (naive): Raw 59 from Bi 0, pA=0.00e+00
+New Cluster C48:SS, Division (naive): Raw 60 from Bi 0, pA=0.00e+00
+New Cluster C49:SS, Division (naive): Raw 61 from Bi 0, pA=0.00e+00
+New Cluster C50:SSS, Division (naive): Raw 62 from Bi 0, pA=0.00e+00
+New Cluster C51:SS, Division (naive): Raw 64 from Bi 0, pA=0.00e+00
+New Cluster C52:S, Division (naive): Raw 65 from Bi 0, pA=0.00e+00
+New Cluster C53:SS, Division (naive): Raw 66 from Bi 0, pA=0.00e+00
+New Cluster C54:S, Division (naive): Raw 68 from Bi 0, pA=0.00e+00
+New Cluster C55:S, Division (naive): Raw 69 from Bi 0, pA=0.00e+00
+New Cluster C56:S, Division (naive): Raw 71 from Bi 0, pA=0.00e+00
+New Cluster C57:S, Division (naive): Raw 72 from Bi 0, pA=0.00e+00
+New Cluster C58:SS, Division (naive): Raw 74 from Bi 0, pA=0.00e+00
+New Cluster C59:SS, Division (naive): Raw 75 from Bi 0, pA=0.00e+00
+New Cluster C60:SS, Division (naive): Raw 76 from Bi 0, pA=0.00e+00
+New Cluster C61:SS, Division (naive): Raw 77 from Bi 0, pA=0.00e+00
+New Cluster C62:SS, Division (naive): Raw 80 from Bi 0, pA=0.00e+00
+New Cluster C63:SS, Division (naive): Raw 83 from Bi 0, pA=0.00e+00
+New Cluster C64:SS, Division (naive): Raw 84 from Bi 0, pA=0.00e+00
+New Cluster C65:S, Division (naive): Raw 85 from Bi 0, pA=0.00e+00
+New Cluster C66:S, Division (naive): Raw 86 from Bi 0, pA=0.00e+00
+New Cluster C67:SS, Division (naive): Raw 87 from Bi 0, pA=0.00e+00
+New Cluster C68:SS, Division (naive): Raw 88 from Bi 0, pA=0.00e+00
+New Cluster C69:S, Division (naive): Raw 89 from Bi 0, pA=0.00e+00
+New Cluster C70:SS, Division (naive): Raw 90 from Bi 0, pA=0.00e+00
+New Cluster C71:S, Division (naive): Raw 91 from Bi 0, pA=0.00e+00
+New Cluster C72:S, Division (naive): Raw 94 from Bi 0, pA=0.00e+00
+New Cluster C73:S, Division (naive): Raw 95 from Bi 0, pA=0.00e+00
+New Cluster C74:S, Division (naive): Raw 96 from Bi 0, pA=0.00e+00
+New Cluster C75:S, Division (naive): Raw 97 from Bi 0, pA=0.00e+00
+New Cluster C76:SS, Division (naive): Raw 98 from Bi 0, pA=0.00e+00
+New Cluster C77:SS, Division (naive): Raw 100 from Bi 0, pA=0.00e+00
+New Cluster C78:S, Division (naive): Raw 104 from Bi 0, pA=0.00e+00
+New Cluster C79:S, Division (naive): Raw 108 from Bi 0, pA=0.00e+00
+New Cluster C80:S, Division (naive): Raw 117 from Bi 0, pA=0.00e+00
+New Cluster C81:SS, Division (naive): Raw 119 from Bi 0, pA=0.00e+00
+New Cluster C82:S, Division (naive): Raw 121 from Bi 0, pA=0.00e+00
+New Cluster C83:S, Division (naive): Raw 147 from Bi 0, pA=0.00e+00
+New Cluster C84:S, Division (naive): Raw 148 from Bi 0, pA=0.00e+00
+New Cluster C85:SS, Division (naive): Raw 154 from Bi 0, pA=0.00e+00
+New Cluster C86:S, Division (naive): Raw 160 from Bi 0, pA=0.00e+00
+New Cluster C87:S, Division (naive): Raw 161 from Bi 0, pA=0.00e+00
+New Cluster C88:S, Division (naive): Raw 168 from Bi 0, pA=0.00e+00
+New Cluster C89:S, Division (naive): Raw 170 from Bi 0, pA=0.00e+00
+New Cluster C90:SS, Division (naive): Raw 173 from Bi 0, pA=0.00e+00
+New Cluster C91:SS, Division (naive): Raw 176 from Bi 0, pA=0.00e+00
+New Cluster C92:S, Division (naive): Raw 177 from Bi 0, pA=0.00e+00
+New Cluster C93:S, Division (naive): Raw 189 from Bi 0, pA=0.00e+00
+New Cluster C94:S, Division (naive): Raw 20 from Bi 2, pA=5.10e-223
+New Cluster C95:SSS, Division (naive): Raw 6 from Bi 0, pA=1.67e-197
+New Cluster C96:SS, Division (naive): Raw 150 from Bi 0, pA=1.13e-159
+New Cluster C97:SS, Division (naive): Raw 132 from Bi 0, pA=2.20e-157
+New Cluster C98:S, Division (naive): Raw 178 from Bi 0, pA=1.94e-156
+New Cluster C99:S, Division (naive): Raw 133 from Bi 0, pA=3.19e-156
+New Cluster C100:SS, Division (naive): Raw 145 from Bi 0, pA=3.65e-155
+New Cluster C101:S, Division (naive): Raw 153 from Bi 0, pA=2.16e-153
+New Cluster C102:S, Division (naive): Raw 120 from Bi 0, pA=1.51e-151
+New Cluster C103:S, Division (naive): Raw 124 from Bi 0, pA=3.53e-151
+New Cluster C104:S, Division (naive): Raw 159 from Bi 0, pA=1.20e-149
+New Cluster C105:S, Division (naive): Raw 146 from Bi 0, pA=1.56e-146
+New Cluster C106:S, Division (naive): Raw 143 from Bi 0, pA=5.83e-146
+New Cluster C107:S, Division (naive): Raw 188 from Bi 0, pA=8.61e-146
+New Cluster C108:S, Division (naive): Raw 139 from Bi 0, pA=6.13e-145
+New Cluster C109:S, Division (naive): Raw 105 from Bi 0, pA=1.52e-141
+New Cluster C110:SS, Division (naive): Raw 172 from Bi 0, pA=2.00e-139
+New Cluster C111:SS, Division (naive): Raw 134 from Bi 0, pA=1.92e-138
+New Cluster C112:SS, Division (naive): Raw 129 from Bi 0, pA=5.55e-138
+New Cluster C113:S, Division (naive): Raw 171 from Bi 0, pA=7.89e-138
+New Cluster C114:S, Division (naive): Raw 102 from Bi 0, pA=1.92e-136
+New Cluster C115:SS, Division (naive): Raw 125 from Bi 0, pA=5.35e-135
+New Cluster C116:S, Division (naive): Raw 175 from Bi 0, pA=9.49e-132
+New Cluster C117:S, Division (naive): Raw 116 from Bi 0, pA=2.11e-130
+New Cluster C118:S, Division (naive): Raw 158 from Bi 0, pA=4.55e-129
+New Cluster C119:S, Division (naive): Raw 106 from Bi 0, pA=8.64e-127
+New Cluster C120:S, Division (naive): Raw 152 from Bi 0, pA=3.08e-123
+New Cluster C121:SS, Division (naive): Raw 126 from Bi 0, pA=7.44e-123
+New Cluster C122:S, Division (naive): Raw 101 from Bi 0, pA=5.89e-122
+New Cluster C123:S, Division (naive): Raw 128 from Bi 0, pA=8.03e-121
+New Cluster C124:S, Division (naive): Raw 180 from Bi 0, pA=3.16e-116
+New Cluster C125:SS, Division (naive): Raw 138 from Bi 0, pA=5.36e-114
+New Cluster C126:S, Division (naive): Raw 166 from Bi 0, pA=4.51e-113
+New Cluster C127:SS, Division (naive): Raw 130 from Bi 0, pA=2.01e-110
+New Cluster C128:S, Division (naive): Raw 109 from Bi 0, pA=3.96e-108
+New Cluster C129:S, Division (naive): Raw 135 from Bi 0, pA=1.03e-105
+New Cluster C130:SS, Division (naive): Raw 169 from Bi 0, pA=3.41e-105
+New Cluster C131:S, Division (naive): Raw 53 from Bi 95, pA=2.21e-58
+New Cluster C132:SS, Division (naive): Raw 17 from Bi 5, pA=2.54e-57
+New Cluster C133:SS, Division (naive): Raw 48 from Bi 95, pA=1.13e-54
+New Cluster C134:S, Division (naive): Raw 63 from Bi 95, pA=4.81e-41
+New Cluster C135:SS, No Division. Minimum pA=3.83e-32 (Raw 70 w/ 3 reads in Bi 95).
+ALIGN: 87312 aligns, 0 shrouded (642 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 3 from Bi 0, pA=1.75e-132
+New Cluster C2:S, No Division. Minimum pA=2.10e+01 (Raw 0 w/ 206 reads in Bi -1).
+ALIGN: 63 aligns, 0 shrouded (21 raw).
+, Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 9 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 10 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 12 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 15 from Bi 0, pA=0.00e+00
+New Cluster C6:SS, Division (naive): Raw 16 from Bi 0, pA=0.00e+00
+New Cluster C7:S, Division (naive): Raw 50 from Bi 0, pA=2.21e-137
+New Cluster C8:S, Division (naive): Raw 47 from Bi 0, pA=2.84e-134
+New Cluster C9:S, Division (naive): Raw 46 from Bi 0, pA=8.38e-134
+New Cluster C10:S, Division (naive): Raw 48 from Bi 0, pA=5.00e-129
+New Cluster C11:S, Division (naive): Raw 29 from Bi 0, pA=8.95e-114
+New Cluster C12:S, Division (naive): Raw 4 from Bi 1, pA=8.68e-66
+New Cluster C13:SS, Division (naive): Raw 28 from Bi 4, pA=6.15e-41
+New Cluster C14:SS, No Division. Minimum pA=2.31e-26 (Raw 8 w/ 14 reads in Bi 0).
+ALIGN: 3570 aligns, 0 shrouded (238 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 6 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C4:S, Division (naive): Raw 11 from Bi 0, pA=2.95e-209
+New Cluster C5:SS, Division (naive): Raw 20 from Bi 0, pA=1.98e-145
+New Cluster C6:S, Division (naive): Raw 21 from Bi 0, pA=2.32e-118
+New Cluster C7:S, Division (naive): Raw 24 from Bi 0, pA=2.60e-112
+New Cluster C8:S, Division (naive): Raw 12 from Bi 0, pA=5.92e-111
+New Cluster C9:S, Division (naive): Raw 22 from Bi 0, pA=7.97e-92
+New Cluster C10:SS, Division (naive): Raw 2 from Bi 1, pA=1.17e-73
+New Cluster C11:S, No Division. Minimum pA=4.22e-10 (Raw 23 w/ 2 reads in Bi 5).
+ALIGN: 1236 aligns, 0 shrouded (103 raw).
+
+Convergence after  3  rounds.
+[1] "starting error model learning for reverse reads..."
+5014750 total bases in 42530 reads from 11 samples will be used for learning the error rates.
+Initializing error rates to maximum possible estimate.
+
+ALIGN: 101 aligns, 0 shrouded (101 raw).
+
+ALIGN: 86 aligns, 0 shrouded (86 raw).
+
+ALIGN: 20 aligns, 0 shrouded (20 raw).
+
+ALIGN: 607 aligns, 0 shrouded (607 raw).
+
+ALIGN: 266 aligns, 0 shrouded (266 raw).
+
+ALIGN: 289 aligns, 0 shrouded (289 raw).
+
+ALIGN: 25 aligns, 0 shrouded (25 raw).
+
+ALIGN: 225 aligns, 0 shrouded (225 raw).
+
+ALIGN: 2616 aligns, 0 shrouded (2616 raw).
+
+ALIGN: 176 aligns, 0 shrouded (176 raw).
+
+ALIGN: 20 aligns, 0 shrouded (20 raw).
+selfConsist step 1 ., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:S, Division (naive): Raw 10 from Bi 0, pA=2.78e-142
+New Cluster C3:S, Division (naive): Raw 11 from Bi 0, pA=1.63e-67
+New Cluster C4:S, No Division. Minimum pA=9.99e+01 (Raw 9 w/ 3 reads in Bi 0).
+ALIGN: 505 aligns, 0 shrouded (101 raw).
+., Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=4.85e-175
+New Cluster C2:S, Division (naive): Raw 8 from Bi 0, pA=1.54e-77
+New Cluster C3:S, Division (naive): Raw 13 from Bi 0, pA=6.66e-60
+New Cluster C4:S, Division (naive): Raw 7 from Bi 0, pA=1.76e-55
+New Cluster C5:SS, No Division. Minimum pA=8.60e+01 (Raw 3 w/ 4 reads in Bi 0).
+ALIGN: 516 aligns, 0 shrouded (86 raw).
+., Division (naive): Raw 1 from Bi 0, pA=6.55e-67
+New Cluster C1:S, No Division. Minimum pA=1.98e+01 (Raw 3 w/ 2 reads in Bi 0).
+ALIGN: 40 aligns, 0 shrouded (20 raw).
+., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 6 from Bi 0, pA=0.00e+00
+New Cluster C6:SS, Division (naive): Raw 9 from Bi 0, pA=0.00e+00
+New Cluster C7:SS, Division (naive): Raw 10 from Bi 0, pA=0.00e+00
+New Cluster C8:SS, Division (naive): Raw 11 from Bi 0, pA=0.00e+00
+New Cluster C9:SS, Division (naive): Raw 12 from Bi 0, pA=0.00e+00
+New Cluster C10:SS, Division (naive): Raw 13 from Bi 0, pA=0.00e+00
+New Cluster C11:SS, Division (naive): Raw 15 from Bi 0, pA=0.00e+00
+New Cluster C12:SS, Division (naive): Raw 16 from Bi 0, pA=0.00e+00
+New Cluster C13:SS, Division (naive): Raw 17 from Bi 0, pA=0.00e+00
+New Cluster C14:SS, Division (naive): Raw 19 from Bi 0, pA=0.00e+00
+New Cluster C15:SS, Division (naive): Raw 22 from Bi 0, pA=0.00e+00
+New Cluster C16:S, Division (naive): Raw 23 from Bi 0, pA=0.00e+00
+New Cluster C17:S, Division (naive): Raw 24 from Bi 0, pA=0.00e+00
+New Cluster C18:SS, Division (naive): Raw 27 from Bi 0, pA=0.00e+00
+New Cluster C19:SS, Division (naive): Raw 28 from Bi 0, pA=0.00e+00
+New Cluster C20:SS, Division (naive): Raw 29 from Bi 0, pA=0.00e+00
+New Cluster C21:SS, Division (naive): Raw 30 from Bi 0, pA=0.00e+00
+New Cluster C22:S, Division (naive): Raw 31 from Bi 0, pA=0.00e+00
+New Cluster C23:SS, Division (naive): Raw 33 from Bi 0, pA=0.00e+00
+New Cluster C24:S, Division (naive): Raw 34 from Bi 0, pA=0.00e+00
+New Cluster C25:SS, Division (naive): Raw 35 from Bi 0, pA=0.00e+00
+New Cluster C26:S, Division (naive): Raw 38 from Bi 0, pA=0.00e+00
+New Cluster C27:SS, Division (naive): Raw 39 from Bi 0, pA=0.00e+00
+New Cluster C28:SS, Division (naive): Raw 40 from Bi 0, pA=0.00e+00
+New Cluster C29:S, Division (naive): Raw 43 from Bi 0, pA=0.00e+00
+New Cluster C30:S, Division (naive): Raw 44 from Bi 0, pA=0.00e+00
+New Cluster C31:S, Division (naive): Raw 45 from Bi 0, pA=0.00e+00
+New Cluster C32:SS, Division (naive): Raw 46 from Bi 0, pA=0.00e+00
+New Cluster C33:SS, Division (naive): Raw 49 from Bi 0, pA=0.00e+00
+New Cluster C34:S, Division (naive): Raw 54 from Bi 0, pA=0.00e+00
+New Cluster C35:SS, Division (naive): Raw 55 from Bi 0, pA=0.00e+00
+New Cluster C36:S, Division (naive): Raw 56 from Bi 0, pA=0.00e+00
+New Cluster C37:SS, Division (naive): Raw 41 from Bi 0, pA=8.50e-252
+New Cluster C38:S, Division (naive): Raw 59 from Bi 0, pA=5.01e-226
+New Cluster C39:SS, Division (naive): Raw 50 from Bi 0, pA=2.32e-224
+New Cluster C40:SS, Division (naive): Raw 57 from Bi 0, pA=2.80e-222
+New Cluster C41:SS, Division (naive): Raw 42 from Bi 0, pA=7.87e-217
+New Cluster C42:SS, Division (naive): Raw 61 from Bi 0, pA=5.81e-215
+New Cluster C43:SS, Division (naive): Raw 51 from Bi 0, pA=2.83e-207
+New Cluster C44:S, Division (naive): Raw 80 from Bi 0, pA=4.12e-202
+New Cluster C45:SS, Division (naive): Raw 78 from Bi 0, pA=1.07e-198
+New Cluster C46:SS, Division (naive): Raw 65 from Bi 0, pA=5.94e-192
+New Cluster C47:SS, Division (naive): Raw 64 from Bi 0, pA=8.67e-185
+New Cluster C48:S, Division (naive): Raw 69 from Bi 0, pA=2.25e-184
+New Cluster C49:S, Division (naive): Raw 71 from Bi 0, pA=2.79e-183
+New Cluster C50:SS, Division (naive): Raw 97 from Bi 0, pA=9.12e-183
+New Cluster C51:S, Division (naive): Raw 93 from Bi 0, pA=3.31e-176
+New Cluster C52:S, Division (naive): Raw 75 from Bi 0, pA=6.71e-176
+New Cluster C53:SS, Division (naive): Raw 82 from Bi 0, pA=2.15e-175
+New Cluster C54:S, Division (naive): Raw 83 from Bi 0, pA=1.28e-174
+New Cluster C55:S, Division (naive): Raw 63 from Bi 0, pA=8.58e-172
+New Cluster C56:S, Division (naive): Raw 94 from Bi 0, pA=1.39e-171
+New Cluster C57:SS, Division (naive): Raw 92 from Bi 0, pA=1.52e-169
+New Cluster C58:SS, Division (naive): Raw 32 from Bi 0, pA=1.61e-166
+New Cluster C59:SS, Division (naive): Raw 66 from Bi 0, pA=2.19e-155
+New Cluster C60:SS, Division (naive): Raw 96 from Bi 0, pA=1.28e-151
+New Cluster C61:S, Division (naive): Raw 91 from Bi 0, pA=9.23e-150
+New Cluster C62:SS, Division (naive): Raw 87 from Bi 0, pA=1.79e-146
+New Cluster C63:S, Division (naive): Raw 74 from Bi 0, pA=2.66e-146
+New Cluster C64:S, Division (naive): Raw 81 from Bi 0, pA=1.24e-141
+New Cluster C65:S, Division (naive): Raw 37 from Bi 0, pA=3.31e-141
+New Cluster C66:SS, Division (naive): Raw 79 from Bi 0, pA=3.27e-137
+New Cluster C67:SS, Division (naive): Raw 85 from Bi 0, pA=2.58e-135
+New Cluster C68:S, Division (naive): Raw 21 from Bi 4, pA=3.32e-135
+New Cluster C69:SSS, Division (naive): Raw 67 from Bi 0, pA=4.42e-135
+New Cluster C70:S, Division (naive): Raw 36 from Bi 0, pA=1.17e-132
+New Cluster C71:S, Division (naive): Raw 90 from Bi 0, pA=8.16e-127
+New Cluster C72:S, Division (naive): Raw 73 from Bi 0, pA=5.56e-124
+New Cluster C73:S, Division (naive): Raw 47 from Bi 0, pA=2.97e-111
+New Cluster C74:S, Division (naive): Raw 88 from Bi 0, pA=2.06e-106
+New Cluster C75:SS, Division (naive): Raw 166 from Bi 0, pA=2.25e-102
+New Cluster C76:S, Division (naive): Raw 180 from Bi 0, pA=8.30e-102
+New Cluster C77:SS, Division (naive): Raw 138 from Bi 0, pA=3.72e-100
+New Cluster C78:SS, Division (naive): Raw 128 from Bi 0, pA=1.72e-99
+New Cluster C79:S, Division (naive): Raw 189 from Bi 0, pA=3.04e-98
+New Cluster C80:S, Division (naive): Raw 184 from Bi 0, pA=1.79e-97
+New Cluster C81:S, Division (naive): Raw 143 from Bi 0, pA=6.82e-97
+New Cluster C82:SS, Division (naive): Raw 135 from Bi 0, pA=3.42e-96
+New Cluster C83:S, Division (naive): Raw 146 from Bi 0, pA=4.04e-96
+New Cluster C84:SS, Division (naive): Raw 174 from Bi 0, pA=3.41e-95
+New Cluster C85:S, Division (naive): Raw 131 from Bi 0, pA=5.14e-95
+New Cluster C86:S, Division (naive): Raw 148 from Bi 0, pA=9.44e-95
+New Cluster C87:S, Division (naive): Raw 155 from Bi 0, pA=8.82e-94
+New Cluster C88:SS, Division (naive): Raw 130 from Bi 0, pA=1.93e-93
+New Cluster C89:S, Division (naive): Raw 164 from Bi 0, pA=3.46e-93
+New Cluster C90:S, Division (naive): Raw 145 from Bi 0, pA=2.24e-92
+New Cluster C91:S, Division (naive): Raw 185 from Bi 0, pA=1.71e-90
+New Cluster C92:S, Division (naive): Raw 160 from Bi 0, pA=2.40e-90
+New Cluster C93:S, Division (naive): Raw 117 from Bi 0, pA=2.98e-90
+New Cluster C94:SS, Division (naive): Raw 68 from Bi 0, pA=3.84e-90
+New Cluster C95:SS, Division (naive): Raw 104 from Bi 0, pA=4.50e-90
+New Cluster C96:S, Division (naive): Raw 125 from Bi 0, pA=1.50e-89
+New Cluster C97:SS, Division (naive): Raw 179 from Bi 0, pA=5.20e-89
+New Cluster C98:S, Division (naive): Raw 127 from Bi 0, pA=2.78e-84
+New Cluster C99:SS, Division (naive): Raw 121 from Bi 0, pA=1.39e-83
+New Cluster C100:S, Division (naive): Raw 151 from Bi 0, pA=1.33e-82
+New Cluster C101:S, Division (naive): Raw 147 from Bi 0, pA=1.11e-81
+New Cluster C102:S, Division (naive): Raw 113 from Bi 0, pA=1.27e-80
+New Cluster C103:S, Division (naive): Raw 153 from Bi 0, pA=1.42e-80
+New Cluster C104:S, Division (naive): Raw 129 from Bi 0, pA=3.50e-80
+New Cluster C105:S, Division (naive): Raw 187 from Bi 0, pA=1.21e-79
+New Cluster C106:SS, Division (naive): Raw 163 from Bi 0, pA=7.28e-79
+New Cluster C107:SS, Division (naive): Raw 115 from Bi 0, pA=3.48e-78
+New Cluster C108:SS, Division (naive): Raw 107 from Bi 0, pA=7.85e-78
+New Cluster C109:S, Division (naive): Raw 106 from Bi 0, pA=8.20e-78
+New Cluster C110:SS, Division (naive): Raw 158 from Bi 0, pA=1.46e-76
+New Cluster C111:SS, Division (naive): Raw 136 from Bi 0, pA=4.99e-74
+New Cluster C112:S, Division (naive): Raw 112 from Bi 0, pA=8.43e-74
+New Cluster C113:S, Division (naive): Raw 123 from Bi 0, pA=2.54e-73
+New Cluster C114:S, Division (naive): Raw 100 from Bi 0, pA=3.11e-73
+New Cluster C115:S, Division (naive): Raw 110 from Bi 0, pA=5.01e-73
+New Cluster C116:S, Division (naive): Raw 114 from Bi 0, pA=3.12e-72
+New Cluster C117:S, Division (naive): Raw 111 from Bi 0, pA=6.12e-72
+New Cluster C118:SS, Division (naive): Raw 105 from Bi 0, pA=6.51e-71
+New Cluster C119:S, Division (naive): Raw 161 from Bi 0, pA=3.34e-69
+New Cluster C120:S, Division (naive): Raw 137 from Bi 0, pA=1.04e-68
+New Cluster C121:S, Division (naive): Raw 157 from Bi 0, pA=5.49e-68
+New Cluster C122:SS, Division (naive): Raw 133 from Bi 0, pA=8.80e-67
+New Cluster C123:S, Division (naive): Raw 181 from Bi 0, pA=3.95e-66
+New Cluster C124:S, Division (naive): Raw 172 from Bi 0, pA=1.68e-64
+New Cluster C125:S, Division (naive): Raw 169 from Bi 0, pA=4.00e-64
+New Cluster C126:SS, Division (naive): Raw 182 from Bi 0, pA=5.15e-63
+New Cluster C127:S, Division (naive): Raw 108 from Bi 0, pA=5.61e-60
+New Cluster C128:S, Division (naive): Raw 173 from Bi 0, pA=2.65e-56
+New Cluster C129:S, Division (naive): Raw 156 from Bi 0, pA=1.53e-55
+New Cluster C130:S, No Division. Minimum pA=2.73e-35 (Raw 8 w/ 62 reads in Bi 1).
+ALIGN: 79517 aligns, 0 shrouded (607 raw).
+., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 3 from Bi 2, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 6 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 8 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 19 from Bi 0, pA=1.84e-158
+New Cluster C6:S, Division (naive): Raw 33 from Bi 0, pA=1.66e-89
+New Cluster C7:S, Division (naive): Raw 65 from Bi 0, pA=9.06e-67
+New Cluster C8:S, Division (naive): Raw 62 from Bi 0, pA=9.87e-64
+New Cluster C9:S, Division (naive): Raw 32 from Bi 0, pA=6.24e-62
+New Cluster C10:S, Division (naive): Raw 31 from Bi 0, pA=4.47e-55
+New Cluster C11:SS, No Division. Minimum pA=5.13e-08 (Raw 64 w/ 2 reads in Bi 11).
+ALIGN: 3192 aligns, 0 shrouded (266 raw).
+., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 11 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 16 from Bi 0, pA=2.62e-238
+New Cluster C5:SS, Division (naive): Raw 17 from Bi 0, pA=1.41e-186
+New Cluster C6:S, Division (naive): Raw 7 from Bi 0, pA=1.96e-146
+New Cluster C7:SS, Division (naive): Raw 41 from Bi 0, pA=1.21e-73
+New Cluster C8:S, Division (naive): Raw 39 from Bi 0, pA=8.51e-73
+New Cluster C9:S, Division (naive): Raw 40 from Bi 0, pA=4.33e-67
+New Cluster C10:S, Division (naive): Raw 65 from Bi 0, pA=5.01e-63
+New Cluster C11:S, No Division. Minimum pA=3.42e-18 (Raw 23 w/ 3 reads in Bi 7).
+ALIGN: 3468 aligns, 0 shrouded (289 raw).
+., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 3 from Bi 0, pA=6.97e-80
+New Cluster C2:S, No Division. Minimum pA=2.26e+01 (Raw 2 w/ 3 reads in Bi 0).
+ALIGN: 75 aligns, 0 shrouded (25 raw).
+., Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C2:S, Division (naive): Raw 12 from Bi 0, pA=1.25e-224
+New Cluster C3:S, Division (naive): Raw 18 from Bi 0, pA=1.40e-148
+New Cluster C4:S, Division (naive): Raw 29 from Bi 0, pA=1.02e-127
+New Cluster C5:S, Division (naive): Raw 31 from Bi 0, pA=1.58e-77
+New Cluster C6:S, Division (naive): Raw 30 from Bi 0, pA=8.63e-76
+New Cluster C7:SS, No Division. Minimum pA=2.25e+02 (Raw 10 w/ 9 reads in Bi 0).
+ALIGN: 1800 aligns, 0 shrouded (225 raw).
+., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 31 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 42 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 84 from Bi 0, pA=0.00e+00
+New Cluster C5:S, Division (naive): Raw 100 from Bi 0, pA=1.31e-198
+New Cluster C6:SS, Division (naive): Raw 99 from Bi 0, pA=6.13e-151
+New Cluster C7:SS, Division (naive): Raw 332 from Bi 0, pA=2.12e-69
+New Cluster C8:S, Division (naive): Raw 192 from Bi 0, pA=2.77e-65
+New Cluster C9:S, Division (naive): Raw 329 from Bi 0, pA=3.39e-63
+New Cluster C10:SS, Division (naive): Raw 190 from Bi 0, pA=2.97e-61
+New Cluster C11:SS, No Division. Minimum pA=2.30e-17 (Raw 188 w/ 3 reads in Bi 7).
+ALIGN: 31392 aligns, 0 shrouded (2616 raw).
+., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 8 from Bi 0, pA=7.26e-234
+New Cluster C4:S, Division (naive): Raw 11 from Bi 0, pA=5.52e-130
+New Cluster C5:SS, Division (naive): Raw 20 from Bi 0, pA=2.82e-93
+New Cluster C6:S, Division (naive): Raw 22 from Bi 0, pA=1.04e-74
+New Cluster C7:S, Division (naive): Raw 37 from Bi 0, pA=8.80e-71
+New Cluster C8:S, Division (naive): Raw 19 from Bi 0, pA=5.77e-70
+New Cluster C9:S, Division (naive): Raw 21 from Bi 0, pA=1.74e-42
+New Cluster C10:SSS, No Division. Minimum pA=5.47e-03 (Raw 23 w/ 2 reads in Bi 10).
+ALIGN: 1936 aligns, 0 shrouded (176 raw).
+., Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 0, pA=1.52e-152
+New Cluster C2:S, Division (naive): Raw 5 from Bi 0, pA=1.40e-90
+New Cluster C3:S, Division (naive): Raw 6 from Bi 0, pA=3.13e-83
+New Cluster C4:SS, No Division. Minimum pA=1.87e+01 (Raw 4 w/ 3 reads in Bi 0).
+ALIGN: 100 aligns, 0 shrouded (20 raw).
+
+   selfConsist step 2, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:S, Division (naive): Raw 10 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 11 from Bi 0, pA=1.91e-130
+New Cluster C4:S, No Division. Minimum pA=7.54e+00 (Raw 9 w/ 3 reads in Bi 0).
+ALIGN: 505 aligns, 0 shrouded (101 raw).
+, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:S, Division (naive): Raw 8 from Bi 0, pA=1.87e-152
+New Cluster C3:S, Division (naive): Raw 13 from Bi 0, pA=1.43e-113
+New Cluster C4:S, Division (naive): Raw 7 from Bi 0, pA=1.02e-103
+New Cluster C5:SS, No Division. Minimum pA=8.96e-01 (Raw 3 w/ 4 reads in Bi 0).
+ALIGN: 516 aligns, 0 shrouded (86 raw).
+, Division (naive): Raw 1 from Bi 0, pA=7.07e-131
+New Cluster C1:S, No Division. Minimum pA=4.26e+00 (Raw 3 w/ 2 reads in Bi 0).
+ALIGN: 40 aligns, 0 shrouded (20 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 6 from Bi 0, pA=0.00e+00
+New Cluster C6:SS, Division (naive): Raw 9 from Bi 0, pA=0.00e+00
+New Cluster C7:SS, Division (naive): Raw 10 from Bi 0, pA=0.00e+00
+New Cluster C8:SS, Division (naive): Raw 11 from Bi 0, pA=0.00e+00
+New Cluster C9:SS, Division (naive): Raw 12 from Bi 0, pA=0.00e+00
+New Cluster C10:SS, Division (naive): Raw 13 from Bi 0, pA=0.00e+00
+New Cluster C11:SS, Division (naive): Raw 15 from Bi 0, pA=0.00e+00
+New Cluster C12:SS, Division (naive): Raw 16 from Bi 0, pA=0.00e+00
+New Cluster C13:SS, Division (naive): Raw 17 from Bi 0, pA=0.00e+00
+New Cluster C14:SS, Division (naive): Raw 19 from Bi 0, pA=0.00e+00
+New Cluster C15:SS, Division (naive): Raw 22 from Bi 0, pA=0.00e+00
+New Cluster C16:S, Division (naive): Raw 23 from Bi 0, pA=0.00e+00
+New Cluster C17:S, Division (naive): Raw 24 from Bi 0, pA=0.00e+00
+New Cluster C18:SS, Division (naive): Raw 27 from Bi 0, pA=0.00e+00
+New Cluster C19:SS, Division (naive): Raw 28 from Bi 0, pA=0.00e+00
+New Cluster C20:SS, Division (naive): Raw 29 from Bi 0, pA=0.00e+00
+New Cluster C21:SS, Division (naive): Raw 30 from Bi 0, pA=0.00e+00
+New Cluster C22:S, Division (naive): Raw 31 from Bi 0, pA=0.00e+00
+New Cluster C23:SS, Division (naive): Raw 32 from Bi 0, pA=0.00e+00
+New Cluster C24:SS, Division (naive): Raw 33 from Bi 0, pA=0.00e+00
+New Cluster C25:S, Division (naive): Raw 34 from Bi 0, pA=0.00e+00
+New Cluster C26:SS, Division (naive): Raw 35 from Bi 0, pA=0.00e+00
+New Cluster C27:S, Division (naive): Raw 36 from Bi 0, pA=0.00e+00
+New Cluster C28:S, Division (naive): Raw 38 from Bi 0, pA=0.00e+00
+New Cluster C29:SS, Division (naive): Raw 39 from Bi 0, pA=0.00e+00
+New Cluster C30:SS, Division (naive): Raw 40 from Bi 0, pA=0.00e+00
+New Cluster C31:S, Division (naive): Raw 41 from Bi 0, pA=0.00e+00
+New Cluster C32:S, Division (naive): Raw 42 from Bi 0, pA=0.00e+00
+New Cluster C33:SS, Division (naive): Raw 43 from Bi 0, pA=0.00e+00
+New Cluster C34:S, Division (naive): Raw 44 from Bi 0, pA=0.00e+00
+New Cluster C35:S, Division (naive): Raw 45 from Bi 0, pA=0.00e+00
+New Cluster C36:SS, Division (naive): Raw 46 from Bi 0, pA=0.00e+00
+New Cluster C37:SS, Division (naive): Raw 49 from Bi 0, pA=0.00e+00
+New Cluster C38:S, Division (naive): Raw 50 from Bi 0, pA=0.00e+00
+New Cluster C39:SS, Division (naive): Raw 51 from Bi 0, pA=0.00e+00
+New Cluster C40:S, Division (naive): Raw 54 from Bi 0, pA=0.00e+00
+New Cluster C41:SS, Division (naive): Raw 55 from Bi 0, pA=0.00e+00
+New Cluster C42:S, Division (naive): Raw 56 from Bi 0, pA=0.00e+00
+New Cluster C43:SS, Division (naive): Raw 57 from Bi 0, pA=0.00e+00
+New Cluster C44:SS, Division (naive): Raw 59 from Bi 0, pA=0.00e+00
+New Cluster C45:SS, Division (naive): Raw 61 from Bi 0, pA=0.00e+00
+New Cluster C46:SS, Division (naive): Raw 62 from Bi 0, pA=0.00e+00
+New Cluster C47:SS, Division (naive): Raw 63 from Bi 0, pA=0.00e+00
+New Cluster C48:S, Division (naive): Raw 64 from Bi 0, pA=0.00e+00
+New Cluster C49:S, Division (naive): Raw 65 from Bi 0, pA=0.00e+00
+New Cluster C50:SS, Division (naive): Raw 66 from Bi 0, pA=0.00e+00
+New Cluster C51:SS, Division (naive): Raw 67 from Bi 0, pA=0.00e+00
+New Cluster C52:S, Division (naive): Raw 69 from Bi 0, pA=0.00e+00
+New Cluster C53:S, Division (naive): Raw 70 from Bi 0, pA=0.00e+00
+New Cluster C54:SS, Division (naive): Raw 73 from Bi 0, pA=0.00e+00
+New Cluster C55:S, Division (naive): Raw 74 from Bi 0, pA=0.00e+00
+New Cluster C56:S, Division (naive): Raw 75 from Bi 0, pA=0.00e+00
+New Cluster C57:SS, Division (naive): Raw 78 from Bi 0, pA=0.00e+00
+New Cluster C58:SS, Division (naive): Raw 79 from Bi 0, pA=0.00e+00
+New Cluster C59:SS, Division (naive): Raw 80 from Bi 0, pA=0.00e+00
+New Cluster C60:SS, Division (naive): Raw 81 from Bi 0, pA=0.00e+00
+New Cluster C61:S, Division (naive): Raw 82 from Bi 0, pA=0.00e+00
+New Cluster C62:S, Division (naive): Raw 83 from Bi 0, pA=0.00e+00
+New Cluster C63:S, Division (naive): Raw 85 from Bi 0, pA=0.00e+00
+New Cluster C64:S, Division (naive): Raw 87 from Bi 0, pA=0.00e+00
+New Cluster C65:S, Division (naive): Raw 90 from Bi 0, pA=0.00e+00
+New Cluster C66:S, Division (naive): Raw 91 from Bi 0, pA=0.00e+00
+New Cluster C67:SS, Division (naive): Raw 92 from Bi 0, pA=0.00e+00
+New Cluster C68:SS, Division (naive): Raw 93 from Bi 0, pA=0.00e+00
+New Cluster C69:S, Division (naive): Raw 94 from Bi 0, pA=0.00e+00
+New Cluster C70:SS, Division (naive): Raw 95 from Bi 0, pA=0.00e+00
+New Cluster C71:S, Division (naive): Raw 96 from Bi 0, pA=0.00e+00
+New Cluster C72:S, Division (naive): Raw 97 from Bi 0, pA=0.00e+00
+New Cluster C73:S, Division (naive): Raw 101 from Bi 0, pA=0.00e+00
+New Cluster C74:SS, Division (naive): Raw 104 from Bi 0, pA=0.00e+00
+New Cluster C75:S, Division (naive): Raw 116 from Bi 0, pA=0.00e+00
+New Cluster C76:SS, Division (naive): Raw 121 from Bi 0, pA=0.00e+00
+New Cluster C77:S, Division (naive): Raw 122 from Bi 0, pA=0.00e+00
+New Cluster C78:SS, Division (naive): Raw 124 from Bi 0, pA=0.00e+00
+New Cluster C79:SS, Division (naive): Raw 127 from Bi 0, pA=0.00e+00
+New Cluster C80:SS, Division (naive): Raw 128 from Bi 0, pA=0.00e+00
+New Cluster C81:S, Division (naive): Raw 130 from Bi 0, pA=0.00e+00
+New Cluster C82:S, Division (naive): Raw 131 from Bi 0, pA=0.00e+00
+New Cluster C83:S, Division (naive): Raw 135 from Bi 0, pA=0.00e+00
+New Cluster C84:S, Division (naive): Raw 138 from Bi 0, pA=0.00e+00
+New Cluster C85:SS, Division (naive): Raw 143 from Bi 0, pA=0.00e+00
+New Cluster C86:SS, Division (naive): Raw 145 from Bi 0, pA=0.00e+00
+New Cluster C87:S, Division (naive): Raw 146 from Bi 0, pA=0.00e+00
+New Cluster C88:SS, Division (naive): Raw 148 from Bi 0, pA=0.00e+00
+New Cluster C89:S, Division (naive): Raw 150 from Bi 0, pA=0.00e+00
+New Cluster C90:SS, Division (naive): Raw 151 from Bi 0, pA=0.00e+00
+New Cluster C91:S, Division (naive): Raw 153 from Bi 0, pA=0.00e+00
+New Cluster C92:S, Division (naive): Raw 155 from Bi 0, pA=0.00e+00
+New Cluster C93:SS, Division (naive): Raw 160 from Bi 0, pA=0.00e+00
+New Cluster C94:SS, Division (naive): Raw 164 from Bi 0, pA=0.00e+00
+New Cluster C95:S, Division (naive): Raw 166 from Bi 0, pA=0.00e+00
+New Cluster C96:S, Division (naive): Raw 174 from Bi 0, pA=0.00e+00
+New Cluster C97:S, Division (naive): Raw 179 from Bi 0, pA=0.00e+00
+New Cluster C98:S, Division (naive): Raw 180 from Bi 0, pA=0.00e+00
+New Cluster C99:SS, Division (naive): Raw 183 from Bi 0, pA=0.00e+00
+New Cluster C100:S, Division (naive): Raw 184 from Bi 0, pA=0.00e+00
+New Cluster C101:S, Division (naive): Raw 185 from Bi 0, pA=0.00e+00
+New Cluster C102:S, Division (naive): Raw 189 from Bi 0, pA=0.00e+00
+New Cluster C103:S, Division (naive): Raw 37 from Bi 0, pA=1.35e-267
+New Cluster C104:SS, Division (naive): Raw 21 from Bi 4, pA=3.08e-249
+New Cluster C105:SS, Division (naive): Raw 47 from Bi 0, pA=9.71e-209
+New Cluster C106:S, Division (naive): Raw 88 from Bi 0, pA=4.72e-200
+New Cluster C107:SS, Division (naive): Raw 68 from Bi 0, pA=4.48e-176
+New Cluster C108:SS, Division (naive): Raw 113 from Bi 0, pA=5.43e-156
+New Cluster C109:S, Division (naive): Raw 162 from Bi 0, pA=8.89e-156
+New Cluster C110:SS, Division (naive): Raw 129 from Bi 0, pA=1.12e-155
+New Cluster C111:S, Division (naive): Raw 187 from Bi 0, pA=4.41e-154
+New Cluster C112:SS, Division (naive): Raw 147 from Bi 0, pA=2.99e-151
+New Cluster C113:S, Division (naive): Raw 106 from Bi 0, pA=1.27e-150
+New Cluster C114:SS, Division (naive): Raw 123 from Bi 0, pA=4.48e-148
+New Cluster C115:S, Division (naive): Raw 107 from Bi 0, pA=2.43e-147
+New Cluster C116:S, Division (naive): Raw 158 from Bi 0, pA=1.83e-143
+New Cluster C117:SS, Division (naive): Raw 115 from Bi 0, pA=8.54e-143
+New Cluster C118:SS, Division (naive): Raw 111 from Bi 0, pA=1.11e-142
+New Cluster C119:SS, Division (naive): Raw 110 from Bi 0, pA=2.74e-142
+New Cluster C120:S, Division (naive): Raw 112 from Bi 0, pA=1.99e-140
+New Cluster C121:S, Division (naive): Raw 136 from Bi 0, pA=1.30e-138
+New Cluster C122:S, Division (naive): Raw 157 from Bi 0, pA=4.38e-138
+New Cluster C123:SS, Division (naive): Raw 100 from Bi 0, pA=6.30e-138
+New Cluster C124:S, Division (naive): Raw 114 from Bi 0, pA=2.61e-136
+New Cluster C125:S, Division (naive): Raw 137 from Bi 0, pA=4.29e-135
+New Cluster C126:S, Division (naive): Raw 181 from Bi 0, pA=5.73e-134
+New Cluster C127:S, Division (naive): Raw 108 from Bi 0, pA=2.19e-133
+New Cluster C128:S, Division (naive): Raw 105 from Bi 0, pA=3.75e-133
+New Cluster C129:S, Division (naive): Raw 161 from Bi 0, pA=5.00e-131
+New Cluster C130:S, Division (naive): Raw 8 from Bi 1, pA=1.39e-128
+New Cluster C131:SS, Division (naive): Raw 169 from Bi 0, pA=5.02e-127
+New Cluster C132:SS, Division (naive): Raw 172 from Bi 0, pA=1.03e-126
+New Cluster C133:S, Division (naive): Raw 133 from Bi 0, pA=1.14e-124
+New Cluster C134:S, Division (naive): Raw 182 from Bi 0, pA=3.36e-124
+New Cluster C135:S, Division (naive): Raw 173 from Bi 0, pA=8.53e-117
+New Cluster C136:S, Division (naive): Raw 156 from Bi 0, pA=8.72e-116
+New Cluster C137:S, Division (naive): Raw 99 from Bi 0, pA=5.90e-59
+New Cluster C138:S, No Division. Minimum pA=7.06e-32 (Raw 18 w/ 22 reads in Bi 6).
+ALIGN: 84373 aligns, 0 shrouded (607 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 3 from Bi 2, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 6 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 8 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 19 from Bi 0, pA=0.00e+00
+New Cluster C6:S, Division (naive): Raw 33 from Bi 0, pA=0.00e+00
+New Cluster C7:S, Division (naive): Raw 65 from Bi 0, pA=4.19e-131
+New Cluster C8:S, Division (naive): Raw 32 from Bi 0, pA=4.05e-126
+New Cluster C9:S, Division (naive): Raw 62 from Bi 0, pA=4.28e-126
+New Cluster C10:S, Division (naive): Raw 31 from Bi 0, pA=8.18e-118
+New Cluster C11:SS, No Division. Minimum pA=2.73e-16 (Raw 64 w/ 2 reads in Bi 11).
+ALIGN: 3192 aligns, 0 shrouded (266 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 11 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 16 from Bi 0, pA=0.00e+00
+New Cluster C6:SS, Division (naive): Raw 17 from Bi 0, pA=0.00e+00
+New Cluster C7:S, Division (naive): Raw 39 from Bi 0, pA=5.03e-150
+New Cluster C8:S, Division (naive): Raw 41 from Bi 0, pA=6.02e-147
+New Cluster C9:S, Division (naive): Raw 40 from Bi 0, pA=1.39e-130
+New Cluster C10:S, Division (naive): Raw 65 from Bi 0, pA=3.09e-123
+New Cluster C11:S, No Division. Minimum pA=7.73e-39 (Raw 23 w/ 3 reads in Bi 4).
+ALIGN: 3468 aligns, 0 shrouded (289 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 3 from Bi 0, pA=1.17e-151
+New Cluster C2:S, No Division. Minimum pA=6.49e-02 (Raw 2 w/ 3 reads in Bi 0).
+ALIGN: 75 aligns, 0 shrouded (25 raw).
+, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C2:S, Division (naive): Raw 12 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 18 from Bi 0, pA=0.00e+00
+New Cluster C4:S, Division (naive): Raw 29 from Bi 0, pA=0.00e+00
+New Cluster C5:S, Division (naive): Raw 31 from Bi 0, pA=8.65e-154
+New Cluster C6:S, Division (naive): Raw 30 from Bi 0, pA=3.32e-148
+New Cluster C7:SS, No Division. Minimum pA=1.14e-12 (Raw 10 w/ 9 reads in Bi 0).
+ALIGN: 1800 aligns, 0 shrouded (225 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 31 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 42 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 84 from Bi 0, pA=0.00e+00
+New Cluster C5:S, Division (naive): Raw 99 from Bi 0, pA=0.00e+00
+New Cluster C6:SS, Division (naive): Raw 100 from Bi 0, pA=0.00e+00
+New Cluster C7:SS, Division (naive): Raw 329 from Bi 0, pA=1.53e-147
+New Cluster C8:SS, Division (naive): Raw 332 from Bi 0, pA=9.74e-137
+New Cluster C9:S, Division (naive): Raw 192 from Bi 0, pA=1.28e-132
+New Cluster C10:S, Division (naive): Raw 190 from Bi 0, pA=2.14e-130
+New Cluster C11:SS, No Division. Minimum pA=1.73e-34 (Raw 188 w/ 3 reads in Bi 6).
+ALIGN: 31392 aligns, 0 shrouded (2616 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 8 from Bi 0, pA=0.00e+00
+New Cluster C4:S, Division (naive): Raw 11 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 20 from Bi 0, pA=0.00e+00
+New Cluster C6:S, Division (naive): Raw 37 from Bi 0, pA=5.93e-144
+New Cluster C7:S, Division (naive): Raw 22 from Bi 0, pA=1.53e-143
+New Cluster C8:S, Division (naive): Raw 19 from Bi 0, pA=1.67e-142
+New Cluster C9:S, Division (naive): Raw 21 from Bi 0, pA=3.74e-86
+New Cluster C10:SSSS, No Division. Minimum pA=5.36e-10 (Raw 23 w/ 2 reads in Bi 10).
+ALIGN: 1936 aligns, 0 shrouded (176 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C2:S, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 6 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, No Division. Minimum pA=1.64e-02 (Raw 4 w/ 3 reads in Bi 0).
+ALIGN: 100 aligns, 0 shrouded (20 raw).
+
+   selfConsist step 3, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:S, Division (naive): Raw 10 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 11 from Bi 0, pA=1.29e-130
+New Cluster C4:S, No Division. Minimum pA=7.58e+00 (Raw 9 w/ 3 reads in Bi 0).
+ALIGN: 505 aligns, 0 shrouded (101 raw).
+, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:S, Division (naive): Raw 8 from Bi 0, pA=1.08e-152
+New Cluster C3:S, Division (naive): Raw 13 from Bi 0, pA=8.85e-114
+New Cluster C4:S, Division (naive): Raw 7 from Bi 0, pA=6.39e-104
+New Cluster C5:SS, No Division. Minimum pA=8.74e-01 (Raw 3 w/ 4 reads in Bi 0).
+ALIGN: 516 aligns, 0 shrouded (86 raw).
+, Division (naive): Raw 1 from Bi 0, pA=4.28e-131
+New Cluster C1:S, No Division. Minimum pA=4.28e+00 (Raw 3 w/ 2 reads in Bi 0).
+ALIGN: 40 aligns, 0 shrouded (20 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 3 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 6 from Bi 0, pA=0.00e+00
+New Cluster C6:SS, Division (naive): Raw 9 from Bi 0, pA=0.00e+00
+New Cluster C7:SS, Division (naive): Raw 10 from Bi 0, pA=0.00e+00
+New Cluster C8:SS, Division (naive): Raw 11 from Bi 0, pA=0.00e+00
+New Cluster C9:SS, Division (naive): Raw 12 from Bi 0, pA=0.00e+00
+New Cluster C10:SS, Division (naive): Raw 13 from Bi 0, pA=0.00e+00
+New Cluster C11:SS, Division (naive): Raw 15 from Bi 0, pA=0.00e+00
+New Cluster C12:SS, Division (naive): Raw 16 from Bi 0, pA=0.00e+00
+New Cluster C13:SS, Division (naive): Raw 17 from Bi 0, pA=0.00e+00
+New Cluster C14:SS, Division (naive): Raw 19 from Bi 0, pA=0.00e+00
+New Cluster C15:SS, Division (naive): Raw 22 from Bi 0, pA=0.00e+00
+New Cluster C16:S, Division (naive): Raw 23 from Bi 0, pA=0.00e+00
+New Cluster C17:S, Division (naive): Raw 24 from Bi 0, pA=0.00e+00
+New Cluster C18:SS, Division (naive): Raw 27 from Bi 0, pA=0.00e+00
+New Cluster C19:SS, Division (naive): Raw 28 from Bi 0, pA=0.00e+00
+New Cluster C20:SS, Division (naive): Raw 29 from Bi 0, pA=0.00e+00
+New Cluster C21:SS, Division (naive): Raw 30 from Bi 0, pA=0.00e+00
+New Cluster C22:S, Division (naive): Raw 31 from Bi 0, pA=0.00e+00
+New Cluster C23:SS, Division (naive): Raw 32 from Bi 0, pA=0.00e+00
+New Cluster C24:SS, Division (naive): Raw 33 from Bi 0, pA=0.00e+00
+New Cluster C25:S, Division (naive): Raw 34 from Bi 0, pA=0.00e+00
+New Cluster C26:SS, Division (naive): Raw 35 from Bi 0, pA=0.00e+00
+New Cluster C27:S, Division (naive): Raw 36 from Bi 0, pA=0.00e+00
+New Cluster C28:S, Division (naive): Raw 38 from Bi 0, pA=0.00e+00
+New Cluster C29:SS, Division (naive): Raw 39 from Bi 0, pA=0.00e+00
+New Cluster C30:SS, Division (naive): Raw 40 from Bi 0, pA=0.00e+00
+New Cluster C31:S, Division (naive): Raw 41 from Bi 0, pA=0.00e+00
+New Cluster C32:S, Division (naive): Raw 42 from Bi 0, pA=0.00e+00
+New Cluster C33:SS, Division (naive): Raw 43 from Bi 0, pA=0.00e+00
+New Cluster C34:S, Division (naive): Raw 44 from Bi 0, pA=0.00e+00
+New Cluster C35:S, Division (naive): Raw 45 from Bi 0, pA=0.00e+00
+New Cluster C36:SS, Division (naive): Raw 46 from Bi 0, pA=0.00e+00
+New Cluster C37:SS, Division (naive): Raw 49 from Bi 0, pA=0.00e+00
+New Cluster C38:S, Division (naive): Raw 50 from Bi 0, pA=0.00e+00
+New Cluster C39:SS, Division (naive): Raw 51 from Bi 0, pA=0.00e+00
+New Cluster C40:S, Division (naive): Raw 54 from Bi 0, pA=0.00e+00
+New Cluster C41:SS, Division (naive): Raw 55 from Bi 0, pA=0.00e+00
+New Cluster C42:S, Division (naive): Raw 56 from Bi 0, pA=0.00e+00
+New Cluster C43:SS, Division (naive): Raw 57 from Bi 0, pA=0.00e+00
+New Cluster C44:SS, Division (naive): Raw 59 from Bi 0, pA=0.00e+00
+New Cluster C45:SS, Division (naive): Raw 61 from Bi 0, pA=0.00e+00
+New Cluster C46:SS, Division (naive): Raw 62 from Bi 0, pA=0.00e+00
+New Cluster C47:SS, Division (naive): Raw 63 from Bi 0, pA=0.00e+00
+New Cluster C48:S, Division (naive): Raw 64 from Bi 0, pA=0.00e+00
+New Cluster C49:S, Division (naive): Raw 65 from Bi 0, pA=0.00e+00
+New Cluster C50:SS, Division (naive): Raw 66 from Bi 0, pA=0.00e+00
+New Cluster C51:SS, Division (naive): Raw 67 from Bi 0, pA=0.00e+00
+New Cluster C52:S, Division (naive): Raw 69 from Bi 0, pA=0.00e+00
+New Cluster C53:S, Division (naive): Raw 70 from Bi 0, pA=0.00e+00
+New Cluster C54:SS, Division (naive): Raw 73 from Bi 0, pA=0.00e+00
+New Cluster C55:S, Division (naive): Raw 74 from Bi 0, pA=0.00e+00
+New Cluster C56:S, Division (naive): Raw 75 from Bi 0, pA=0.00e+00
+New Cluster C57:SS, Division (naive): Raw 78 from Bi 0, pA=0.00e+00
+New Cluster C58:SS, Division (naive): Raw 79 from Bi 0, pA=0.00e+00
+New Cluster C59:SS, Division (naive): Raw 80 from Bi 0, pA=0.00e+00
+New Cluster C60:SS, Division (naive): Raw 81 from Bi 0, pA=0.00e+00
+New Cluster C61:S, Division (naive): Raw 82 from Bi 0, pA=0.00e+00
+New Cluster C62:S, Division (naive): Raw 83 from Bi 0, pA=0.00e+00
+New Cluster C63:S, Division (naive): Raw 85 from Bi 0, pA=0.00e+00
+New Cluster C64:S, Division (naive): Raw 87 from Bi 0, pA=0.00e+00
+New Cluster C65:S, Division (naive): Raw 90 from Bi 0, pA=0.00e+00
+New Cluster C66:S, Division (naive): Raw 91 from Bi 0, pA=0.00e+00
+New Cluster C67:SS, Division (naive): Raw 92 from Bi 0, pA=0.00e+00
+New Cluster C68:SS, Division (naive): Raw 93 from Bi 0, pA=0.00e+00
+New Cluster C69:S, Division (naive): Raw 94 from Bi 0, pA=0.00e+00
+New Cluster C70:SS, Division (naive): Raw 95 from Bi 0, pA=0.00e+00
+New Cluster C71:S, Division (naive): Raw 96 from Bi 0, pA=0.00e+00
+New Cluster C72:S, Division (naive): Raw 97 from Bi 0, pA=0.00e+00
+New Cluster C73:S, Division (naive): Raw 101 from Bi 0, pA=0.00e+00
+New Cluster C74:SS, Division (naive): Raw 104 from Bi 0, pA=0.00e+00
+New Cluster C75:S, Division (naive): Raw 116 from Bi 0, pA=0.00e+00
+New Cluster C76:SS, Division (naive): Raw 121 from Bi 0, pA=0.00e+00
+New Cluster C77:S, Division (naive): Raw 122 from Bi 0, pA=0.00e+00
+New Cluster C78:SS, Division (naive): Raw 124 from Bi 0, pA=0.00e+00
+New Cluster C79:SS, Division (naive): Raw 37 from Bi 0, pA=0.00e+00
+New Cluster C80:SS, Division (naive): Raw 127 from Bi 0, pA=0.00e+00
+New Cluster C81:SS, Division (naive): Raw 128 from Bi 0, pA=0.00e+00
+New Cluster C82:S, Division (naive): Raw 130 from Bi 0, pA=0.00e+00
+New Cluster C83:S, Division (naive): Raw 131 from Bi 0, pA=0.00e+00
+New Cluster C84:S, Division (naive): Raw 135 from Bi 0, pA=0.00e+00
+New Cluster C85:S, Division (naive): Raw 138 from Bi 0, pA=0.00e+00
+New Cluster C86:SS, Division (naive): Raw 143 from Bi 0, pA=0.00e+00
+New Cluster C87:SS, Division (naive): Raw 145 from Bi 0, pA=0.00e+00
+New Cluster C88:S, Division (naive): Raw 146 from Bi 0, pA=0.00e+00
+New Cluster C89:SS, Division (naive): Raw 148 from Bi 0, pA=0.00e+00
+New Cluster C90:S, Division (naive): Raw 150 from Bi 0, pA=0.00e+00
+New Cluster C91:SS, Division (naive): Raw 151 from Bi 0, pA=0.00e+00
+New Cluster C92:S, Division (naive): Raw 153 from Bi 0, pA=0.00e+00
+New Cluster C93:S, Division (naive): Raw 155 from Bi 0, pA=0.00e+00
+New Cluster C94:SS, Division (naive): Raw 160 from Bi 0, pA=0.00e+00
+New Cluster C95:SS, Division (naive): Raw 164 from Bi 0, pA=0.00e+00
+New Cluster C96:S, Division (naive): Raw 166 from Bi 0, pA=0.00e+00
+New Cluster C97:S, Division (naive): Raw 174 from Bi 0, pA=0.00e+00
+New Cluster C98:S, Division (naive): Raw 179 from Bi 0, pA=0.00e+00
+New Cluster C99:S, Division (naive): Raw 180 from Bi 0, pA=0.00e+00
+New Cluster C100:SS, Division (naive): Raw 183 from Bi 0, pA=0.00e+00
+New Cluster C101:S, Division (naive): Raw 184 from Bi 0, pA=0.00e+00
+New Cluster C102:S, Division (naive): Raw 185 from Bi 0, pA=0.00e+00
+New Cluster C103:S, Division (naive): Raw 189 from Bi 0, pA=0.00e+00
+New Cluster C104:S, Division (naive): Raw 21 from Bi 4, pA=7.81e-250
+New Cluster C105:SS, Division (naive): Raw 47 from Bi 0, pA=4.05e-209
+New Cluster C106:S, Division (naive): Raw 88 from Bi 0, pA=1.55e-200
+New Cluster C107:SS, Division (naive): Raw 68 from Bi 0, pA=2.42e-176
+New Cluster C108:SS, Division (naive): Raw 113 from Bi 0, pA=3.29e-156
+New Cluster C109:S, Division (naive): Raw 129 from Bi 0, pA=5.26e-156
+New Cluster C110:S, Division (naive): Raw 162 from Bi 0, pA=5.56e-156
+New Cluster C111:SS, Division (naive): Raw 187 from Bi 0, pA=2.19e-154
+New Cluster C112:SS, Division (naive): Raw 147 from Bi 0, pA=1.33e-151
+New Cluster C113:S, Division (naive): Raw 106 from Bi 0, pA=6.40e-151
+New Cluster C114:SS, Division (naive): Raw 123 from Bi 0, pA=2.81e-148
+New Cluster C115:S, Division (naive): Raw 107 from Bi 0, pA=9.93e-148
+New Cluster C116:S, Division (naive): Raw 158 from Bi 0, pA=9.34e-144
+New Cluster C117:SS, Division (naive): Raw 115 from Bi 0, pA=4.09e-143
+New Cluster C118:SS, Division (naive): Raw 111 from Bi 0, pA=6.09e-143
+New Cluster C119:SS, Division (naive): Raw 110 from Bi 0, pA=1.56e-142
+New Cluster C120:S, Division (naive): Raw 112 from Bi 0, pA=1.07e-140
+New Cluster C121:S, Division (naive): Raw 136 from Bi 0, pA=5.88e-139
+New Cluster C122:S, Division (naive): Raw 157 from Bi 0, pA=2.76e-138
+New Cluster C123:SS, Division (naive): Raw 100 from Bi 0, pA=3.70e-138
+New Cluster C124:S, Division (naive): Raw 114 from Bi 0, pA=1.49e-136
+New Cluster C125:S, Division (naive): Raw 137 from Bi 0, pA=2.66e-135
+New Cluster C126:S, Division (naive): Raw 181 from Bi 0, pA=3.68e-134
+New Cluster C127:S, Division (naive): Raw 108 from Bi 0, pA=1.44e-133
+New Cluster C128:S, Division (naive): Raw 105 from Bi 0, pA=2.57e-133
+New Cluster C129:S, Division (naive): Raw 161 from Bi 0, pA=2.85e-131
+New Cluster C130:S, Division (naive): Raw 8 from Bi 1, pA=3.16e-129
+New Cluster C131:SS, Division (naive): Raw 169 from Bi 0, pA=3.40e-127
+New Cluster C132:SS, Division (naive): Raw 172 from Bi 0, pA=6.14e-127
+New Cluster C133:S, Division (naive): Raw 133 from Bi 0, pA=6.28e-125
+New Cluster C134:S, Division (naive): Raw 182 from Bi 0, pA=1.88e-124
+New Cluster C135:S, Division (naive): Raw 173 from Bi 0, pA=4.70e-117
+New Cluster C136:S, Division (naive): Raw 156 from Bi 0, pA=6.64e-116
+New Cluster C137:S, Division (naive): Raw 99 from Bi 0, pA=3.94e-59
+New Cluster C138:S, No Division. Minimum pA=6.23e-32 (Raw 18 w/ 22 reads in Bi 6).
+ALIGN: 84373 aligns, 0 shrouded (607 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 3 from Bi 2, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 6 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 8 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 19 from Bi 0, pA=0.00e+00
+New Cluster C6:S, Division (naive): Raw 33 from Bi 0, pA=0.00e+00
+New Cluster C7:S, Division (naive): Raw 65 from Bi 0, pA=2.60e-131
+New Cluster C8:S, Division (naive): Raw 32 from Bi 0, pA=2.49e-126
+New Cluster C9:S, Division (naive): Raw 62 from Bi 0, pA=2.76e-126
+New Cluster C10:S, Division (naive): Raw 31 from Bi 0, pA=5.10e-118
+New Cluster C11:SS, No Division. Minimum pA=2.56e-16 (Raw 64 w/ 2 reads in Bi 11).
+ALIGN: 3192 aligns, 0 shrouded (266 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 11 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 16 from Bi 0, pA=0.00e+00
+New Cluster C6:SS, Division (naive): Raw 17 from Bi 0, pA=0.00e+00
+New Cluster C7:S, Division (naive): Raw 39 from Bi 0, pA=3.15e-150
+New Cluster C8:S, Division (naive): Raw 41 from Bi 0, pA=3.25e-147
+New Cluster C9:S, Division (naive): Raw 40 from Bi 0, pA=7.55e-131
+New Cluster C10:S, Division (naive): Raw 65 from Bi 0, pA=1.93e-123
+New Cluster C11:S, No Division. Minimum pA=4.70e-39 (Raw 23 w/ 3 reads in Bi 4).
+ALIGN: 3468 aligns, 0 shrouded (289 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 3 from Bi 0, pA=6.30e-152
+New Cluster C2:S, No Division. Minimum pA=6.58e-02 (Raw 2 w/ 3 reads in Bi 0).
+ALIGN: 75 aligns, 0 shrouded (25 raw).
+, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C2:S, Division (naive): Raw 12 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 18 from Bi 0, pA=0.00e+00
+New Cluster C4:S, Division (naive): Raw 29 from Bi 0, pA=0.00e+00
+New Cluster C5:S, Division (naive): Raw 31 from Bi 0, pA=5.54e-154
+New Cluster C6:S, Division (naive): Raw 30 from Bi 0, pA=1.91e-148
+New Cluster C7:SS, No Division. Minimum pA=1.15e-12 (Raw 10 w/ 9 reads in Bi 0).
+ALIGN: 1800 aligns, 0 shrouded (225 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 31 from Bi 0, pA=0.00e+00
+New Cluster C3:SS, Division (naive): Raw 42 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, Division (naive): Raw 84 from Bi 0, pA=0.00e+00
+New Cluster C5:S, Division (naive): Raw 99 from Bi 0, pA=0.00e+00
+New Cluster C6:SS, Division (naive): Raw 100 from Bi 0, pA=0.00e+00
+New Cluster C7:SS, Division (naive): Raw 329 from Bi 0, pA=1.29e-147
+New Cluster C8:SS, Division (naive): Raw 332 from Bi 0, pA=6.10e-137
+New Cluster C9:S, Division (naive): Raw 192 from Bi 0, pA=8.10e-133
+New Cluster C10:S, Division (naive): Raw 190 from Bi 0, pA=1.42e-130
+New Cluster C11:SS, No Division. Minimum pA=1.33e-34 (Raw 188 w/ 3 reads in Bi 6).
+ALIGN: 31392 aligns, 0 shrouded (2616 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 4 from Bi 0, pA=0.00e+00
+New Cluster C2:SS, Division (naive): Raw 7 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 8 from Bi 0, pA=0.00e+00
+New Cluster C4:S, Division (naive): Raw 11 from Bi 0, pA=0.00e+00
+New Cluster C5:SS, Division (naive): Raw 20 from Bi 0, pA=0.00e+00
+New Cluster C6:S, Division (naive): Raw 37 from Bi 0, pA=3.82e-144
+New Cluster C7:S, Division (naive): Raw 22 from Bi 0, pA=8.46e-144
+New Cluster C8:S, Division (naive): Raw 19 from Bi 0, pA=1.09e-142
+New Cluster C9:S, Division (naive): Raw 21 from Bi 0, pA=2.81e-86
+New Cluster C10:SSSS, No Division. Minimum pA=5.36e-10 (Raw 23 w/ 2 reads in Bi 10).
+ALIGN: 1936 aligns, 0 shrouded (176 raw).
+, Division (naive): Raw 1 from Bi 0, pA=0.00e+00
+New Cluster C1:SS, Division (naive): Raw 2 from Bi 0, pA=0.00e+00
+New Cluster C2:S, Division (naive): Raw 5 from Bi 0, pA=0.00e+00
+New Cluster C3:S, Division (naive): Raw 6 from Bi 0, pA=0.00e+00
+New Cluster C4:SS, No Division. Minimum pA=1.64e-02 (Raw 4 w/ 3 reads in Bi 0).
+ALIGN: 100 aligns, 0 shrouded (20 raw).
+
+Convergence after  3  rounds.
+null device 
+          1 
+null device 
+          1 
+[1] "starting dada2 for forward reads..."
+selfConsist step 1 ...........
+   selfConsist step 2
+   selfConsist step 3
+Convergence after  3  rounds.
+[1] "starting dada2 for reverse reads..."
+selfConsist step 1 ...........
+   selfConsist step 2
+   selfConsist step 3
+   selfConsist step 4
+Convergence after  4  rounds.
+[1] "merging paird ends..."
+[1] "generating sequence table..."
+[1] "Number of sequences in table"
+[1]  11 204
+
+ 75  86  91  98 102 114 121 126 139 143 144 157 158 161 164 167 171 172 176 177 
+  1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 
+185 186 188 189 192 197 207 208 209 210 218 243 244 245 246 247 248 249 250 251 
+  1   1   1   1   1   1   1   1   1   1   1   1   1   1   6  22   8   5  10   6 
+253 254 255 262 263 264 265 266 267 268 272 286 287 
+  1   1   2   2   3  11  28  31  24   6   2   1   1 
+[1] "identifying bimeric sequences..."
+[1] "Number of non-bimeric sequences:"
+[1] 194
+[1] "Percentage of reads which are non-bimeric:"
+[1] 0.9960791
+null device 
+          1 
+null device 
+          1 
+      [,1]
+ [1,]  0.7
+ [2,]  1.9
+ [3,]  3.1
+ [4,]  4.3
+ [5,]  5.5
+ [6,]  6.7
+ [7,]  7.9
+ [8,]  9.1
+ [9,] 10.3
+[10,] 11.5
+[11,] 12.7
+[12,] 13.9
+[13,] 15.1
+[14,] 16.3
+[15,] 17.5
+[16,] 18.7
+[17,] 19.9
+[18,] 21.1
+[19,] 22.3
+[20,] 23.5
+[21,] 24.7
+[22,] 25.9
+[23,] 27.1
+[24,] 28.3
+[25,] 29.5
+[26,] 30.7
+[27,] 31.9
+[28,] 33.1
+[29,] 34.3
+[30,] 35.5
+[31,] 36.7
+[32,] 37.9
+[33,] 39.1
+[34,] 40.3
+[35,] 41.5
+[36,] 42.7
+[37,] 43.9
+[38,] 45.1
+[39,] 46.3
+[40,] 47.5
+[41,] 48.7
+[42,] 49.9
+[43,] 51.1
+[44,] 52.3
+[45,] 53.5
+[46,] 54.7
+[47,] 55.9
+[48,] 57.1
+[49,] 58.3
+[50,] 59.5
+[51,] 60.7
+[52,] 61.9
+[53,] 63.1
+null device 
+          1 
+[1] "--save_run not found or empty. skip saving Rdata image to a file"
+['Rscript', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Code/runDADA2.R', '-p', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_NOP/mixed_nop_prim_meta.tsv', '-r', '/Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini', '-d', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_NOP', '-o', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_NOP/seqtab.tsv', '-c', 'parasite', '-ee', '5,5', '-tR', '0,0', '-mL', '30', '-tQ', '5,5', '-id', '0', '-mC', '10', '-wA', '1e-120', '-jC', '1', '-mM', '0', '-s', '', '-b', 'Data/barcodes_matches.csv', '--bimera']

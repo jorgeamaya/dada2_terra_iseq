@@ -405,16 +405,25 @@ def convert_seqtab(file, cigars, out):
 		f.readline()
 		for line in f:
 			line = line.strip().split("\t")
+			if line[0].endswith("_1.fq.gz"):
+				continue 
 			sample = line[0]
 			seqtab[sample] = {}
 			# iterate through each ASV (i.e. ASV1, ASV2, ... ASVn)
+			print(line)
 			for i, count in enumerate(line[1:]):
 				asv = f"ASV{i+1}" # don't use actual sequence
 				variant = asv_to_cigar.get(asv)
 				if not variant:
 					continue # ASV was filtered out
 				# sum ASVs per sample that are the same variant
-				count = int(count)
+				#count = int(count)
+				print("Count")
+				print(count)
+				type(count)
+				if count == '':
+					count = '0.0'
+				count = float(count)
 				if variant not in total_reads:
 					total_reads[variant] = 0
 				total_reads[variant] += count

@@ -191,6 +191,7 @@ if (file.exists(seqfile)) {
 	#from the sequence of the ASVs to happlotype ids of the form ASV1, ASV2, ASV3, ...
 	
 	## ASV summary table
+	seqtab_haps[is.na(seqtab_haps)] = 0 
 	total_reads <- apply(seqtab_haps,2,sum) #Sum column wise to obtain the total number of occurrences of each ASV across samples
 	total_samples <- apply(seqtab_haps,2,function(x) sum(x != 0)) #Obtain the total number of samples/rows in which the ASV is present.
 	asvdf <- data.frame(hapid = hapid, #hapid in the ASV1, ASV2, ASV3, ... form.

@@ -1,0 +1,120 @@
+Loading required package: dada2
+Loading required package: Rcpp
+Loading required package: limma
+Loading required package: data.table
+Warning message:
+package ‘data.table’ was built under R version 3.6.3 
+Loading required package: argparse
+Warning message:
+package ‘argparse’ was built under R version 3.6.3 
+Loading required package: viridis
+Loading required package: viridisLite
+Warning message:
+package ‘viridisLite’ was built under R version 3.6.3 
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Scale for 'y' is already present. Adding another scale for 'y', which will
+replace the existing scale.
+Creating output directory: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered
+Warning messages:
+1: Transformation introduced infinite values in continuous y-axis 
+2: Transformation introduced infinite values in continuous y-axis 
+Warning messages:
+1: Transformation introduced infinite values in continuous y-axis 
+2: Transformation introduced infinite values in continuous y-axis 
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/SP011228685510c_S104_filt_R1.fastq.gz
+Encountered 5 unique sequences from 116 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/625E110KA210c_S145_filt_R1.fastq.gz
+Encountered 160 unique sequences from 7274 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/SP011228685410c_S105_filt_R1.fastq.gz
+Encountered 9 unique sequences from 164 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/SP011228685210c_S106_filt_R1.fastq.gz
+Encountered 60 unique sequences from 1775 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/5KB25KB110c_S110_filt_R1.fastq.gz
+Encountered 243 unique sequences from 15118 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/625E25KB110c_S146_filt_R1.fastq.gz
+Encountered 72 unique sequences from 2957 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/5KB110KA210c_S109_filt_R1.fastq.gz
+Encountered 186 unique sequences from 12505 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/1000BC10c_S100_filt_R1.fastq.gz
+Encountered 109 unique sequences from 4929 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/SP011228651210c_S191_filt_R1.fastq.gz
+Encountered 49 unique sequences from 2078 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/15C10c_S171_filt_R1.fastq.gz
+Encountered 155 unique sequences from 592 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/SP011228685010c_S127_filt_R1.fastq.gz
+Encountered 3 unique sequences from 72 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/SP011228685510c_S104_filt_R2.fastq.gz
+Encountered 7 unique sequences from 116 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/625E110KA210c_S145_filt_R2.fastq.gz
+Encountered 168 unique sequences from 7274 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/SP011228685410c_S105_filt_R2.fastq.gz
+Encountered 8 unique sequences from 164 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/SP011228685210c_S106_filt_R2.fastq.gz
+Encountered 47 unique sequences from 1775 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/5KB25KB110c_S110_filt_R2.fastq.gz
+Encountered 1597 unique sequences from 15118 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/625E25KB110c_S146_filt_R2.fastq.gz
+Encountered 96 unique sequences from 2957 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/5KB110KA210c_S109_filt_R2.fastq.gz
+Encountered 182 unique sequences from 12505 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/1000BC10c_S100_filt_R2.fastq.gz
+Encountered 177 unique sequences from 4929 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/SP011228651210c_S191_filt_R2.fastq.gz
+Encountered 66 unique sequences from 2078 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/15C10c_S171_filt_R2.fastq.gz
+Encountered 167 unique sequences from 592 total sequences read.
+Dereplicating sequence entries in Fastq file: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/DADA2_OP/filtered/SP011228685010c_S127_filt_R2.fastq.gz
+Encountered 6 unique sequences from 72 total sequences read.
+115 paired-reads (in 1 unique pairings) successfully merged out of 115 (in 1 pairings) input.
+7264 paired-reads (in 2 unique pairings) successfully merged out of 7264 (in 2 pairings) input.
+163 paired-reads (in 1 unique pairings) successfully merged out of 163 (in 1 pairings) input.
+1774 paired-reads (in 1 unique pairings) successfully merged out of 1774 (in 1 pairings) input.
+15106 paired-reads (in 1 unique pairings) successfully merged out of 15106 (in 1 pairings) input.
+2953 paired-reads (in 1 unique pairings) successfully merged out of 2953 (in 1 pairings) input.
+12502 paired-reads (in 1 unique pairings) successfully merged out of 12502 (in 1 pairings) input.
+4886 paired-reads (in 3 unique pairings) successfully merged out of 4925 (in 5 pairings) input.
+2078 paired-reads (in 1 unique pairings) successfully merged out of 2078 (in 1 pairings) input.
+380 paired-reads (in 14 unique pairings) successfully merged out of 491 (in 34 pairings) input.
+72 paired-reads (in 1 unique pairings) successfully merged out of 72 (in 1 pairings) input.
+Identified 1 bimeras out of 17 input sequences.

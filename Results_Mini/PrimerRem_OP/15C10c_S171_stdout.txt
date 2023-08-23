@@ -1,0 +1,50 @@
+This is cutadapt 3.4 with Python 3.7.10
+Command line parameters: -g file:Data/primers_overlap_fw.fasta -G file:Data/primers_overlap_rv.fasta -o /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/15C10c_S171_mixed_op_1.fq.gz -p /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/15C10c_S171_mixed_op_2.fq.gz --pair-adapters --action=trim --untrimmed-output /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/15C10c_S171_temp_1.fq.gz --untrimmed-paired-output /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/15C10c_S171_temp_2.fq.gz /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/AdaptorRem/15C10c_S171_val_1.fq.gz /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/AdaptorRem/15C10c_S171_val_2.fq.gz
+Processing reads on 1 core in paired-end mode ...
+Finished in 0.20 s (10 µs/read; 5.86 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:             19,381
+  Read 1 with adapter:                   1,400 (7.2%)
+  Read 2 with adapter:                   1,400 (7.2%)
+Pairs written (passing filters):         1,400 (7.2%)
+
+Total basepairs processed:     3,381,187 bp
+  Read 1:     1,687,906 bp
+  Read 2:     1,693,281 bp
+Total written (filtered):        171,381 bp (5.1%)
+  Read 1:        85,247 bp
+  Read 2:        86,134 bp
+
+=== First read: Adapter AMA1 ===
+
+Sequence: CCATCAGGGAAATGTCCAGT; Type: regular 5'; Length: 20; Trimmed: 1400 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+18	2	0.0	1	0 0 2
+19	40	0.0	1	2 21 17
+20	729	0.0	2	335 223 171
+21	577	0.0	2	0 24 553
+22	52	0.0	2	0 0 52
+
+
+=== Second read: Adapter AMA1 ===
+
+Sequence: TTTCCTGCATGTCTTGAACA; Type: regular 5'; Length: 20; Trimmed: 1400 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+18	5	0.0	1	0 0 5
+19	276	0.0	1	1 129 146
+20	1089	0.0	2	351 724 14
+21	11	0.0	2	1 9 1
+22	19	0.0	2	0 0 19
+['cutadapt', '-g', 'file:Data/primers_overlap_fw.fasta', '-G', 'file:Data/primers_overlap_rv.fasta', '-o', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/15C10c_S171_mixed_op_1.fq.gz', '-p', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/15C10c_S171_mixed_op_2.fq.gz', '--pair-adapters', '--action=trim', '--untrimmed-output', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/15C10c_S171_temp_1.fq.gz', '--untrimmed-paired-output', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/15C10c_S171_temp_2.fq.gz', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/AdaptorRem/15C10c_S171_val_1.fq.gz', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/AdaptorRem/15C10c_S171_val_2.fq.gz']

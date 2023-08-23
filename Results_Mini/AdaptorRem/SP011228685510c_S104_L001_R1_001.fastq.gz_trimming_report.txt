@@ -1,0 +1,73 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/SP011228685510c_S104_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.6
+Cutadapt version: 3.4
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 5
+Quality encoding type selected: ASCII+33
+Using Nextera adapter for trimming (count: 554). Second best hit was smallRNA (count: 0)
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Output file will be GZIP compressed
+
+
+This is cutadapt 3.4 with Python 3.7.10
+Command line parameters: -j 1 -e 0.1 -q 5 -O 1 -a CTGTCTCTTATA /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/SP011228685510c_S104_L001_R1_001.fastq.gz
+Processing reads on 1 core in single-end mode ...
+Finished in 0.01 s (10 µs/read; 6.26 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                     932
+Reads with adapters:                       916 (98.3%)
+Reads written (passing filters):           932 (100.0%)
+
+Total basepairs processed:       140,732 bp
+Quality-trimmed:                       0 bp (0.0%)
+Total written (filtered):         81,439 bp (57.9%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 916 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 0.0%
+  C: 0.5%
+  G: 63.0%
+  T: 36.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	352	233.0	0	352
+21	1	0.0	1	1
+31	1	0.0	1	1
+75	2	0.0	1	2
+81	1	0.0	1	1
+91	2	0.0	1	2
+93	1	0.0	1	1
+94	62	0.0	1	62
+95	137	0.0	1	133 4
+96	11	0.0	1	10 1
+97	44	0.0	1	42 2
+98	4	0.0	1	4
+100	8	0.0	1	8
+101	5	0.0	1	5
+107	1	0.0	1	1
+114	268	0.0	1	265 3
+115	14	0.0	1	14
+119	1	0.0	1	1
+131	1	0.0	1	1
+
+RUN STATISTICS FOR INPUT FILE: /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/SP011228685510c_S104_L001_R1_001.fastq.gz
+=============================================
+932 sequences processed in total
+

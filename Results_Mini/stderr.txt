@@ -1,0 +1,138 @@
+Loading required package: argparse
+Warning message:
+package ‘argparse’ was built under R version 3.6.3 
+Loading required package: limma
+Loading required package: data.table
+Warning message:
+package ‘data.table’ was built under R version 3.6.3 
+Loading required package: stringr
+Loading required package: seqinr
+
+Attaching package: ‘seqinr’
+
+The following object is masked from ‘package:limma’:
+
+    zscore
+
+Warning message:
+package ‘seqinr’ was built under R version 3.6.3 
+Loading required package: parallel
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Warning messages:
+1: package ‘doMC’ was built under R version 3.6.3 
+2: package ‘foreach’ was built under R version 3.6.3 
+3: package ‘iterators’ was built under R version 3.6.3 
+Loading required package: Biostrings
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following object is masked from ‘package:limma’:
+
+    plotMA
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:seqinr’:
+
+    translate
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+
+MUSCLE v3.8.1551 by Robert C. Edgar
+
+http://www.drive5.com/muscle
+This software is donated to the public domain.
+Please cite: Edgar, R.C. Nucleic Acids Res 32(5), 1792-97.
+
+PfAMA_1 5 seqs, lengths min 196, max 196, avg 196
+00:00:00      3 MB(0%)  Iter   1    6.67%  K-mer dist pass 100:00:00      3 MB(0%)  Iter   1  100.00%  K-mer dist pass 1
+00:00:00      3 MB(0%)  Iter   1    6.67%  K-mer dist pass 200:00:00      3 MB(0%)  Iter   1  100.00%  K-mer dist pass 2
+00:00:00      4 MB(0%)  Iter   1   25.00%  Align node       00:00:00      4 MB(0%)  Iter   1   50.00%  Align node00:00:00      4 MB(0%)  Iter   1   75.00%  Align node00:00:00      4 MB(0%)  Iter   1  100.00%  Align node00:00:00      4 MB(0%)  Iter   1  100.00%  Align node
+00:00:00      4 MB(0%)  Iter   1   20.00%  Root alignment00:00:00      4 MB(0%)  Iter   1   40.00%  Root alignment00:00:00      4 MB(0%)  Iter   1   60.00%  Root alignment00:00:00      4 MB(0%)  Iter   1   80.00%  Root alignment00:00:00      4 MB(0%)  Iter   1  100.00%  Root alignment00:00:00      4 MB(0%)  Iter   1  100.00%  Root alignment
+00:00:00      4 MB(0%)  Iter   2  100.00%  Root alignment
+00:00:00      4 MB(0%)  Iter   3   28.57%  Refine biparts00:00:00      4 MB(0%)  Iter   3   42.86%  Refine biparts00:00:00      4 MB(0%)  Iter   3   57.14%  Refine biparts00:00:00      4 MB(0%)  Iter   3   71.43%  Refine biparts00:00:00      4 MB(0%)  Iter   3   85.71%  Refine biparts00:00:00      4 MB(0%)  Iter   3  100.00%  Refine biparts00:00:00      4 MB(0%)  Iter   3  114.29%  Refine biparts00:00:00      4 MB(0%)  Iter   3  100.00%  Refine biparts
+
+MUSCLE v3.8.1551 by Robert C. Edgar
+
+http://www.drive5.com/muscle
+This software is donated to the public domain.
+Please cite: Edgar, R.C. Nucleic Acids Res 32(5), 1792-97.
+
+PfCSP_1 5 seqs, lengths min 247, max 288, avg 258
+00:00:00      3 MB(0%)  Iter   1    6.67%  K-mer dist pass 100:00:00      3 MB(0%)  Iter   1  100.00%  K-mer dist pass 1
+00:00:00      3 MB(0%)  Iter   1    6.67%  K-mer dist pass 200:00:00      3 MB(0%)  Iter   1  100.00%  K-mer dist pass 2
+00:00:00      4 MB(0%)  Iter   1   25.00%  Align node       00:00:00      4 MB(0%)  Iter   1   50.00%  Align node00:00:00      4 MB(0%)  Iter   1   75.00%  Align node00:00:00      4 MB(0%)  Iter   1  100.00%  Align node00:00:00      5 MB(0%)  Iter   1  100.00%  Align node
+00:00:00      5 MB(0%)  Iter   1   20.00%  Root alignment00:00:00      5 MB(0%)  Iter   1   40.00%  Root alignment00:00:00      5 MB(0%)  Iter   1   60.00%  Root alignment00:00:00      5 MB(0%)  Iter   1   80.00%  Root alignment00:00:00      5 MB(0%)  Iter   1  100.00%  Root alignment00:00:00      5 MB(0%)  Iter   1  100.00%  Root alignment
+00:00:00      5 MB(0%)  Iter   2   33.33%  Refine tree   00:00:00      5 MB(0%)  Iter   2   66.67%  Refine tree00:00:00      5 MB(0%)  Iter   2  100.00%  Refine tree00:00:00      5 MB(0%)  Iter   2  133.33%  Refine tree00:00:00      5 MB(0%)  Iter   2  100.00%  Refine tree
+00:00:00      5 MB(0%)  Iter   2   20.00%  Root alignment00:00:00      5 MB(0%)  Iter   2   40.00%  Root alignment00:00:00      5 MB(0%)  Iter   2   60.00%  Root alignment00:00:00      5 MB(0%)  Iter   2   80.00%  Root alignment00:00:00      5 MB(0%)  Iter   2  100.00%  Root alignment00:00:00      5 MB(0%)  Iter   2  100.00%  Root alignment
+00:00:00      5 MB(0%)  Iter   2  100.00%  Root alignment
+00:00:00      5 MB(0%)  Iter   3   28.57%  Refine biparts00:00:00      5 MB(0%)  Iter   3   42.86%  Refine biparts00:00:00      5 MB(0%)  Iter   3   57.14%  Refine biparts00:00:00      5 MB(0%)  Iter   3   71.43%  Refine biparts00:00:00      5 MB(0%)  Iter   3   85.71%  Refine biparts00:00:00      5 MB(0%)  Iter   3  100.00%  Refine biparts00:00:00      5 MB(0%)  Iter   3  114.29%  Refine biparts00:00:00      5 MB(0%)  Iter   3  100.00%  Refine biparts
+
+MUSCLE v3.8.1551 by Robert C. Edgar
+
+http://www.drive5.com/muscle
+This software is donated to the public domain.
+Please cite: Edgar, R.C. Nucleic Acids Res 32(5), 1792-97.
+
+PfTRAP_1 2 seqs, lengths min 255, max 320, avg 287
+00:00:00      3 MB(0%)  Iter   1   33.33%  K-mer dist pass 100:00:00      3 MB(0%)  Iter   1  100.00%  K-mer dist pass 1
+00:00:00      3 MB(0%)  Iter   1   33.33%  K-mer dist pass 200:00:00      3 MB(0%)  Iter   1  100.00%  K-mer dist pass 2
+00:00:00      3 MB(0%)  Iter   1  100.00%  Align node       00:00:00      4 MB(0%)  Iter   1  100.00%  Align node
+00:00:00      4 MB(0%)  Iter   1   50.00%  Root alignment00:00:00      4 MB(0%)  Iter   1  100.00%  Root alignment00:00:00      4 MB(0%)  Iter   1  100.00%  Root alignment
+INFO: Loading Data/pf3d7_ref_updated_v4.fasta
+INFO: Parsing /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PostProc_DADA2/ASVTable.txt with total reads >= 0, samples >= 0, snv_dist <= -1, indel_dist <= -1
+INFO: Excluding ASVs that failed post-DADA2 filters.
+INFO: Writing amplicon fasta files to /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/ASV_to_CIGAR/alingments
+INFO: Running MUSCLE aligner on amplicon fasta files. Please wait...
+INFO: Parsing alignments to CIGAR strings
+INFO: Wrote ASV->CIGAR table to /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/ASV_to_CIGAR/ASV_to_CIGAR.out.txt
+INFO: Converting DADA2 seqtab file /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/seqtab_mixed.tsv to /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/CIGARVariants_Bfilter.out.tsv
+INFO: Completed successfully!

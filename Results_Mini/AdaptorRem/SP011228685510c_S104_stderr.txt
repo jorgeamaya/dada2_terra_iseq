@@ -1,0 +1,207 @@
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt version: 3.4
+single-core operation.
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Output will be written into the directory: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/AdaptorRem/
+Using user-specified basename (>>SP011228685510c_S104<<) instead of deriving the filename from the input file(s)
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/SP011228685510c_S104_L001_R1_001.fastq.gz <<)
+
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Nextera	554	CTGTCTCTTATA	932	59.44
+smallRNA	0	TGGAATTCTCGG	932	0.00
+Illumina	0	AGATCGGAAGAGC	932	0.00
+Using Nextera adapter for trimming (count: 554). Second best hit was smallRNA (count: 0)
+
+Writing report to '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/AdaptorRem/SP011228685510c_S104_L001_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/SP011228685510c_S104_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.6
+Cutadapt version: 3.4
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 5
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 3.4). Setting -j 1
+Writing final adapter and quality trimmed output to SP011228685510c_S104_L001_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 5') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/SP011228685510c_S104_L001_R1_001.fastq.gz <<< 
+This is cutadapt 3.4 with Python 3.7.10
+Command line parameters: -j 1 -e 0.1 -q 5 -O 1 -a CTGTCTCTTATA /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/SP011228685510c_S104_L001_R1_001.fastq.gz
+Processing reads on 1 core in single-end mode ...
+Finished in 0.01 s (10 µs/read; 6.26 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                     932
+Reads with adapters:                       916 (98.3%)
+Reads written (passing filters):           932 (100.0%)
+
+Total basepairs processed:       140,732 bp
+Quality-trimmed:                       0 bp (0.0%)
+Total written (filtered):         81,439 bp (57.9%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 916 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 0.0%
+  C: 0.5%
+  G: 63.0%
+  T: 36.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	352	233.0	0	352
+21	1	0.0	1	1
+31	1	0.0	1	1
+75	2	0.0	1	2
+81	1	0.0	1	1
+91	2	0.0	1	2
+93	1	0.0	1	1
+94	62	0.0	1	62
+95	137	0.0	1	133 4
+96	11	0.0	1	10 1
+97	44	0.0	1	42 2
+98	4	0.0	1	4
+100	8	0.0	1	8
+101	5	0.0	1	5
+107	1	0.0	1	1
+114	268	0.0	1	265 3
+115	14	0.0	1	14
+119	1	0.0	1	1
+131	1	0.0	1	1
+
+RUN STATISTICS FOR INPUT FILE: /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/SP011228685510c_S104_L001_R1_001.fastq.gz
+=============================================
+932 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/AdaptorRem/SP011228685510c_S104_L001_R2_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/SP011228685510c_S104_L001_R2_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.6
+Cutadapt version: 3.4
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 5
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 3.4). Setting -j -j 1
+Writing final adapter and quality trimmed output to SP011228685510c_S104_L001_R2_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 5') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/SP011228685510c_S104_L001_R2_001.fastq.gz <<< 
+This is cutadapt 3.4 with Python 3.7.10
+Command line parameters: -j 1 -e 0.1 -q 5 -O 1 -a CTGTCTCTTATA /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/SP011228685510c_S104_L001_R2_001.fastq.gz
+Processing reads on 1 core in single-end mode ...
+Finished in 0.01 s (9 µs/read; 6.64 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                     932
+Reads with adapters:                       565 (60.6%)
+Reads written (passing filters):           932 (100.0%)
+
+Total basepairs processed:       140,732 bp
+Quality-trimmed:                       0 bp (0.0%)
+Total written (filtered):         81,998 bp (58.3%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 565 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 0.0%
+  C: 0.4%
+  G: 0.2%
+  T: 99.5%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "T" extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	3	233.0	0	3
+21	1	0.0	1	1
+31	1	0.0	1	1
+75	2	0.0	1	2
+81	1	0.0	1	1
+91	2	0.0	1	2
+93	1	0.0	1	1
+94	62	0.0	1	60 2
+95	137	0.0	1	135 2
+96	10	0.0	1	10
+97	44	0.0	1	44
+98	4	0.0	1	4
+100	8	0.0	1	8
+101	5	0.0	1	5
+107	1	0.0	1	1
+114	267	0.0	1	264 3
+115	14	0.0	1	14
+119	1	0.0	1	1
+131	1	0.0	1	1
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+
+RUN STATISTICS FOR INPUT FILE: /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/SP011228685510c_S104_L001_R2_001.fastq.gz
+=============================================
+932 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files SP011228685510c_S104_L001_R1_001_trimmed.fq.gz and SP011228685510c_S104_L001_R2_001_trimmed.fq.gz
+Now renaming the output files
+
+ORIGINAL FILE 1: >>SP011228685510c_S104_L001_R1_001_trimmed.fq.gz<<	RENAMING TO:>>SP011228685510c_S104_R1_trimmed.fq.gz<<
+ORIGINAL FILE 2: >>SP011228685510c_S104_L001_R2_001_trimmed.fq.gz<<	RENAMING TO:>>SP011228685510c_S104_R2_trimmed.fq.gz<<
+file_1: SP011228685510c_S104_R1_trimmed.fq.gz, file_2: SP011228685510c_S104_R2_trimmed.fq.gz
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: SP011228685510c_S104_R1_trimmed.fq.gz and SP011228685510c_S104_R2_trimmed.fq.gz <<<<<
+Renaming the output files (AGAIN).
+Writing validated paired-end Read 1 reads to SP011228685510c_S104_val_1.fq.gz
+Writing validated paired-end Read 2 reads to SP011228685510c_S104_val_2.fq.gz
+
+Total number of sequences analysed: 932
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 0 (0.00%)
+
+Deleting both intermediate output files SP011228685510c_S104_R1_trimmed.fq.gz and SP011228685510c_S104_R2_trimmed.fq.gz
+
+====================================================================================================
+

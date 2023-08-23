@@ -1,0 +1,51 @@
+Watermark 3
+Meta file will be generated at /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/Fq_metadata/rawfilelist.tsv
+Meta file generated at /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/Fq_metadata/rawfilelist.tsv
+Meta file will be generated at /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/AdaptorRem/adaptorrem_meta.tsv
+Meta file generated at /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/AdaptorRem/adaptorrem_meta.tsv
+BARCODE - Watermark 3
+Entered loop
+/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results
+MADE PRIMERREM DIRECTORIES AND META FILE
+Meta file will be generated at /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/mixed_op_prim_meta.tsv
+Meta file generated at /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/mixed_op_prim_meta.tsv
+Meta file will be generated at /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/mixed_temp_meta.tsv
+Meta file generated at /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_OP/mixed_temp_meta.tsv
+Meta file will be generated at /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_NOP/mixed_nop_prim_meta.tsv
+Meta file generated at /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PrimerRem_NOP/mixed_nop_prim_meta.tsv
+[1] "Running postProc with reference."
+[1] "Running postProc with second reference."
+[1] "#Produce the asvdf and seqs_df"
+[1] "no reference"
+[1] "After SNV filter"
+[1] "After Indel Filter"
+[1] "bimera"
+PLACEHOLDER1: Watermark 3
+PLACEHOLDER2
+PLACEHOLDER3
+PLACEHOLDER4
+['Rscript', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Code/postProc_dada2.R', '-s', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/seqtab_mixed.tsv', '-b', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/ASVBimeras.txt', '-snv', 'Data/snv_filters.txt', '--indel_filter', '0.895', '-o', '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PostProc_DADA2/ASVTable.txt', '--fasta', '--parallel', '--reference', 'Data/pf3d7_ref_updated_v4.fasta', '--strain', '3D7', '--reference2', 'Data/pfdd2_ref_updated_v3.fasta', '--strain2', 'DD2']
+PLACEHOLDER5
+PLACEHOLDER6
+PLACEHOLDER7
+PLACEHOLDER7
+INFO: Loading /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/PostProc_DADA2/ASVSeqs.fasta
+PLACEHOLDER 8
+PLACEHOLDER 9
+PLACEHOLDER 10
+PLACEHOLDER 11
+PLACEHOLDER 12
+{'PfAMA_1': ['ASV2', 'ASV3', 'ASV4', 'ASV5'], 'PfCSP_1': ['ASV41', 'ASV64', 'ASV204', 'ASV206'], 'PfTRAP_1': ['ASV158']}
+PfAMA_1
+/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/ASV_to_CIGAR/alingments/PfAMA_1.fasta
+/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/ASV_to_CIGAR/alingments/PfAMA_1.msa
+PfCSP_1
+/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/ASV_to_CIGAR/alingments/PfCSP_1.fasta
+/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/ASV_to_CIGAR/alingments/PfCSP_1.msa
+PfTRAP_1
+/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/ASV_to_CIGAR/alingments/PfTRAP_1.fasta
+/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/ASV_to_CIGAR/alingments/PfTRAP_1.msa
+PLACEHOLDER 13
+PLACEHOLDER 14
+PLACEHOLDER 15
+PLACEHOLDER 16

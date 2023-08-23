@@ -1,0 +1,259 @@
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt version: 3.4
+single-core operation.
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Output will be written into the directory: /Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/AdaptorRem/
+Using user-specified basename (>>625E25KB110c_S146<<) instead of deriving the filename from the input file(s)
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/625E25KB110c_S146_L001_R1_001.fastq.gz <<)
+
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Nextera	332	CTGTCTCTTATA	6401	5.19
+Illumina	0	AGATCGGAAGAGC	6401	0.00
+smallRNA	0	TGGAATTCTCGG	6401	0.00
+Using Nextera adapter for trimming (count: 332). Second best hit was Illumina (count: 0)
+
+Writing report to '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/AdaptorRem/625E25KB110c_S146_L001_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/625E25KB110c_S146_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.6
+Cutadapt version: 3.4
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 5
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 3.4). Setting -j 1
+Writing final adapter and quality trimmed output to 625E25KB110c_S146_L001_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 5') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/625E25KB110c_S146_L001_R1_001.fastq.gz <<< 
+This is cutadapt 3.4 with Python 3.7.10
+Command line parameters: -j 1 -e 0.1 -q 5 -O 1 -a CTGTCTCTTATA /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/625E25KB110c_S146_L001_R1_001.fastq.gz
+Processing reads on 1 core in single-end mode ...
+Finished in 0.05 s (8 µs/read; 7.71 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                   6,401
+Reads with adapters:                     6,076 (94.9%)
+Reads written (passing filters):         6,401 (100.0%)
+
+Total basepairs processed:       966,551 bp
+Quality-trimmed:                       0 bp (0.0%)
+Total written (filtered):        925,627 bp (95.8%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 6076 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 47.1%
+  C: 47.1%
+  G: 5.6%
+  T: 0.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	2977	1600.2	0	2977
+2	2753	400.1	0	2753
+3	1	100.0	0	1
+7	1	0.4	0	1
+12	2	0.0	1	1 1
+20	3	0.0	1	3
+23	5	0.0	1	5
+33	2	0.0	1	2
+38	1	0.0	1	1
+40	2	0.0	1	2
+41	1	0.0	1	1
+42	5	0.0	1	5
+45	2	0.0	1	2
+53	1	0.0	1	1
+54	6	0.0	1	6
+60	1	0.0	1	1
+66	2	0.0	1	2
+71	2	0.0	1	2
+74	1	0.0	1	1
+77	1	0.0	1	1
+79	2	0.0	1	2
+80	1	0.0	1	1
+84	1	0.0	1	1
+86	2	0.0	1	2
+87	5	0.0	1	5
+88	2	0.0	1	2
+90	8	0.0	1	8
+93	3	0.0	1	3
+94	1	0.0	1	1
+95	3	0.0	1	3
+96	56	0.0	1	53 3
+97	102	0.0	1	100 2
+98	25	0.0	1	25
+99	31	0.0	1	31
+101	1	0.0	1	1
+102	7	0.0	1	7
+115	21	0.0	1	20 1
+116	15	0.0	1	15
+117	2	0.0	1	2
+118	1	0.0	1	1
+119	1	0.0	1	1
+121	7	0.0	1	6 1
+123	3	0.0	1	3
+130	1	0.0	1	1
+131	6	0.0	1	2 4
+
+RUN STATISTICS FOR INPUT FILE: /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/625E25KB110c_S146_L001_R1_001.fastq.gz
+=============================================
+6401 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/Users/jorgeamaya/Desktop/dada2_terra_iseq/Results/AdaptorRem/625E25KB110c_S146_L001_R2_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/625E25KB110c_S146_L001_R2_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.6
+Cutadapt version: 3.4
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 5
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 3.4). Setting -j -j 1
+Writing final adapter and quality trimmed output to 625E25KB110c_S146_L001_R2_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 5') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/625E25KB110c_S146_L001_R2_001.fastq.gz <<< 
+This is cutadapt 3.4 with Python 3.7.10
+Command line parameters: -j 1 -e 0.1 -q 5 -O 1 -a CTGTCTCTTATA /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/625E25KB110c_S146_L001_R2_001.fastq.gz
+Processing reads on 1 core in single-end mode ...
+Finished in 0.04 s (6 µs/read; 9.59 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                   6,401
+Reads with adapters:                       364 (5.7%)
+Reads written (passing filters):         6,401 (100.0%)
+
+Total basepairs processed:       966,551 bp
+Quality-trimmed:                       0 bp (0.0%)
+Total written (filtered):        935,032 bp (96.7%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 364 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 2.2%
+  C: 89.8%
+  G: 4.9%
+  T: 3.0%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by "C" extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	21	1600.2	0	21
+2	5	400.1	0	5
+3	1	100.0	0	1
+7	1	0.4	0	1
+12	2	0.0	1	1 1
+20	3	0.0	1	3
+23	5	0.0	1	5
+33	2	0.0	1	2
+38	1	0.0	1	1
+40	2	0.0	1	2
+41	1	0.0	1	1
+42	5	0.0	1	5
+45	2	0.0	1	2
+53	1	0.0	1	1
+54	6	0.0	1	6
+60	1	0.0	1	1
+66	2	0.0	1	2
+71	2	0.0	1	2
+74	1	0.0	1	1
+77	1	0.0	1	1
+79	2	0.0	1	2
+80	1	0.0	1	1
+84	1	0.0	1	1
+86	2	0.0	1	2
+87	5	0.0	1	5
+88	2	0.0	1	2
+90	8	0.0	1	8
+93	3	0.0	1	3
+94	1	0.0	1	1
+95	3	0.0	1	3
+96	55	0.0	1	55
+97	101	0.0	1	101
+98	25	0.0	1	25
+99	31	0.0	1	31
+101	1	0.0	1	1
+102	7	0.0	1	7
+115	20	0.0	1	19 1
+116	15	0.0	1	15
+117	2	0.0	1	2
+118	1	0.0	1	1
+119	1	0.0	1	1
+121	6	0.0	1	6
+123	3	0.0	1	3
+130	1	0.0	1	0 1
+131	2	0.0	1	2
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+
+RUN STATISTICS FOR INPUT FILE: /Users/jorgeamaya/Desktop/Broad_Test/Data_Repo_iSeq_Mini/625E25KB110c_S146_L001_R2_001.fastq.gz
+=============================================
+6401 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files 625E25KB110c_S146_L001_R1_001_trimmed.fq.gz and 625E25KB110c_S146_L001_R2_001_trimmed.fq.gz
+Now renaming the output files
+
+ORIGINAL FILE 1: >>625E25KB110c_S146_L001_R1_001_trimmed.fq.gz<<	RENAMING TO:>>625E25KB110c_S146_R1_trimmed.fq.gz<<
+ORIGINAL FILE 2: >>625E25KB110c_S146_L001_R2_001_trimmed.fq.gz<<	RENAMING TO:>>625E25KB110c_S146_R2_trimmed.fq.gz<<
+file_1: 625E25KB110c_S146_R1_trimmed.fq.gz, file_2: 625E25KB110c_S146_R2_trimmed.fq.gz
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: 625E25KB110c_S146_R1_trimmed.fq.gz and 625E25KB110c_S146_R2_trimmed.fq.gz <<<<<
+Renaming the output files (AGAIN).
+Writing validated paired-end Read 1 reads to 625E25KB110c_S146_val_1.fq.gz
+Writing validated paired-end Read 2 reads to 625E25KB110c_S146_val_2.fq.gz
+
+Total number of sequences analysed: 6401
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 0 (0.00%)
+
+Deleting both intermediate output files 625E25KB110c_S146_R1_trimmed.fq.gz and 625E25KB110c_S146_R2_trimmed.fq.gz
+
+====================================================================================================
+

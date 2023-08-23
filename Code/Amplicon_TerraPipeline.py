@@ -486,6 +486,7 @@ def main():
 				continue
 			msa = os.path.join(outdir, f"{amplicon}.msa")
 			print(msa)
+			#subprocess.run(["muscle", "-in", fasta, "-out", msa], stdout=sys.stdout, stderr=sys.stderr)
 			subprocess.run(["muscle", "-align", fasta, "-output", msa], stdout=sys.stdout, stderr=sys.stderr)
 		
 #		ac.run_muscle(bins, outdir=outdir)
