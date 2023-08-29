@@ -82,6 +82,8 @@ workflow dada2_denoising_iseq {
 		File CIGARVariants_Bfilter_f = ampseq_dada2_iseq_process.CIGARVariants_Bfilter
 		File ASV_to_CIGAR_f = ampseq_dada2_iseq_process.ASV_to_CIGAR
 		File seqtab_f = ampseq_dada2_iseq_process.seqtab
+		File ASVTable_f = ampseq_dada2_iseq_process.ASVTable
+		File ASVSeqs_f = ampseq_dada2_iseq_process.ASVSeqs
 	}
 }
 
@@ -189,6 +191,8 @@ task ampseq_dada2_iseq_process {
 		File CIGARVariants_Bfilter = "Results/CIGARVariants_Bfilter.out.tsv"
 		File ASV_to_CIGAR = "Results/ASV_to_CIGAR/ASV_to_CIGAR.out.txt"
 		File seqtab = "Results/seqtab_mixed.tsv"
+		File ASVTable = "Results/PostProc_DADA2/ASVTable.txt"
+		File ASVSeqs = "Results/PostProc_DADA2/ASVSeqs.fasta"
 	}
 	runtime {
 		cpu: 1
